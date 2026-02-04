@@ -1,7 +1,7 @@
 # Weapon Stats
-attack-damage: '&3 &7➸ Attack Damage: &f{value}'
-attack-speed: '&3 &7➸ Attack Speed: &f{value}'
-critical-strike-chance: '&3 &7■ Crit Strike Chance: &f<plus>{value}%'
+attack-damage: '&3 &x&B&D&9&7&C&3■ 공격 피해: &f{value}'
+attack-speed: '&3 &x&B&D&9&7&C&3■ 공격 속도: &f{value}'
+critical-strike-chance: '&3 &x&8&7&B&0&C&4■ 크리티컬 확률: &f<plus>{value}%'
 critical-strike-power: '&3 &7■ Crit Strike Power: &f<plus>{value}%'
 skill-critical-strike-chance: '&3 &7■ Skill Crit Chance: &f<plus>{value}%'
 skill-critical-strike-power: '&3 &7■ Skill Crit Power: &f<plus>{value}%'
@@ -154,7 +154,7 @@ required-strength: '&eRequires &c{value} &eStrength'
 required-intelligence: '&eRequires &c{value} &eIntelligence'
 
 additional-dexterity: '&3 &7■ Extra Dexterity: &f<plus>{value}'
-additional-strength: '&3 &7■ Extra Strength: &f<plus>{value}'
+additional-strength: '&3 &x&E&2&9&8&A&4■ 추가 힘: &f<plus>{value}'
 additional-intelligence: '&3 &7■ Extra Intelligence: &f<plus>{value}'
 
 # MMOCore Professions
@@ -182,22 +182,22 @@ element:
 custom-myluck: '&3 &7■ Luck: &f<plus>{value}'
 
 # Aura Skils
-additional-wisdom: '&3 &7■ Extra Wisdom: &f{value}'
+additional-wisdom: '&3 &x&9&8&A&C&E&2■ 추가 지혜: &f{value}'
 additional-health: '&3 &x&C&4&8&7&8&7■ 추가 체력: &f{value}'
-additional-regeneration: '&3 &7■ Extra Regeneration: &f{value}'
-additional-luck: '&3 &7■ Extra Luck: &f{value}'
+additional-regeneration: '&3 &x&C&4&8&7&8&7■ 추가 재생: &f{value}'
+additional-luck: '&3 &x&9&8&E&2&B&E■ 추가 운: &f{value}'
 additional-toughness: '&3 &7■ Extra Toughness: &f{value}'
 additional-strength: '&3 &7■ Extra Strength: &f{value}'
 additional-crit-damage: '&3 &7■ Extra Crit Damage: &f{value}'
-additional-crit-chance: '&3 &7■ Extra Crit Chance: &f{value}'
+additional-crit-chance: '&3 &x&8&7&B&0&C&4■ 추가 크리티컬 확률: &f{value}'
 required-farming: '&eRequires {value} in Farming'
 required-foraging: '&eRequires {value} in Foraging'
 required-mining: '&eRequires {value} in Mining'
 required-fishing: '&eRequires {value} in Fishing'
-required-excavation: '&eRequires {value} in Excavation'
+required-excavation: '&x&E&A&B&B&B&B ■ Excavation {value}레벨이 필요합니다' # TODO: 번역
 required-archery: '&eRequires {value} in Archery'
 required-defense: '&x&E&A&B&B&B&B ■ 방어 {value}레벨이 필요합니다'
-required-fighting: '&eRequires {value} in Fighting'
+required-fighting: '&x&E&A&B&B&B&B ■ 전투 {value}레벨이 필요합니다'
 required-endurance: '&eRequires {value} in Endurance'
 required-agility: '&eRequires {value} in Agility'
 required-alchemy: '&eRequires {value} in Alchemy'
