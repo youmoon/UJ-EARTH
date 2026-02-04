@@ -1,0 +1,25 @@
+# EnderVault Configuration File
+# This file controls how enderchest data is stored.
+
+storage:
+  # Storage type to use. Options: "mysql", "sqlite", "pdc"
+  # - "mysql": Uses a MySQL database (requires a running MySQL server).
+  # - "sqlite": Uses a local SQLite database file (stored in the plugin folder).
+  # - "pdc": Uses Persistent Data Containers (stored in player data, only works for online players).
+  type: "sqlite"
+
+  # MySQL database settings (only used if type is "mysql")
+  mysql:
+    # Format: jdbc:mysql://<host>:<port>/<database>
+    url: "jdbc:mysql://localhost:3306/enderplus"
+    username: "your_username"
+    password: "your_password"
+
+  # SQLite database settings (only used if type is "sqlite")
+  sqlite:
+    # The file name for the SQLite database.
+    # This will be created in the plugin's data folder (e.g., plugins/EnderPlus/).
+    file: "enderplus.db"
+
+Config:
+  OnlineMode: true

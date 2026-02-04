@@ -1,0 +1,34 @@
+# #################
+#   No Mending   #
+# #################
+
+# Bypass permission : nomending.bypass
+
+# false = prevent items with mending to get repaired with exp and remove the enchant.
+enable-mending: true
+
+# if "enable-mending: false", it's useless to go further...
+# false = mending can't be obtain by players in the world (remove from natural items, replace from natural books).
+# NB : You're still able to give mending to a player through a book.
+enable-mending-obtention: false
+
+# if "enable-mending-obtention: false", it's useless to go further...
+# false = mending can't be obtain by these differents categories.
+obtain-books-by-fishing: false
+obtain-items-by-fishing: false
+obtain-books-by-trading: false
+obtain-books-by-looting: false
+obtain-items-by-looting: false
+
+# Replacement enchant when mending is removed:
+# NB : if replace-on-books is false, the plugin may not work
+replace-on-items: false
+replace-on-books: true
+# Use vanilla names, in lower cases, with _ instead of spaces
+replacement-enchant: unbreaking
+level: 2
+
+# Displays in the console when a mending is removed.
+display-log-message: true
+# if "enable-mending: false" : inform the player when a mending is removed from his items.
+inform-player: true

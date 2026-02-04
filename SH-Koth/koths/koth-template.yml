@@ -1,0 +1,88 @@
+# The following is a template for a King of the Hill (KoTH) configuration file.
+# The id is a unique identifier for the KoTH. Is the name of the file without the extension.
+# In this case, the file name is "koth-template.yml" and the id "koth-template".
+# Is not necessary to delete this file, it will be ignored if the id is not changed.
+
+# The world where the KoTH is located
+world: world_name
+
+# Corner coordinates for the KoTH area
+# These coordinates define the rectangular area of the KoTH.
+corner-1:
+  x: 16
+  y: 80
+  z: 16
+corner-2:
+  x: -16
+  y: 64
+  z: -16
+
+# Display name for the KoTH, used in placeholders.
+display-name: "<rainbow>King of the Hill"
+
+# Should a boss-bar be displayed for this KoTH?
+boss-bar: true
+
+# The time in seconds that the KoTH will be active before it resets.
+max-duration: 300
+
+# The time in seconds that a player must stay in the KoTH area to capture it.
+capture-time: 20
+
+# Koths can be played in 'capture' or 'score'.
+type: "capture"
+
+# Should the KoTH be played in solo mode or team mode?
+# If set to true, the KoTH will be played in solo mode, where individual players compete against each other.
+# If set to false, the KoTH will be played in team mode.
+# In team mode, players must be in a team to score points and win the KoTH
+solo-koth: false
+
+# Should a team be created automatically if a player joins the KoTH area?
+# If set to true, a team will be created and assigned for the player if they are not already in a team.
+# If set to false, the player must be in a team to SCORE the koth.
+# This parameter is only relevant if the KoTH is played in team mode, in solo mode it is ignored.
+create-team-if-not-exists: true
+
+# Should players be denied entry to the KoTH if they are not in a team?
+# If set to true, players who are not in a team will not be able to enter the KoTH area.
+# If set to false, players can enter the KoTH area even if they are not in a team.
+# If "create-team-if-not-exists" is set to true, players will be automatically added to a team allowing them to enter.
+# This parameter is only relevant if the KoTH is played in team mode, in solo mode it is ignored.
+deny-entry-if-not-in-team: false
+
+# List of commands to perform at different stages of the KoTH.
+commands-perform:
+  # These commands will be executed when the KoTH starts (one time).
+  start:
+    - "say The KoTH has started!"
+  # These commands will be executed when the KoTH ends (one time).
+  end:
+    - "say The KoTH has ended!"
+  # These commands will be executed when a player wins the KoTH,
+  # these means: one time if this koth is solo, or for each player if this koth is team.
+  to-winners:
+    - "say Congratulations, %player%!"
+    - "minecraft:give %player_name% minecraft:diamond 5"
+
+# This must be added by commands in game, taken the item in ur main hand.
+# You can add as many items as u want.
+physical-rewards:
+
+# Configuration for the scoreboards.
+scoreboard:
+  enabled: true
+  running:
+    title: "<gold><bold>King of the Hill"
+    lines:
+      - " "
+      - "<yellow>Time Left: <gold>%shkoth_<koth_id>_time_left%"
+      - " "
+  capturing:
+    title: "<gold><bold>King of the Hill"
+    lines:
+      - " "
+      - "<yellow>Time Left: <gold>%shkoth_<koth_id>_time_left%"
+      - "<yellow>Capturing: <gold>%shkoth_<koth_id>_capturing%"
+      - "<yellow>Capture Progress: <gold>%shkoth_<koth_id>_progress%"
+      - " "

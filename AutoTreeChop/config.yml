@@ -1,0 +1,82 @@
+visual-effect: true
+toolDamage: true
+max-uses-per-day: 50
+max-blocks-per-day: 500
+cooldownTime: 20
+vipCooldownTime: 20
+stopChoppingIfNotConnected: false
+stopChoppingIfDifferentTypes: false
+chopTreeAsync: true
+use-player-locale: false
+useMysql: false
+hostname: example.com
+port: 3306
+database: example
+username: root
+password: abc1234
+locale: en
+residenceFlag: build
+griefPreventionFlag: Build
+limitVipUsage: true
+vip-uses-per-day: 50
+vip-blocks-per-day: 500
+toolDamageDecrease: 1
+mustUseTool: false
+defaultTreeChop: false
+respectUnbreaking: true
+playBreakSound: true
+log-types:
+- OAK_LOG
+- SPRUCE_LOG
+- BIRCH_LOG
+- JUNGLE_LOG
+- ACACIA_LOG
+- DARK_OAK_LOG
+- MANGROVE_LOG
+- CHERRY_LOG
+enable-sneak-toggle: false
+enable-command-toggle: true
+sneak-message: false
+enable-auto-replant: true
+replant-delay-ticks: 1
+require-sapling-in-inventory: false
+replant-visual-effect: true
+valid-soil-types:
+- DIRT
+- GRASS_BLOCK
+- PODZOL
+- COARSE_DIRT
+- ROOTED_DIRT
+log-sapling-mapping:
+  OAK_LOG: OAK_SAPLING
+  BIRCH_LOG: BIRCH_SAPLING
+  SPRUCE_LOG: SPRUCE_SAPLING
+  JUNGLE_LOG: JUNGLE_SAPLING
+  ACACIA_LOG: ACACIA_SAPLING
+  DARK_OAK_LOG: DARK_OAK_SAPLING
+  MANGROVE_LOG: MANGROVE_PROPAGULE
+  CHERRY_LOG: CHERRY_SAPLING
+  PALE_OAK_LOG: PALE_OAK_SAPLING
+enable-leaf-removal: true
+leaf-removal-delay-ticks: 1
+leaf-removal-radius: 8
+leaf-removal-drop-items: false
+leaf-removal-visual-effects: true
+leaf-removal-async: true
+leaf-removal-batch-size: 20
+leaf-removal-counts-towards-limit: false
+leaf-types:
+- OAK_LEAVES
+- SPRUCE_LEAVES
+- BIRCH_LEAVES
+- JUNGLE_LEAVES
+- ACACIA_LEAVES
+- DARK_OAK_LEAVES
+- MANGROVE_LEAVES
+- CHERRY_LEAVES
+- PALE_OAK_LEAVES
+leaf-removal-mode: smart
+chop-batch-size: 50
+max-tree-size: 500
+max-discovery-blocks: 1000
+call-block-break-event: true

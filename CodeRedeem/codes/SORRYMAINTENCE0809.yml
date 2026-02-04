@@ -1,0 +1,25 @@
+# REDEEM CODE (use only capital letters and numbers)
+code: SORRYMAINTENCE0809
+
+# Enable or disable the code
+enabled: true
+
+# Validity date in yyyyMMdd format
+validity: 20250822
+
+# Rewards configuration 
+# Reference to the book YAML file in writtenbook folder
+# level enhantment 1-100
+# Command must be valid
+rewards:
+- money: 1000
+- command: give {player} gold_block[custom_name='["",{"text":"1058490518091235809153억
+    + 네라풀 + 겉날개 + 양조재료 + 철퇴","italic":false,"color":"#ffcc66"}]',lore=['["",{"text":"
+    | 점검보상 최종 협상안","italic":false,"color":"white"}]'],enchantment_glint_override=true]
+
+# Optional: Define how many times the code can be redeemed
+# Use -1 for unlimited
+redeem_limit: -1
+
+# dont change this
+redeem_count: 18

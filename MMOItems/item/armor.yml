@@ -1,0 +1,64 @@
+SAND_HELMET:
+  base:
+    material: GOLDEN_HELMET
+    equippable-slot: HEAD
+    max-item-damage: 715.0
+    name: '&x&A&E&A&3&7&5모&x&B&B&B&1&8&1래 &x&D&4&C&C&9&8모&x&E&0&D&9&A&3자'
+    lore:
+    - '&x&C&4&C&4&C&4그릇처럼 투구 안에 모래가 가득하다..'
+    disable-repairing: true
+    required-defense: 2.0
+    tier: RARE
+    defense: 1.0
+    knockback-resistance: -0.01
+    additional-health: 1.0
+    model: oraxen:sand_helmet
+    equippable-model: oraxen:sand
+SAND_CHESTPLATE:
+  base:
+    material: GOLDEN_CHESTPLATE
+    equippable-slot: CHEST
+    max-item-damage: 895.0
+    name: '&x&A&E&A&3&7&5모&x&B&B&B&1&8&1래 &x&D&4&C&C&9&8조&x&E&0&D&9&A&3끼'
+    lore:
+    - '&x&C&4&C&4&C&4모래 사장에 빠졌다 나온 것 처럼 모래로 가득하다..'
+    disable-repairing: true
+    required-defense: 3.0
+    tier: RARE
+    defense: 2.0
+    knockback-resistance: -0.025
+    additional-health: 3.0
+    model: oraxen:sand_chestplate
+    equippable-model: oraxen:sand
+SAND_LEGGINGS:
+  base:
+    material: GOLDEN_LEGGINGS
+    equippable-slot: LEGS
+    max-item-damage: 790.0
+    name: '&x&A&E&A&3&7&5모&x&B&B&B&1&8&1래 &x&D&4&C&C&9&8바&x&E&0&D&9&A&3지'
+    lore:
+    - '&x&C&4&C&4&C&4이정도 모래면 돈도 벌 수 있겠는걸..'
+    disable-repairing: true
+    required-defense: 2.0
+    tier: RARE
+    defense: 1.5
+    knockback-resistance: -0.02
+    additional-health: 2.0
+    model: oraxen:sand_leggings
+    equippable-model: oraxen:sand
+SAND_BOOTS:
+  base:
+    material: GOLDEN_BOOTS
+    equippable-slot: FEET
+    max-item-damage: 650.0
+    name: '&x&A&E&A&3&7&5모&x&B&B&B&1&8&1래 &x&D&4&C&C&9&8신&x&E&0&D&9&A&3발'
+    lore:
+    - '&x&C&4&C&4&C&4신발 속에 모래라니..'
+    disable-repairing: true
+    required-defense: 1.0
+    tier: RARE
+    defense: 0.5
+    knockback-resistance: -0.01
+    additional-health: 1.0
+    equippable-model: oraxen:sand_boots
+    model: oraxen:sand

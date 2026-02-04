@@ -1,0 +1,11 @@
+{
+  "world": {
+    "world": "world",
+    "centerX": 17407.5,
+    "centerZ": -3072.0,
+    "radiusX": 23551.5,
+    "radiusZ": 15359.0,
+    "shape": "rectangle",
+    "wrap": "none"
+  }
+}

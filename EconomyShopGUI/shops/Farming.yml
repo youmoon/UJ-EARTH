@@ -1,0 +1,176 @@
+pages:
+  page1:
+    items:
+      '1':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '2':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '5':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '6':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '7':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '8':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '9':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '10':
+        material: wheat
+        buy: 25
+        sell: 10
+        stack-size: 64
+      '11':
+        material: carrot
+        buy: 24
+        sell: 9
+        stack-size: 64
+      '12':
+        material: potato
+        buy: 26
+        sell: 10
+        stack-size: 64
+      '13':
+        material: beetroot
+        buy: 25
+        sell: 10
+        stack-size: 64
+      '14':
+        material: sugar_cane
+        buy: 75
+        sell: 12
+        stack-size: 64
+      '15':
+        material: apple
+        buy: 300
+        sell: 15
+        stack-size: 64
+      '16':
+        material: cocoa_beans
+        buy: 20
+        sell: 9.0
+        stack-size: 64
+      '17':
+        material: MELON
+        buy: 30
+        sell: 10.5
+        stack-size: 64
+      '18':
+        material: Pumpkin
+        buy: 30
+        sell: 10.5
+        stack-size: 64
+      '19':
+        material: sweet_berries
+        buy: 15
+        sell: 7
+        stack-size: 64
+      '20':
+        material: glow_berries
+        buy: 30
+        sell: 8
+        stack-size: 64
+      '21':
+        material: red_mushroom
+        buy: 50
+        sell: 9
+        stack-size: 64
+      '22':
+        material: brown_mushroom
+        buy: 50
+        sell: 9
+        stack-size: 64
+      '23':
+        material: HONEYCOMB
+        buy: 50
+        sell: 9
+        stack-size: 64
+      '24':
+        material: honey_bottle
+        buy: 75
+        sell: 14
+        stack-size: 16
+      '25':
+        material: dirt
+        buy: 64
+        sell: 0
+        stack-size: 64
+      '26':
+        material: rooted_dirt
+        buy: 128
+        sell: 0
+        stack-size: 64
+      '27':
+        material: air
+        buy: 6
+        sell: 1.5
+      '28':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '29':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '30':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '31':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '32':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '33':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '34':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '35':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '36':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '37':
+        material: WHEAT_seeds
+        buy: 15
+        sell: 0.25
+        stack-size: 64
+      '38':
+        material: PUMPKIN_SEEDS
+        buy: 15
+        sell: 0.25
+        stack-size: 64
+      '39':
+        material: melon_seeds
+        buy: 15
+        sell: 0.25
+        stack-size: 64
+      '40':
+        material: beetroot_seeds
+        buy: 15
+        sell: 0.25
+        stack-size: 64
+

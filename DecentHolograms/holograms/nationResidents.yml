@@ -1,0 +1,22 @@
+location: world:-5116.500:70.500:-17410.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: §e👥 §f§l국가별 거주자 순위 §e👥
+    height: 0.3
+  - content: '%townyadvanced_top_town_residents_1%'
+    height: 0.3
+  - content: '%townyadvanced_top_town_residents_2%'
+    height: 0.3
+  - content: '%townyadvanced_top_town_residents_3%'
+    height: 0.3
+  - content: '%townyadvanced_top_town_residents_4%'
+    height: 0.3
+  - content: '%townyadvanced_top_town_residents_5%'
+    height: 0.3
+  actions: {}

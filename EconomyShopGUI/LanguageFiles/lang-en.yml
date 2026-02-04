@@ -1,0 +1,411 @@
+# Help translate this file over on our Crowdin: https://crowdin.com/project/economyshopgui
+
+#StartUp/Reload
+creating-latest-shops: 최신 버전에 맞는 기본 상점을 생성합니다. 서버 버전 %version% 과(와) 일치하는 레이아웃이 없어 기본 레이아웃이 생성되었습니다. 지원되는 서버 버전을 사용해주세요.
+default-shops-created: 버전 %version% 에 호환되는 기본 상점 레이아웃이 %path% 에 생성되었습니다.
+loaded-shop-configurations: /shops/ 에서 총 %total% 개의 상점 설정을 로드했습니다.
+default-sections-created: 기본 섹션 레이아웃이 %path% 에 생성되었습니다.
+loaded-section-configurations: /sections/ 에서 총 %total% 개의 섹션 설정을 로드했습니다.
+updating-shop-settings: 상점 설정을 업데이트하는 중…
+creating-new-shop-config: 섹션 설정은 존재하지만 상점 설정이 없어, 섹션 ‘%section%’ 용 새 상점 설정을 생성합니다. 이전에 제대로 제거되지 않았나요?
+creating-new-section-config: 상점 설정은 존재하지만 섹션 설정이 없어, 섹션 ‘%section%’ 용 새 섹션 설정을 생성합니다. 이전에 제대로 제거되지 않았나요?
+adding-new-shop-shops,yml: shops.yml 에 새 상점 %shopsection% 을(를) 추가합니다.
+adding-new-shop-sections,yml: sections.yml 에 새 상점 %shopsection% 을(를) 추가합니다.
+disabled-due-no-vault: Vault 플러그인이 없어 비활성화되었습니다. Vault 를 설치해주세요.
+disabled-due-no-economy: 경제 플러그인이 없어 비활성화되었습니다. EssentialsX 와 같은 경제 플러그인을 설치해주세요.
+update-available: 'EconomyShopGUI 업데이트 가능: 현재 v%plugin_version% 이지만 v%latest_version% 이(가) 출시되었습니다.'
+done: 초기화 완료 - 소요 시간 %millis%ms
+updating-sections-config: 섹션 설정을 업데이트하는 중…
+debug-mode-enabled: 디버그 모드가 활성화되었습니다.
+economy-provider-null: EconomyProvider 가 null 입니다.
+successfully-hooked-into-vault: Vault 와 연동에 성공했습니다.
+language-file-using: '%languagefile% 언어 파일을 사용 중입니다.'
+cannot-find-language-file: 언어 파일을 찾을 수 없습니다!
+minecraft-version-using: Minecraft 버전 %version% 을(를) 사용 중입니다…
+checking-each-item: 잘못되었거나 누락된 값이 있는지 각 아이템을 검사하는 중…
+loading-items: 모든 아이템을 로드하는 중…
+could-not-find-valid-version: 지원되는 서버 버전을 찾을 수 없습니다. 플러그인이 제대로 작동하지 않을 수 있습니다. 지원되는 Minecraft 버전을 사용해주세요.
+updating-configs: 새 버전이 감지되어 설정을 업데이트하는 중…
+creating-backup: 기존 %fileName% 을(를) 백업으로 생성합니다. 백업은 EconomyShopGUI 플러그인 폴더의 backups 폴더에서 찾을 수 있습니다.
+discounts-feature-unavailable: 권한 플러그인이 없어 할인 기능을 활성화할 수 없습니다.
+cannot-hook-permissions: 지원되는 권한 플러그인을 찾지 못했습니다.
+enabled-plugin-hook: '%plugin% 연동을 활성화했습니다.'
+failed-plugin-integration: '%plugin% 연동에 실패했습니다. 플러그인이 비활성화되었거나 존재하지 않습니다.'
+loading-season-modifiers: 설정에서 계절 보정자를 로드하는 중…
+loaded-season-modifiers: 월드 ‘%world%’ 의 계절 ‘%season%’ 에 대해 총 %total% 개의 보정자를 로드했습니다.
+no-season-modifiers-found: 설정에서 계절 %season% 의 보정자를 찾을 수 없습니다.
+season-change: 월드 ‘%world%’ 에서 계절이 %season% 으로 변경되어 보정자를 다시 로드합니다…
+economy-providers-loaded: 모든 %shops% 개의 상점 섹션에 대해 총 %total% 개의 경제 제공자를 로드했습니다.
+section-economy-provider-loaded: 상점 ‘%shop%’ 의 기본 경제 제공자로 ‘%economy%’ 를 사용합니다.
+loaded-shop-stand-module: stands.json 에서 총 %count% 개의 상점 스탠드를 로드했습니다.
+saving-shop-stands: 총 %count% 개의 상점 스탠드를 stands.json 에 저장합니다…
+
+#Shop prefix
+shop-prefix: '&9&l상점 &8&l>> '
+
+#Main Shop Inventory
+inventory-main-shop-title: '&8&l서버 상점'
+profile: '&a프로필'
+name: '&6이름'
+money: '&6잔액'
+level: '&6레벨'
+
+# SellGUI inventory
+inventory-sellgui-title: '&8&l판매 GUI'
+
+#Buystacks Inventory title
+inventory-buystacks-title: '&8스택 구매 &a&l> &r&8%item%'
+
+# Transaction screen
+inventory-howmuchsell-title: '&8판매 &c&l> &r&8%item%'
+inventory-howmuchbuy-title: '&8구매 &a&l> &r&8%item%'
+plus-one: '&b+1'
+min-one: '&5-1'
+plus-sixteen: '&b+16'
+min-sixteen: '&5-16'
+plus-thirty-two: '&b+32'
+min-thirty-two: '&5-32'
+sell: '&a클릭하여 판매'
+sell-all: '&c클릭하여 모두 판매'
+buy: '&a클릭하여 구매'
+buy-stacks: '&c클릭하여 스택 구매'
+transaction-screen-total-price: '&3%price%'
+transaction-screen-total-amount: '&5x %amount%'
+max-amount-reached: '&c최대 수량에 도달했습니다'
+min-amount-reached: '&c최소 수량에 도달했습니다'
+
+# ShopStands transactions
+shopstand-buy-screen-title: '&8구매 &a&l> &r&8%item%'
+shopstand-sell-screen-title: '&8판매 &c&l> &r&8%item%'
+shopstand-click-to-buy: '&a%amount%개 구매하려면 클릭'
+shopstand-click-to-sell: '&a%amount%개 판매하려면 클릭'
+shopstand-total-price: '&c총 가격: &7%price%'
+
+# Shop stands module
+default-shop-stand-item-name: '&eShopStand'
+default-shop-stand-item-lore: '&f이 아이템을 놓으면\n&f새로운 &6ShopStand&f가\n&f해당 위치에 생성됩니다\n&ffor shop item &c%item%'
+shop-stands-management-inventory-title: '&8&l스탠드 관리'
+shop-stand-info-item-name: '&6&lShopStand 정보:'
+shop-stand-info-item-lore: '&a스탠드 ID: &f%id%\n&a위치: &f%location%\n&a상점 아이템: &f%item%\n&a스탠드 타입: &f%type%\n&a로딩 여부: &f%loaded%'
+force-reload-stand-item-name: '&e&l스탠드 강제 재로딩'
+force-reload-stand-item-lore: '&f클릭 시 스탠드를 재로딩하여\n&f디스플레이 아이템과 스탠드를\n&f다시 생성합니다'
+destroy-stand-item-name: '&4&lShopStand 제거'
+destroy-stand-item-lore: '&e클릭하여 이 스탠드를 제거'
+reload-shop-stand: '&aID %id% 스탠드를 강제로 재로딩했습니다'
+shop-stand-browse-inventory-title: '&8&l스탠드 목록'
+shop-stand-location-format: '월드: ''%world%'' | x:%pos_x% y:%pos_y% z:%pos_z%'
+created-new-shop-stand: '&a%item% 아이템용 ShopStand를 성공적으로 생성했습니다'
+error-creating-new-shop-stand: '&c새 ShopStand 생성 실패: %reason%'
+
+#All Inventory's
+back: '&4뒤로'
+cancel: '&4취소'
+
+#Previous/Next/Current page
+previous-page: '&d이전 페이지'
+next-page: '&b다음 페이지'
+current-page: '&7페이지:'
+
+# ShopItem lore
+left-click-buy: \n &a&l구매 가격\n &a■ &f%buyPrice%
+seasonal-buy-price: \n &a&l구매 가격\n &a■ &f&m%buyPrice%&r &f%seasonalBuyPrice%
+discounted-buy-price: \n &a&l구매 가격\n &a■ &f&m%buyPrice%&r &f%discountedPrice%
+right-click-sell: \n &c&l판매 가격\n &c■ &f%sellPrice%
+seasonal-sell-price: \n &c&l판매 가격\n &c■ &f&m%sellPrice%&r &f%seasonalSellPrice%
+multiplied-sell-price: \n &c&l판매 가격\n &c■ &f&m%sellPrice%&r &f%multipliedPrice%
+shift-right-click-sell-all: '&bShift+우클릭: 모두 판매'
+item-location-in-shop: '&8섹션: %shopsection%, 위치: %itemLoc%'
+item-cannot-be-bought: \n &a&l구매 가격\n &a■ &f구매 불가
+item-cannot-be-sold: \n &c&l판매 가격\n &c■ &f판매 불가
+item-seasonal-price: '&e&l시즌 가격 %season-icon%'
+decoration-lore: '\n &e&l사용법:'
+decoration-lore-buy: '&e ╚&e&l» &f왼쪽 클릭: 구매'
+decoration-lore-sell-all: '&e ╚&e&l» &fShift+우클릭: 전체 판매'
+decoration-lore-sell: '&e ╚&e&l» &f우클릭: 판매'
+time-requirement-lore: '&c&l구매 가능 시간\n&c%minTime% &l~ &c%maxTime% (인게임 시간)'
+quest-requirement-lore: '&c&l퀘스트 완료 필요: &b&l%questName%'
+region-requirement-lore: '&c&l해당 지역 내에서만 구매/판매 가능: &b&l%regionName%'
+
+#Buy/Sell Messages
+discord-srv-player-transaction: '%player_name%님이 %bought/sold% %amount%개 %items%을(를) %price%에 거래했습니다'
+pay-confirmation: '&a%amount%개 %material%을(를) &c%amounttopay%에 성공적으로 구매했습니다'
+sell-confirmation: '&a%amount%개 %material%을(를) &c%amounttopay%에 성공적으로 판매했습니다'
+sell-confirmation-multiple-items: '&a%amount%개의 아이템을 &c%amounttopay%에 성공적으로 판매했습니다'
+no-item-to-be-sold: '&c인벤토리에 판매할 아이템이 없습니다.'
+cannot-purchase-item: '&c이 아이템은 구매할 수 없습니다.'
+cannot-sell-item: '&c이 아이템은 판매할 수 없습니다.'
+player-made-transaction: '%playername%님이 %bought/sold% %amount%개 %material%을(를) %amountofmoney%에 거래했습니다 (방법: %buy/sell-method%)'
+player-made-transaction-multiple-items: '%playername%님이 %items%을(를) %amountofmoney%에 거래했습니다 (방법: %buy/sell-method%)'
+time-requirement-not-met: '&c이 아이템은 인게임 %minTime%~%maxTime%에만 거래할 수 있습니다 (현재: %progress%). 잠시 후 다시 시도해주세요!'
+quest-requirement-not-met: '&c퀘스트 &b&l%questName%&c 완료 시에만 거래할 수 있습니다. 완료 후 다시 시도해주세요.'
+region-requirement-not-met: '&c이 아이템은 지역 %regionName% 내에서만 거래할 수 있습니다.'
+buy-screen: 구매 화면
+sell-screen: 판매 화면
+buystacks-screen: 스택 구매 화면
+sellall-screen: 전체 판매 화면
+sellall-command: 전체 판매 명령
+sellgui-screen: 판매 GUI 화면
+quick-buy: 빠른 구매 화면
+quick-sell: 빠른 판매 화면
+shopstand-buy-screen: ShopStand 구매 화면
+shopstand-sell-screen: ShopStand 판매 화면
+auto-sell-chest: 판매상자
+bought: 구매됨
+sold: 판매됨
+on-screen-title-sold: '&a+%price%'
+on-screen-title-bought: '&c-%price%'
+
+#CurrencySymbol
+currencysymbol: $%price%
+symbol-pricing-format: '%symbol%%price%'
+named-pricing-format: '%price% &l%currency-format%'
+
+# XP Currency name format
+xp-currency-name-singular: XP 포인트
+xp-currency-name-plural: XP 포인트
+
+#All commands
+command-disabled-in-world: '&c이 명령은 현재 월드에서 사용할 수 없습니다.'
+
+#Edit-shop subcommand descriptions
+editshop-add-item-subcommand-desc: '&a상점에 아이템을 추가합니다.'
+editshop-edit-item-subcommand-desc: '&a상점의 기존 아이템을 수정합니다.'
+editshop-remove-item-subcommand-desc: '&a상점에서 아이템을 삭제합니다.'
+editshop-import-subcommand-desc: '&a다른 위치 또는 플러그인에서 파일/설정을 가져옵니다.'
+editshop-add-hand-item-subcommand-desc: '&a손에 든 아이템을 상점에 추가합니다.'
+editshop-add-section-subcommand-desc: '&a상점 섹션을 추가합니다.'
+editshop-edit-section-subcommand-desc: '&a기존 상점 섹션을 수정합니다.'
+editshop-remove-section-subcommand-desc: '&a상점 섹션을 제거합니다.'
+editshop-migrate-subcommand-desc: '&a다른 위치 또는 플러그인에서 데이터를 마이그레이션합니다.'
+editshop-shopstands-subcommand-desc: '&a기존 ShopStand 관리 또는 새로 생성'
+editshop-shopstands-give-subcommand-desc: '&a설치 가능한 ShopStand 아이템을 제공합니다.'
+editshop-shopstands-destroy-subcommand-desc: '&aID로 ShopStand를 제거합니다.'
+editshop-shopstands-browse-subcommand-desc: '&a기존 ShopStand 목록 GUI를 엽니다.'
+
+#Edit-shop subcommand syntaxes
+editshop-add-item-subcommand-syntax: '&a/editshop additem <section> <material> <buy price> <sell price> [displayname]'
+editshop-edit-item-subcommand-syntax: '&a/editshop edititem <section> <item> <action> <key> <value>'
+editshop-remove-item-subcommand-syntax: '&a/editshop deleteitem <section> <item>'
+editshop-import-subcommand-syntax: '&a/editshop import <plugin> <file>'
+editshop-add-hand-item-subcommand-syntax: '&a/editshop addhanditem <section> <buy price> <sell price>'
+editshop-add-section-subcommand-syntax: '&a/editshop addsection <section> <material> <displayname> <slot>'
+editshop-edit-section-subcommand-syntax: '&a/editshop editsection <section> <action> <key> <value>'
+editshop-remove-section-subcommand-syntax: '&a/editshop deletesection <section>'
+editshop-migrate-subcommand-syntax: '&a/editshop migrate <plugin> <image> [flags]'
+editshop-shopstands-subcommand-syntax: '&a/editshop shopstands <give|destroy> ...'
+editshop-shopstands-give-subcommand-syntax: '&a/editshop shopstands give <standType> <section> <index>'
+editshop-shopstands-destroy-subcommand-syntax: '&a/eshop shopstands destroy <standID>'
+editshop-shopstands-browse-subcommand-syntax: '&a/eshop shopstands browse'
+
+#Edit-shop command messages
+editshop-adding-item: '&a상점 %shop%에 새 아이템을 추가하는 중…'
+editshop-add-item-successful: '&a아이템을 상점 %shop%의 %itemPath% 경로에 성공적으로 추가했습니다.'
+editshop-adding-section: '&a상점 %section%에 새 섹션 설정을 추가하는 중…'
+editshop-add-section-successful: '&a새 섹션 설정이 %path%에 생성되었습니다.'
+editshop-editing-item: '&a아이템을 업데이트하는 중…'
+editshop-edit-item-successful: '&a''%itemPath%'' 경로의 아이템을 성공적으로 업데이트했습니다.'
+editshop-editing-section: '&a섹션을 업데이트하는 중…'
+editshop-removing-item: '&a상점에서 아이템을 제거하는 중…'
+editshop-remove-item-successful: '&a상점에서 ''%itemPath%'' 아이템을 성공적으로 제거했습니다.'
+editshop-removing-section: '&a상점에서 섹션을 제거하는 중…'
+editshop-removed-section: '&a&a상점에서 ''%itemPath%'' 섹션을 성공적으로 제거했습니다.'
+editshop-reload-shop-to-see-changes: '&a변경 사항을 적용하려면 /sreload 명령을 사용하세요.'
+file-replaced: '&a기존 %fileName%이(가) 새 파일로 교체되었습니다. 이전 파일은 backups 폴더에서 확인할 수 있습니다.'
+shop-stand-item-received: '&aShopStand %item%용 %amount%x 아이템을 받았습니다.'
+
+#Edit-shop command errors
+section-does-not-contain-item: '&c섹션 ''%shopsection%''에 아이템 ''%itemLoc%''이(가) 없습니다.'
+no-valid-action: '&c유효하지 않은 작업 ''%action%''입니다. 가능한 작업: %actions%.'
+no-valid-key: '&c유효하지 않은 키 ''%key%''입니다. 가능한 키: %keys%.'
+action-not-valid-on-key: '&c''%key%'' 키에는 %action% 작업을 수행할 수 없습니다.'
+edit-item-material-invalid: '&c수정하려는 아이템의 재료 ''%material%''이(가) 올바르지 않습니다.'
+key-already-defined: '&c아이템에 ''%key%'' 키가 이미 정의되어 있어 중복 추가할 수 없습니다.'
+key-is-not-found: '&c아이템에서 ''%key%'' 키를 찾을 수 없어 제거할 수 없습니다.'
+plugin-not-found: '&c지정한 이름의 플러그인을 찾을 수 없습니다. 지원 여부를 확인하세요.'
+file-not-found: '&c플러그인 %pluginName% 폴더에서 이름이 %fileName%인 파일을 찾을 수 없습니다.'
+no-valid-slot-for-item: '&c아이템을 슬롯 ''%slot%''에 배치할 수 없습니다. 슬롯은 1에서 %maxShopSize% 사이여야 합니다.'
+slot-already-in-use: '&c이 섹션의 해당 슬롯이 이미 사용 중입니다. 사용 가능한 슬롯: %available-slots%'
+slot-needs-to-be-number: '&c메인 메뉴의 슬롯 번호는 숫자여야 합니다.'
+invalid-shop-stand-type: '&c유효하지 않은 ShopStand 타입입니다. 가능한 값: %values%'
+unknown-shop-stand-id: '&cID가 %id%인 ShopStand을 찾을 수 없습니다.'
+stand-type-not-supported: '&c현재 Minecraft 버전에서 ShopStand 타입 %type%을(를) 지원하지 않습니다.'
+
+#Reload Command
+configs-reloaded: '&a모든 설정 파일이 재로드되었습니다.'
+
+# Sellall command usages
+sellall-command-usages: '&a명령어 사용법:'
+sellall-inventory-command-usage: '&7/sellall inventory &f- &7인벤토리의 모든 아이템을 판매합니다'
+sellall-hand-command-usage: '&7/sellall hand &8[수량] &f- &7손에 든 아이템을 모두 판매합니다'
+sellall-item-command-usage: '&7/sellall <아이템> &8[수량] &f- &7지정한 아이템을 인벤토리에서 모두 판매합니다'
+
+# ShopGive command
+shop-item-given: '&a%amount%x %material% 아이템을 받았습니다.'
+shop-item-received: '&a섹션 %section%의 인덱스 %itemIndex% 아이템 %amount%x을(를) 받았습니다.'
+
+#Balance Command
+check-balance: '&b현재 잔액: &c%amountofmoney%&b'
+check-balance-other-player: '&b%playername%의 잔액: &c%amountofmoney%&a'
+
+#Givemoney Command
+givemoneycommand-example: '&9/givemoney <플레이어> <금액>'
+givemoney-complete: '&aGivemoney 완료'
+
+#Pay Command
+minimum-amount: '&c플레이어에게 지급할 최소 금액은 %minimumamount%입니다.'
+payment-complete: '&a지급 완료'
+player-received-money: '&a%playername%님으로부터 &c%amounttogive%&a를 받았습니다!'
+need-player-and-amount: '&9플레이어와 금액을 입력해야 합니다.'
+need-amount: '&9금액을 입력해야 합니다.'
+paycommand-example: '&9/pay <플레이어> <금액>'
+
+#Player breaks spawner
+default-spawner-name: '&9&l%spawner-type% &r스포너'
+spawner-broke-and-applied-to-inventory: '&a%spawner-type% 스포너를 성공적으로 채굴하여 인벤토리에 적용했습니다.'
+need-silk-touch: '&c이 작업을 위해 실크터치 곡괭이가 필요합니다!'
+
+#JoinMessage
+join-message: '&2환영합니다! 현재 잔액: &c%balance%'
+
+#Level event
+level-event-message: '&2[레벨] &c%amount%이(가) 잔액에 추가되었습니다!'
+
+#Item error's
+displayname-null: 디스플레이 이름을 가져올 수 없습니다.
+item-name-null: 아이템 이름을 가져올 수 없습니다.
+need-item-material: 재료 값이 비어 있어 아이템을 생성할 수 없습니다.
+item-material-null: 재료 '%material%'을(를) 불러올 수 없습니다. 존재 여부와 철자를 확인하세요.
+item-enchantment-null: 인챈트 정보를 가져올 수 없습니다.
+need-item-enchantment: 인챈트 값이 비어 있어 생성할 수 없습니다.
+item-enchantment-not-supported: 현재 Minecraft 버전에서 해당 인챈트를 지원하지 않습니다.
+enchantment-cannot-apply-to-item: 인챈트를 적용하려면 아이템이 인챈트 북이거나 해당 인챈트에 맞는 도구여야 합니다.
+item-spawnertype-null: 스포너 타입 정보를 가져올 수 없습니다.
+need-item-spawnertype: 비어 있는 스포너 타입으로는 스포너를 생성할 수 없습니다.
+material-needs-to-be-spawner: 스포너 타입을 적용하려면 아이템 재료가 스포너여야 합니다.
+item-potiontype-null: 포션 타입 정보를 가져올 수 없습니다.
+need-item-potiontype: 비어 있는 포션 타입으로는 생성할 수 없습니다.
+potiontype-not-supported: 현재 Minecraft 버전에서 해당 포션 타입을 지원하지 않습니다.
+material-needs-to-be-potion: 포션 효과를 적용하려면 아이템 재료가 포션 또는 팁 화살이어야 합니다.
+cant-bind-multiple-applyments: 인챈트/스포너/포션 효과를 동시에 여러 개 적용할 수 없습니다.
+item-error: '&c아이템 오류가 발생했습니다. 콘솔을 확인하세요.'
+material-not-supported: 현재 Minecraft 버전에서 해당 아이템 재료를 지원하지 않습니다.
+item-needs-buy-and-sell-value: 모든 아이템에는 구매/판매 가격이 필요합니다.
+sell-value-wrong: 판매 가격은 숫자 또는 소수여야 합니다.
+buy-value-wrong: 구매 가격은 숫자 또는 소수여야 합니다.
+option-type-changed: Spawner 생성 옵션명이 version 2.2에서 clarity를 위해 type → spawnertype로 변경되었습니다.
+option-meta-changed: displayname 적용 옵션명이 version 2.2에서 meta → displayname으로 변경되었습니다.
+cannot-display-shopsection: 아이템 슬롯은 0~%maxInvSize% 사이여야 하므로 섹션 '%shopsection%'을(를) 생성할 수 없습니다.
+need-recipe-material: 레시피 재료 값이 비어 있어 생성할 수 없습니다.
+cannot-get-recipe-material: 레시피 재료를 생성할 수 없습니다. 이름 철자와 존재 여부를 확인하세요.
+recipe-material-not-supported: 현재 Minecraft 버전에서 해당 레시피 재료를 지원하지 않습니다.
+material-needs-to-be-book: 레시피 적용을 위해 아이템 재료가 지식의 책이어야 합니다.
+need-skullowner: 플레이어 헤드 생성에 Skull Owner가 필요합니다.
+material-needs-to-be-skull: 스컬 텍스처 적용을 위해 아이템 재료가 플레이어 헤드여야 합니다.
+material-needs-to-be-leather-armor: 색상 적용을 위해 아이템 재료가 가죽 방어구여야 합니다.
+invalid-item-requirement-type: '유효하지 않은 아이템 요구사항 타입: ''%type%'''
+invalid-item-requirement: '잘못된 아이템 요구사항: %requirement%'
+invalid-spawn-potential-weight: 스폰 가중치는 숫자여야 합니다.
+invalid-spawn-potential: '스폰 포텐셜 형식은 ''<entityType>:<weight>''이어야 합니다. 현재: ''%spawn_potential%'''
+invalid-material-for-item-option: 아이템 옵션 %item-option% 적용을 위해 재료가 %material%이어야 합니다.
+invalid-ominous-bottle-strength: 'ominous bottle 강도는 1~5 사이여야 합니다. 현재: %strength%'
+error-setting-item-option: '아이템 옵션 ''%item-option%'' 설정에 실패했습니다. 오류:'
+
+#Item path
+items-path-in-shops-config: 'shops.yml의 아이템 경로: %location%'
+items-path-in-sections-config: 'sections.yml의 아이템 경로: %location%'
+items-path-in-config: 'config.yml의 아이템 경로: %location%'
+
+#Compatibility
+mineablespawners-compatibility-enabled: 구성에서 스포너 공급자를 MineableSpawners로 설정했습니다.
+mineablespawners-found: MineableSpawners를 찾았습니다, 통합 중…
+mineablespawners-not-found: MineableSpawners를 찾을 수 없습니다.
+could-not-intergrate-with-mineablespawners: MineableSpawners와 통합하지 못했습니다.
+using-mineablespawners-spawners: MineableSpawners를 스포너 공급자로 사용합니다…
+rosestacker-compatibility-enabled: 구성에서 스포너 공급자를 RoseStacker로 설정했습니다.
+rosestacker-not-found: RoseStacker를 찾을 수 없습니다.
+could-not-integrate-with-rosestacker: RoseStacker와 통합하지 못했습니다.
+rosestacker-found: RoseStacker를 찾았습니다, 통합 중…
+using-rosestacker-spawners: RoseStacker를 스포너 공급자로 사용합니다…
+ultimatestacker-compatibility-enabled: 구성에서 스포너 공급자를 UltimateStacker로 설정했습니다.
+ultimatestacker-not-found: UltimateStacker를 찾을 수 없습니다.
+could-not-integrate-with-ultimatestacker: UltimateStacker와 통합하지 못했습니다.
+ultimatestacker-found: UltimateStacker를 찾았습니다, 통합 중…
+using-ultimatestacker-spawners: UltimateStacker를 스포너 공급자로 사용합니다…
+wildstacker-compatibility-enabled: 구성에서 스포너 공급자를 WildStacker로 설정했습니다.
+wildstacker-not-found: WildStacker를 찾을 수 없습니다.
+wildstacker-found: WildStacker를 찾았습니다, 통합 중…
+could-not-integrate-with-wildstacker: WildStacker와 통합하지 못했습니다.
+using-wildstacker-spawners: WildStacker를 스포너 공급자로 사용합니다.
+spawner-compatibility-enabled: 구성에서 스포너 공급자를 %provider%로 설정했습니다.
+spawner-provider-not-found: '%provider%를 찾을 수 없습니다.'
+spawner-provider-found: '%provider%를 찾았습니다, 통합 중…'
+failed-spawner-provider-integration: '%provider%와 통합하지 못했습니다.'
+using-external-spawners: '%provider%를 스포너 공급자로 사용합니다.'
+
+silkspawners-compatibility-enabled: 구성에서 SilkSpawners 호환성을 활성화했습니다.
+silkspawners-not-found: SilkSpawners를 찾을 수 없습니다.
+silkspawners-found: SilkSpawners를 찾았습니다, 통합 중…
+could-not-integrate-with-silkspawners: SilkSpawners와 통합하지 못했습니다.
+using-silkspawners-spawners: SilkSpawners를 스포너 공급자로 사용합니다…
+using-default-spawners: 플러그인 기본 스포너 공급자를 사용합니다…
+
+#Error's
+cannot-find-discounted-section: 섹션 '%section%'에 대한 할인을 추가할 수 없습니다. 섹션이 비활성화되었거나 존재하지 않습니다.
+cannot-find-discounted-group: 권한 그룹 '%permsGroup%'에 대한 할인을 추가할 수 없습니다. 철자와 플러그인 지원 여부를 확인하세요.
+disabling-plugin: 플러그인을 비활성화합니다…
+not-spawn-able: 이 엔티티 타입은 스폰할 수 없습니다. '%spawnertype%'
+real-player: 실제 플레이어만 이 명령을 사용할 수 있습니다.
+player-not-online: '&c해당 플레이어는 존재하지 않거나 온라인 상태가 아닙니다.'
+cannot-sell-air: '&c공기를 판매할 수 없습니다...'
+no-permissions: '&c권한이 없습니다.'
+no-permissions-to-open-shop: '&c이 상점 섹션을 열 권한이 없습니다.'
+cannot-do-that: '&4이 작업을 수행할 수 없습니다!!'
+more-space-needed: '&c인벤토리에 공간을 더 확보해주세요.'
+could-not-store-all-items: '&c인벤토리가 가득 차서 %amount%개의 아이템을 추가하지 못했습니다.'
+not-enough-space-inside-inventory: '&4인벤토리에 공간이 부족하여 남은 아이템을 바닥에 떨어뜨립니다.'
+insufficient-money: '&c%currency%가 부족합니다.'
+canceling-transaction-no-space: '&4인벤토리 공간 부족으로 거래를 취소합니다.\n공간을 확보한 후 다시 시도해주세요.'
+no-items-in-section: '%shopsection% 섹션에 아이템이 없어 열 수 없습니다!'
+no-item-found: '&c판매할 아이템을 찾을 수 없습니다.'
+not-enough-items-to-sell: '&c최소 %min-sell%개를 판매해야 합니다. 현재: %quantity%개'
+item-null: '&c아이템이 존재하지 않습니다.'
+item-cannot-be-sold-to-server: '&c이 아이템(%material%)은 서버에 판매할 수 없습니다. 관리자에게 문의하세요.'
+could-not-save-shops,yml: '&4shops.yml 설정을 저장하지 못했습니다.'
+could-not-save-sections,yml: '&4sections.yml 설정을 저장하지 못했습니다.'
+could-not-save-config: '%fileName% 설정을 저장하지 못했습니다.'
+rgb-color-formatted-wrong: 'RGB 색상은 ''0x000000'', ''#000000'' 또는 ''000000'' 형식이어야 합니다. 경로: %path%'
+no-shop-found: '&c해당 이름의 상점 섹션을 찾을 수 없습니다.'
+no-valid-amount: '&c유효한 수량이 아닙니다.'
+restart-plugin: 상점 섹션을 열 수 없습니다. 플러그인을 재시작하거나 Discord 서버에 문의하세요.
+could-not-check-for-updates: '&c업데이트 확인에 실패했습니다.'
+cannot-update-config: '&cconfig.yml 설정을 업데이트할 수 없습니다.'
+cannot-read-config: '%fileName% 설정을 읽을 수 없습니다. 잘못 구성되었습니다. Yaml 파서를 사용하거나 지원 서버에 문의하세요.'
+error-occured-while-reloading: '&4플러그인 재로딩 중 오류가 발생했습니다. 콘솔을 확인하세요.'
+could-not-get-the-limitedstock-mode: 'limitedstock 모드를 가져오지 못했습니다: %limitedStockMode%'
+error-occurred-while-connecting-to-database: 데이터베이스 연결 중 오류가 발생했습니다.
+invalid-item-type: '&c유효하지 않은 아이템 타입: %type%'
+cannot-enter-shop-banned-gamemode: '&c%gamemode% 모드에서는 구매/판매할 수 없습니다.'
+cannot-use-command-banned-gamemode: '&c%gamemode% 모드에서는 명령을 사용할 수 없습니다.'
+cannot-load-season-modifier: '%path%에서 로드된 섹션/아이템이 없어 계절 보정자를 불러올 수 없습니다.'
+invalid-season-modifier: '%path%에서 잘못된 보정자를 찾았습니다. -100~100% 사이여야 합니다. 현재: %current%'
+cannot-load-economy-provider: '상점 ''%shop%''의 경제 제공자를 로드하지 못했습니다. 이유: %reason%. 기본값 사용 중…'
+cannot-find-economy-provider: '상점 ''%shop%''의 경제 제공자를 찾을 수 없습니다: %type%. 기본값 사용 중…'
+cannot-find-default-economy-provider: config.yml의 경제 유형 '%economy%'을 찾을 수 없습니다. 자동으로 찾는 중…
+cannot-load-default-economy-provider: '기본 경제 제공자를 로드하지 못했습니다. 이유: %reason%. 자동으로 찾는 중…'
+removed-shop-stand: '&c위치 %location%에서 ShopStand를 제거했습니다.'
+shop-stand-load-failed: 'ID ''%id%'' ShopStand 로드 실패: %reason%'
+shop-stand-unload-failed: 'ID ''%id%'' ShopStand 언로드 실패: %reason%'
+shop-stand-inside-unloaded-chunk: ShopStand가 언로드된 청크에 있습니다
+item-from-shop-stand-not-found: ShopStand '%item%' 아이템을 찾을 수 없습니다
+block-from-shop-stand-not-found: '%location% 위치의 스탠드 블록 타입이 캐시된 ''%type%''과(와) 일치하지 않습니다'
+invalid-shop-stand-world: 월드 '%world%'가 존재하지 않아 ID %id% ShopStand 위치가 유효하지 않습니다
+invalid-shop-stand-format: 'ID %id% ShopStand 위치 형식이 잘못되었습니다: x%pos_x%, y%pos_y%, z%pos_z%'
+error-saving-shop-stands: ShopStand를 stands.json에 저장하지 못했습니다
+error-loading-shop-stands: stands.json에서 ShopStand를 로드하지 못했습니다
+error-loading-shop-stand: 'ID ''%stand%'' ShopStand 로드 실패: %reason%'
+error-creating-stands-storage: stands.json 저장소 파일을 생성하지 못했습니다
+invalid-stand-type: '&c유효하지 않은 ShopStand 타입: %type%'
+shop-stands-module-not-enabled: ShopStands 모듈이 활성화되어 있지 않습니다
+cannot-open-shop-stand: '플레이어 ''%player%''용 ShopStand 열기 실패: ShopItem(%item%)이(가) 존재하지 않습니다!'
+invalid-click-type: 클릭 타입 '%click-type%'이(가) 잘못되었습니다. 기본값 사용 중…
+invalid-click-action: 클릭 액션 '%click-action%'이(가) 잘못되었습니다. 기본값 사용 중…

@@ -1,0 +1,1421 @@
+pages:
+  page1:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: white_dye
+        buy: 1
+        sell: -1
+        stack-size: 64
+      '11':
+        material: light_gray_dye
+        buy: 1
+        sell: -1
+        stack-size: 64
+      '12':
+        material: gray_dye
+        buy: 1.5
+        sell: -1
+        stack-size: 64
+      '13':
+        material: black_dye
+        buy: 6
+        sell: -1
+        stack-size: 64
+      '14':
+        material: brown_dye
+        buy: 10
+        sell: -1
+        stack-size: 64
+      '15':
+        material: red_dye
+        buy: 1
+        sell: -1
+        stack-size: 64
+      '16':
+        material: orange_dye
+        buy: 2
+        sell: -1
+        stack-size: 64
+      '17':
+        material: yellow_dye
+        buy: 1.5
+        sell: -1
+        stack-size: 64
+      '18':
+        material: lime_dye
+        buy: 8.5
+        sell: -1
+        stack-size: 64
+      '19':
+        material: green_dye
+        buy: 8
+        sell: -1
+        stack-size: 64
+      '20':
+        material: cyan_dye
+        buy: 8.5
+        sell: -1
+        stack-size: 64
+      '21':
+        material: light_blue_dye
+        buy: 2.5
+        sell: -1
+        stack-size: 64
+      '22':
+        material: blue_dye
+        buy: 2
+        sell: -1
+        stack-size: 64
+      '23':
+        material: purple_dye
+        buy: 1
+        sell: -1
+        stack-size: 64
+      '24':
+        material: magenta_dye
+        buy: 1
+        sell: -1
+        stack-size: 64
+      '25':
+        material: Pink_dye
+        buy: 1
+        sell: -1
+        stack-size: 64
+  page2:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: dandelion
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '11':
+        material: poppy
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '12':
+        material: blue_orchid
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '13':
+        material: allium
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '14':
+        material: azure_bluet
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '15':
+        material: red_tulip
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '16':
+        material: orange_tulip
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '17':
+        material: white_tulip
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '18':
+        material: pink_tulip
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '19':
+        material: oxeye_daisy
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '20':
+        material: cornflower
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '21':
+        material: lily_of_the_valley
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '22':
+        material: torchflower
+        buy: 1000
+        sell: -1
+        stack-size: 64
+      '23':
+        material: closed_eyeblossom
+        buy: 1000
+        sell: -1
+        stack-size: 64
+      '24':
+        material: open_eyeblossom
+        buy: 1000
+        sell: -1
+        stack-size: 64
+      '25':
+        material: wither_rose
+        buy: 1500
+        sell: -1
+        stack-size: 64
+      '26':
+        material: pink_petals
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '27':
+        material: spore_blossom
+        buy: 1000
+        sell: -1
+        stack-size: 64
+      '28':
+        material: sunflower
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '29':
+        material: lilac
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '30':
+        material: rose_bush
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '31':
+        material: peony
+        buy: 500
+        sell: -1
+        stack-size: 64
+      '32':
+        material: pitcher_plant
+        buy: 1000
+        sell: -1
+        stack-size: 64
+  page3:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: white_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '11':
+        material: light_gray_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '12':
+        material: gray_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '13':
+        material: black_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '14':
+        material: brown_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '15':
+        material: red_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '16':
+        material: orange_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '17':
+        material: yellow_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '18':
+        material: lime_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '19':
+        material: green_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '20':
+        material: cyan_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '21':
+        material: light_blue_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '22':
+        material: blue_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '23':
+        material: purple_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '24':
+        material: magenta_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+      '25':
+        material: Pink_wool
+        buy: 75
+        sell: -1
+        stack-size: 64
+  page4:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: white_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '11':
+        material: light_gray_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '12':
+        material: gray_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '13':
+        material: black_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '14':
+        material: brown_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '15':
+        material: red_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '16':
+        material: orange_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '17':
+        material: yellow_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '18':
+        material: lime_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '19':
+        material: green_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '20':
+        material: cyan_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '21':
+        material: light_blue_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '22':
+        material: blue_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '23':
+        material: purple_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '24':
+        material: magenta_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '25':
+        material: Pink_carpet
+        buy: 40
+        sell: -1
+        stack-size: 64
+  page5:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '11':
+        material: white_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '12':
+        material: light_gray_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '13':
+        material: gray_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '14':
+        material: black_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '15':
+        material: brown_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '16':
+        material: red_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '17':
+        material: orange_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '18':
+        material: yellow_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '19':
+        material: lime_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '20':
+        material: green_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '21':
+        material: cyan_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '22':
+        material: light_blue_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '23':
+        material: blue_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '24':
+        material: purple_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '25':
+        material: magenta_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+      '26':
+        material: Pink_terracotta
+        buy: 100
+        sell: -1
+        stack-size: 64
+  page6:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: white_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '11':
+        material: light_gray_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '12':
+        material: gray_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '13':
+        material: black_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '14':
+        material: brown_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '15':
+        material: red_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '16':
+        material: orange_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '17':
+        material: yellow_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '18':
+        material: lime_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '19':
+        material: green_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '20':
+        material: cyan_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '21':
+        material: light_blue_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '22':
+        material: blue_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '23':
+        material: purple_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '24':
+        material: magenta_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '25':
+        material: Pink_glazed_terracotta
+        buy: 120
+        sell: -1
+        stack-size: 64
+  page7:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: white_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '11':
+        material: light_gray_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '12':
+        material: gray_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '13':
+        material: black_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '14':
+        material: brown_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '15':
+        material: red_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '16':
+        material: orange_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '17':
+        material: yellow_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '18':
+        material: lime_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '19':
+        material: green_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '20':
+        material: cyan_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '21':
+        material: light_blue_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '22':
+        material: blue_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '23':
+        material: purple_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '24':
+        material: magenta_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+      '25':
+        material: Pink_concrete
+        buy: 60
+        sell: -1
+        stack-size: 64
+  page8:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: white_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '11':
+        material: light_gray_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '12':
+        material: gray_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '13':
+        material: black_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '14':
+        material: brown_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '15':
+        material: red_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '16':
+        material: orange_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '17':
+        material: yellow_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '18':
+        material: lime_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '19':
+        material: green_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '20':
+        material: cyan_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '21':
+        material: light_blue_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '22':
+        material: blue_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '23':
+        material: purple_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '24':
+        material: magenta_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '25':
+        material: Pink_concrete_powder
+        buy: 45
+        sell: -1
+        stack-size: 64
+  page9:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '11':
+        material: white_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '12':
+        material: light_gray_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '13':
+        material: gray_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '14':
+        material: black_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '15':
+        material: brown_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '16':
+        material: red_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '17':
+        material: orange_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '18':
+        material: yellow_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '19':
+        material: lime_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '20':
+        material: green_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '21':
+        material: cyan_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '22':
+        material: light_blue_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '23':
+        material: blue_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '24':
+        material: purple_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '25':
+        material: magenta_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '26':
+        material: Pink_stained_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+      '27':
+        material: tinted_glass
+        buy: 120
+        sell: -1
+        stack-size: 64
+  page10:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '11':
+        material: white_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '12':
+        material: light_gray_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '13':
+        material: gray_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '14':
+        material: black_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '15':
+        material: brown_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '16':
+        material: red_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '17':
+        material: orange_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '18':
+        material: yellow_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '19':
+        material: lime_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '20':
+        material: green_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '21':
+        material: cyan_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '22':
+        material: light_blue_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '23':
+        material: blue_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '24':
+        material: purple_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '25':
+        material: magenta_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '26':
+        material: Pink_stained_glass_pane
+        buy: 30
+        sell: -1
+        stack-size: 64
+  page11:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '11':
+        material: white_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '12':
+        material: light_gray_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '13':
+        material: gray_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '14':
+        material: black_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '15':
+        material: brown_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '16':
+        material: red_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '17':
+        material: orange_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '18':
+        material: yellow_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '19':
+        material: lime_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '20':
+        material: green_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '21':
+        material: cyan_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '22':
+        material: light_blue_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '23':
+        material: blue_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '24':
+        material: purple_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '25':
+        material: magenta_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '26':
+        material: Pink_candle
+        buy: 45
+        sell: -1
+        stack-size: 64
+  page12:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: orange_stained_glass_pane
+        name: ' '
+      '3':
+        material: yellow_stained_glass_pane
+        name: ' '
+      '4':
+        material: lime_stained_glass_pane
+        name: ' '
+      '5':
+        material: green_stained_glass_pane
+        name: ' '
+      '6':
+        material: cyan_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: purple_stained_glass_pane
+        name: ' '
+      '10':
+        material: white_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '11':
+        material: light_gray_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '12':
+        material: gray_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '13':
+        material: black_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '14':
+        material: brown_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '15':
+        material: red_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '16':
+        material: orange_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '17':
+        material: yellow_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '18':
+        material: lime_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '19':
+        material: green_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '20':
+        material: cyan_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '21':
+        material: light_blue_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '22':
+        material: blue_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '23':
+        material: purple_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '24':
+        material: magenta_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+      '25':
+        material: Pink_banner
+        buy: 110
+        sell: -1
+        stack-size: 16
+  page13:
+    items:
+      '1':
+        material: CREEPER_BANNER_PATTERN
+        buy: 150
+        sell: -1
+        stack-size: 1
+      '2':
+        material: FLOWER_BANNER_PATTERN
+        buy: 150
+        sell: -1
+        stack-size: 1
+      '3':
+        material: GLOBE_BANNER_PATTERN
+        buy: 150
+        sell: -1
+        stack-size: 1
+      '4':
+        material: GUSTER_BANNER_PATTERN
+        buy: 150
+        sell: -1
+        stack-size: 1
+      '5':
+        material: MOJANG_BANNER_PATTERN
+        buy: 150
+        sell: -1
+        stack-size: 1
+      '6':
+        material: PIGLIN_BANNER_PATTERN
+        buy: 150
+        sell: -1
+        stack-size: 1
+      '7':
+        material: SKULL_BANNER_PATTERN
+        buy: 150
+        sell: -1
+        stack-size: 1
+      '8':
+        material: FIELD_MASONED_BANNER_PATTERN
+        buy: 150
+        sell: -1
+        stack-size: 1
+      '9':
+        material: BORDURE_INDENTED_BANNER_PATTERN
+        buy: 150
+        sell: -1
+        stack-size: 1
+      '10':
+        material: FLOW_INDENTED_BANNER_PATTERN
+        buy: 150
+        sell: -1
+        stack-size: 1

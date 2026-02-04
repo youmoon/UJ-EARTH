@@ -1,0 +1,126 @@
+{
+  "world": null,
+  "id": "exampleconfig",
+  "customName": "ExampleConfig",
+  "rewards": [
+    {
+      "type": "net.islandearth.rpgregions.rewards.ExperienceReward",
+      "properties": {
+        "xp": 10,
+        "alwaysAward": false,
+        "timeBetweenReward": 0
+      }
+    },
+    {
+      "type": "net.islandearth.rpgregions.rewards.ItemReward",
+      "properties": {
+        "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABXQAAj09dAALRGF0YVZlcnNpb250AAJpZHQABWNvdW50dAAOc2NoZW1hX3ZlcnNpb251cQB+AAYAAAAFdAAeb3JnLmJ1a2tpdC5pbnZlbnRvcnkuSXRlbVN0YWNrc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAEVh0ABNtaW5lY3JhZnQ6aXJvbl9iYXJzc3EAfgAPAAAAAXEAfgAT",
+        "alwaysAward": false,
+        "timeBetweenReward": 0
+      }
+    },
+    {
+      "type": "net.islandearth.rpgregions.rewards.PlayerCommandReward",
+      "properties": {
+        "command": "say I discovered a region!",
+        "alwaysAward": false,
+        "timeBetweenReward": 0
+      }
+    },
+    {
+      "type": "net.islandearth.rpgregions.rewards.ConsoleCommandReward",
+      "properties": {
+        "command": "say Server sees you discovered a region!",
+        "alwaysAward": false,
+        "timeBetweenReward": 0
+      }
+    },
+    {
+      "type": "net.islandearth.rpgregions.rewards.MessageReward",
+      "properties": {
+        "messages": [
+          "\u0026aExample message as a reward"
+        ],
+        "alwaysAward": false,
+        "timeBetweenReward": 0
+      }
+    }
+  ],
+  "sound": "AMBIENT.UNDERWATER.EXIT",
+  "icon": "WOODEN_AXE",
+  "iconModel": 0,
+  "undiscoveredIconModel": 0,
+  "undiscoveredIcon": "TOTEM_OF_UNDYING",
+  "iconCommand": [
+    {
+      "command": "say",
+      "clickType": "DISCOVERED",
+      "console": false,
+      "cooldown": 0
+    }
+  ],
+  "showCoords": false,
+  "location": null,
+  "hints": [],
+  "showHint": false,
+  "teleportable": false,
+  "hidden": false,
+  "discoverable": true,
+  "effects": [
+    {
+      "type": "net.islandearth.rpgregions.effects.PotionRegionEffect",
+      "properties": {
+        "potionEffect": {
+          "type": "GLOWING",
+          "duration": 100,
+          "amplifier": 1,
+          "ambient": true,
+          "particles": true,
+          "icon": true
+        },
+        "wearingRequired": true,
+        "ignoreItems": [
+          "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABXQAAj09dAALRGF0YVZlcnNpb250AAJpZHQABWNvdW50dAAOc2NoZW1hX3ZlcnNpb251cQB+AAYAAAAFdAAeb3JnLmJ1a2tpdC5pbnZlbnRvcnkuSXRlbVN0YWNrc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAEVh0ABltaW5lY3JhZnQ6aXJvbl9jaGVzdHBsYXRlc3EAfgAPAAAAAXEAfgAT"
+        ],
+        "ignorePerm": true
+      }
+    }
+  ],
+  "requirements": [],
+  "discoveredLore": [],
+  "alwaysShowTitles": false,
+  "title": null,
+  "subtitle": null,
+  "discoveredTitle": null,
+  "discoveredSubtitle": null,
+  "regenerate": {
+    "schematicName": null,
+    "origin": null,
+    "regenerateInterval": 50000,
+    "loadChunks": false,
+    "regeneratingEntities": [
+      {
+        "entityType": "SHULKER",
+        "validSpawnSurfaces": [
+          "PURPUR_BLOCK",
+          "PURPUR_PILLAR"
+        ],
+        "maxPerChunk": 5,
+        "rarity": 30,
+        "isMythicEntity": false
+      }
+    ],
+    "onDiscover": false,
+    "onlyEntities": true
+  },
+  "teleportCooldown": 0,
+  "teleportCost": 0.0,
+  "showActionbar": true,
+  "opacity": 0.5,
+  "lineOpacity": 0.5,
+  "colour": "13369344",
+  "lineColour": "13369344",
+  "dynmap": true,
+  "secondsInsideToDiscover": 0,
+  "disablePassthrough": false
+}

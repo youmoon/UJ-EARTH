@@ -1,0 +1,214 @@
+# This file is generated with LightCore used in LightCoins
+#
+#    ___       ___  ________  ___  ___  _________  ________  ________  ________  _______
+#   |\  \     |\  \|\   ____\|\  \|\  \|\___   ___\\   ____\|\   __  \|\   __  \|\  ___ \
+#   \ \  \    \ \  \ \  \___|\ \  \\\  \|___ \  \_\ \  \___|\ \  \|\  \ \  \|\  \ \   __/|
+#    \ \  \    \ \  \ \  \  __\ \   __  \   \ \  \ \ \  \    \ \  \\\  \ \   _  _\ \  \_|/__
+#     \ \  \____\ \  \ \  \|\  \ \  \ \  \   \ \  \ \ \  \____\ \  \\\  \ \  \\  \\ \  \_|\ \
+#      \ \_______\ \__\ \_______\ \__\ \__\   \ \__\ \ \_______\ \_______\ \__\\ _\\ \_______\
+#       \|_______|\|__|\|_______|\|__|\|__|    \|__|  \|_______|\|_______|\|__|\|__|\|_______|
+#
+# -> powered LightCoins - A simple and lightweight coins /virtual currency plugin for your server.
+#    Copyright © 2024 LightStudios
+#
+# Here you can translate all messages of the plugin into your desired language.
+# If you wish to use different languages, create a new file called "language/xx.yml" where "xx" is the language code.
+# Copy the default en.yml content and paste it into the new file. Then translate the messages into the desired language.
+# After that you can change the language in the config.yml file to the new language code.
+#
+# IMPORTANT: Do not use color codes such as '&7' or '#ffdc73' in the messages!
+#            Your console will overflow with errors, and the plugin will not work properly.
+#            Instead, use the modern mini message system: "<gray>Text" or "<yellow>Text"
+#            You can find all available colors and formats here: https://docs.advntr.dev/minimessage/format.html
+#            This system also supports hover events, click events and more. Check the documentation for more information.
+# HINT: All the messages are auto translated to PlaceholderAPI placeholders. You can use them in every message.
+# HINT: If your message is too long for your editor, you can easily add a list as a line for some non List messages.
+#       example: -> all methods shows the same message
+#         noPermission: '<red>You do not have permission to do this! You need <dark_red>#permission#<red>!'
+#         noPermission:
+#           - '<red>You do not have permission'
+#           - 'to do this! You need <dark_red>#permission#<red>!'
+#       result: '<red>You do not have permission to do this! You need <dark_red>#permission#<red>!'
+#
+version: 1 # do not touch this, please :( (plugin will not work, probably :o)
+prefix: <yellow><bold><italic>light<gray>Coins <dark_gray>● <reset>
+noPermission: <red>You do not have permission to do this! You need <dark_red>#permission#<red>!
+wrongSyntax: <red>Wrong command syntax. <gray>Please use <red>#syntax#
+noNumber: <red>This is not a number! Please use valid numbers.
+noNegativ: <red>You can't use negative numbers!
+playerNotFound: <red>The player <dark_red>#player#<red> could not be found!
+somethingWentWrong: '<red>Something went wrong! Infos: #info#'
+reloadSuccess: <gray>Plugin <yellow>successfully<gray> reloaded!
+starterCoins: <gray>You have received <yellow>#coins# <gray>#currency# as a starter
+  gift!
+playerDeleted: <gray>You have deleted the player <yellow>#player#<gray>.
+onlyConsole: <red>This command can only be executed by the console!
+# Vault Economy
+coinsShow: '<gray>You have <yellow>#coins#<gray> #currency#.'
+coinsShowTarget: <gray>The player <yellow>#player#<gray> has <yellow>#coins# <gray>#currency#
+coinsAdd: <gray>You have added <yellow>#coins# <gray>#currency# to <yellow>#player#<gray>.
+coinsAddTarget: <gray>The player <yellow>#player# <gray>has added <yellow>#coins#
+  <gray>#currency# to you.
+coinsAddAll: <gray>You have added <yellow>#coins# <gray>#currency# to <yellow>#amount#
+  players<gray>.
+coinsAddAllFailed: <red>Failed to add <dark_red>#coins# <red>#currency# to <dark_red>#amount#
+  players<red>.
+coinsSet: <gray>You have set the balance of <yellow>#player#<gray> to <yellow>#coins#
+  <gray>#currency#.
+coinsSetTarget: <gray>The player <yellow>#player# <gray>has set your balance to <yellow>#coins#
+  <gray>#currency#.
+coinsRemove: <gray>You have removed <yellow>#coins# <gray>#currency# from <yellow>#player#<gray>.
+coinsRemoveTarget: <gray>The player <yellow>#player# <gray>has removed <yellow>#coins#
+  <gray>#currency# from you.
+# Player Commands
+pay: <gray>You have paid <yellow>#coins# <gray>#currency# to <yellow>#target#<gray>.
+payTarget: <gray>The player <yellow>#target#<gray> has paid you <yellow>#coins# <gray>#currency#.
+payCooldown: <red>You have to wait <yellow>#time# <red>seconds before you can pay
+  again!
+payOnlyOnlinePlayer:
+- '<red>The target player <dark_red>#target# <red>can''t be found or is not online! '
+- <red>You can only pay <dark_red>players on the local Server <red>due to security
+  reasons!
+payNotYourself: <red>You can't <dark_red>pay <red>yourself!
+baltop:
+  header:
+  - <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+    <yellow><bold><italic>light<gray>Coins <reset><gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+  - ' <gray>Top 10 Players with the largest'
+  - '     <gray>balance on the server'
+  - ' '
+  - <dark_gray>● <yellow><bold>Overall<reset> <gray>- <yellow>#overall# <gray>#currency#
+  - ' '
+  content: <dark_gray>● <yellow><bold>#number#<reset><gray># <dark_gray>● <yellow>#name#
+    <gray>- <yellow>#amount# <gray>#currency#
+  footer:
+  - ' '
+  - <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+    <gray><strikethrough>-----</strikethrough><yellow>●<gray>⏺<yellow>●<gray><strikethrough>-----</strikethrough>
+    <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+# Virtual Currencies
+virtualShow: <gray>The player <yellow>#player# <gray>have <yellow>#amount# <gray>#currency#.
+virtualCurrencyNotFound: <red>The currency <dark_red>#currency# <red>could not be
+  found!
+virtualCurrencyAdd: <gray>You have added <yellow>#amount# <gray>#currency# to <yellow>#player#<gray>.
+virtualCurrencySet: <gray>You have set the currency <yellow>#currency#<gray> of player
+  <yellow>#player#<gray> to <yellow>#amount#<gray>.
+virtualCurrencyRemove: <gray>You have removed <yellow>#amount# <gray>#currency# from
+  <yellow>#player#<gray>.
+# Help messages for all modules
+helpCommand:
+  coins:
+  - <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+    <yellow><bold><italic>light<gray>Coins <reset><gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+  - ' '
+  - '  <gray>Admin & Console Commands:'
+  - <gray>● <yellow>/coins show <gray>[<yellow>player<gray>] <gray>- Show a players
+    balance
+  - <gray>● <yellow>/coins add/set/remove <gray>[<yellow>player<gray>] <gray>[<yellow>amount<gray>]
+    <gray>- Change a player coins value
+  - <gray>● <yellow>/coins help <gray>- Showing all the available commands
+  - ' '
+  - '  <gray>Player Commands:'
+  - <gray>● <yellow>/pay <gray>[<yellow>player<gray>] <gray>[<yellow>amount<gray>]
+    <gray>- Send coins to other players
+  - <gray>● <yellow>/baltop <gray>- List the players with the 10 largest balances
+  - <gray>● <yellow>/coins <gray>- Shows your current balance
+  - ' '
+  - <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+    <gray><strikethrough>-----</strikethrough><yellow>●<gray>⏺<yellow>●<gray><strikethrough>-----</strikethrough>
+    <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+  virtual:
+  - <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+    <yellow><bold><italic>light<gray>Coins <reset><gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+  - ' '
+  - '  <gray>Admin & Console Commands:'
+  - <gray>● <yellow>/virtual show <gray>[<yellow>currency<gray>] <gray>- Show a players
+    currency balance
+  - <gray>● <yellow>/virtual set/add/remove <gray>[<yellow>currency<gray>] <gray>[<yellow>player<gray>]
+    <gray>[<yellow>amount<gray>] <gray>- Change a player currency value
+  - ' '
+  - <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+    <gray><strikethrough>-----</strikethrough><yellow>●<gray>⏺<yellow>●<gray><strikethrough>-----</strikethrough>
+    <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+  default:
+  - <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+    <yellow><bold><italic>light<gray>Coins <reset><gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+  - ' '
+  - '  <gray>Admin & Console Commands:'
+  - <gray>● <yellow>/lightcoins reload <gray>- Reload the configs and messages.
+  - <gray>● <yellow>/lightcoins help <gray>- Showing all the available commands
+  - ' '
+  - <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+    <gray><strikethrough>-----</strikethrough><yellow>●<gray>⏺<yellow>●<gray><strikethrough>-----</strikethrough>
+    <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+  player:
+  - <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+    <yellow><bold><italic>light<gray>Coins <reset><gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+  - ' '
+  - '  <gray>Player Commands:'
+  - <gray>● <yellow>/coins <gray>- Shows your current balance
+  - <gray>● <yellow>/pay <gray>[<yellow>player<gray>] <gray>[<yellow>amount<gray>]
+    <gray>- Send coins to other players
+  - <gray>● <yellow>/baltop <gray>- List the players with the 10 largest balances
+  - ' '
+  - <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+    <gray><strikethrough>-----</strikethrough><yellow>●<gray>⏺<yellow>●<gray><strikethrough>-----</strikethrough>
+    <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+loseCoinsOnDeath: <gray>You have lost <yellow>#coins# <gray>#currency# due to your
+  death.
+# debug command
+debugCommand:
+- <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+  <yellow><bold><italic>DEBUG INFO <reset><gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+- ' '
+- '<gray>● <gray>Server: <yellow>#server-version# <gray>/ <yellow>#server-type#'
+- '<gray>● <gray>Performance: <yellow>#tps-1#<gray>/<yellow>#tps-5#<gray>/#<yellow>#tps-15#
+  <gray>with average <yellow>#current-mspt# <gray>mspt'
+- '<gray>● <gray>OS: <yellow>#os# #os-version# <gray>/ <yellow>#os-arch#'
+- '<gray>● <gray>CPU: <yellow>#cpu# <gray>/ <yellow>#cpu-cores# <gray>cores'
+- '<gray>● <gray>RAM:  <yellow>#ram-usage# <gray>/ <yellow>#ram# <gray>MB'
+- '<gray>● <gray>Java: <yellow>#java-version# <gray>/ <yellow>#java-vendor#'
+- '<gray>● <gray>LightCoins/Core Versions: <yellow>#coins-version#<gray>/ <yellow>#core-version#'
+- '<gray>● <gray>Database connection: <yellow>#database-type#<gray>/ <yellow>#database-status#
+  <gray>while multisync is #multisync#'
+- '<gray>● <gray>Redis connection: <yellow>#redis-status# <gray>/ <yellow>#redis-test#'
+- '<gray>● <gray>Registered accounts: <yellow>#accounts#'
+- ' '
+- <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+  <gray><strikethrough>-----</strikethrough><yellow>●<gray>⏺<yellow>●<gray><strikethrough>-----</strikethrough>
+  <gray><strikethrough>-----</strikethrough><yellow>●<gray><strikethrough>-----</strikethrough>
+# titles
+titles:
+  transactions:
+    static:
+      onDeposit:
+        upperTitle: <gray>You <green>received
+        lowerTitle: <green>#amount# <gray>#currency#
+      onWithdraw:
+        upperTitle: <gray>You <red>payed
+        lowerTitle: <red>#amount# <gray>#currency#
+      onPay:
+        upperTitle: <yellow>#target# <gray>payed you
+        lowerTitle: <yellow>#amount# <gray>#currency#
+    animated:
+      onDeposit:
+        start:
+          upperTitle: <green>DEPOSIT
+          lowerTitle: '<gray>Your Balance: <green>#counter# <gray>#currency#'
+        end:
+          upperTitle: <gray>You <green>received
+          lowerTitle: <green>#amount# <gray>#currency#
+      onWithdraw:
+        start:
+          upperTitle: <red>WITHDRAW
+          lowerTitle: '<gray>Your Balance: <red>#counter# <gray>#currency#'
+        end:
+          upperTitle: <gray>You <red>payed
+          lowerTitle: <red>#amount# <gray>#currency#
+      onPay:
+        start:
+          upperTitle: <green>PAYMENT
+          lowerTitle: '<gray>Your Balance: <green>#counter# <gray>#currency#'
+        end:
+          upperTitle: <yellow>#target# <gray>payed you
+          lowerTitle: <yellow>#amount# <gray>#currency#

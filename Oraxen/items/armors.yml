@@ -1,0 +1,58 @@
+# Material list for latest spigot version: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# EntityType list for latest spigot version: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+# Attribute list for latest spigot version: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/Attribute.html
+# Potion effects list for latest spigot version: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+# Random UUID generator: https://www.uuidgenerator.net/
+# Color codes: https://docs.adventure.kyori.net/minimessage.html#format
+sand_helmet:
+  material: GOLDEN_HELMET
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 1201
+    generate_model: true
+    parent_model: item/generated
+    textures:
+      - items/yeomoon/armor/sand_helmet.png
+  Components:
+    equippable:
+      slot: HEAD
+      model: oraxen:sand
+sand_chestplate:
+  material: GOLDEN_CHESTPLATE
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 1202
+    generate_model: true
+    parent_model: item/generated
+    textures:
+      - items/yeomoon/armor/sand_chestplate.png
+  Components:
+    equippable:
+      slot: CHEST
+      model: oraxen:sand
+sand_leggings:
+  material: GOLDEN_LEGGINGS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 1203
+    generate_model: true
+    parent_model: item/generated
+    textures:
+      - items/yeomoon/armor/sand_leggings.png
+  Components:
+    equippable:
+      slot: LEGS
+      model: oraxen:sand
+sand_boots:
+  material: GOLDEN_BOOTS
+  excludeFromInventory: true
+  Pack:
+    custom_model_data: 1204
+    generate_model: true
+    parent_model: item/generated
+    textures:
+      - items/yeomoon/armor/sand_boots.png
+  Components:
+    equippable:
+      slot: FEET
+      model: oraxen:sand

@@ -1,0 +1,223 @@
+# Plugin Message Prefix
+prefix: '&7[<g:#8A2387:#E94057:#F27121>RoseStacker&7] '
+
+# Stack Display Tags
+entity-stack-display: '&c%amount%x &7%name%'
+entity-stack-display-custom-name: '%name% &7[&c%amount%x&7]'
+entity-stack-display-spawn-egg: '&c%amount%x &7%name% 생성 알'
+item-stack-display: '&c%amount%x &7%name%'
+item-stack-display-single: '&7%name%'
+block-stack-display: '&c%amount%x &7%name%'
+spawner-stack-display: '&c%amount%x &7%name%'
+spawner-stack-display-single: '&7%name%'
+
+# Hologram Display Tags
+# 사용 가능한 스포너 변수: %name%, %amount%, %max_amount%, %time_remaining%, %ticks_remaining%, %total_spawned%
+# 여러 줄을 지원합니다.
+block-hologram-display:
+  - '&c%amount%x &7%name%'
+spawner-hologram-display:
+  - '&c%amount%x &7%name%'
+spawner-hologram-display-single:
+  - '&7%name%'
+spawner-hologram-display-empty:
+  - '&c%amount%x &7%name%'
+spawner-hologram-display-empty-single:
+  - '&7%name%'
+
+# Base Command Message
+base-command-color: '&e'
+base-command-help: '&b/%cmd% help&e를 입력하여 명령어 정보를 확인하세요.'
+
+# Help Command
+command-help-description: 도움말 메뉴를 표시합니다... 잘 찾아오셨네요.
+command-help-title: '&e사용 가능한 명령어:'
+command-help-list-description: '&8 - &d/%cmd% %subcmd% %args% &7- %desc%'
+command-help-list-description-no-args: '&8 - &d/%cmd% %subcmd% &7- %desc%'
+
+# Reload Command
+command-reload-description: 플러그인을 리로드합니다.
+command-reload-reloaded: '&e플러그인 데이터, 설정, 언어 파일이 리로드되었습니다.'
+
+# Give Command
+command-give-description: 미리 스택된 아이템을 지급합니다.
+command-give-usage: '&c사용법: &e/rs give <block|spawner|entity> <플레이어> <타입> [스택크기] [개수]'
+command-give-given: '&b%player%&e님에게 [%display%&e]을(를) 지급했습니다.'
+command-give-given-multiple: '&b%player%&e님에게 [%display%&e]을(를) &e%amount%개 지급했습니다.'
+command-give-unstackable: '&c지정한 유형은 스택할 수 없습니다.'
+command-give-too-large: '&c지정한 개수가 해당 유형의 최대 스택 크기를 초과합니다.'
+
+# Clearall Command
+command-clearall-description: 모든 스택 유형을 제거합니다.
+command-clearall-killed-entities: '&b%amount%개&e의 엔티티 스택을 제거했습니다.'
+command-clearall-killed-items: '&b%amount%개&e의 아이템 스택을 제거했습니다.'
+command-clearall-killed-all: '&b%entityAmount%개&e의 엔티티 스택과 &b%itemAmount%개&e의 아이템 스택을 제거했습니다.'
+
+# Stats Command
+command-stats-description: 플러그인 통계를 표시합니다.
+command-stats-header: '&a현재 플러그인 통계:'
+command-stats-threads: '&b%amount%개&e의 활성화된 스태킹 스레드.'
+command-stats-stacked-entities: '&b%stackAmount%개&e의 로드된 엔티티 스택, 총 &b%total%&e마리의 엔티티.'
+command-stats-stacked-items: '&b%stackAmount%개&e의 로드된 아이템 스택, 총 &b%total%&e개의 아이템.'
+command-stats-stacked-blocks: '&b%stackAmount%개&e의 로드된 블록 스택, 총 &b%total%&e개의 블록.'
+command-stats-stacked-spawners: '&b%stackAmount%개&e의 로드된 스포너 스택, 총 &b%total%&e개의 스포너.'
+command-stats-active-tasks: '&b%amount%개&e의 활성화된 작업.'
+
+# Translate Command
+command-translate-description: 스택 이름을 번역합니다.
+command-translate-loading: '&e번역 데이터를 다운로드하고 적용하는 중입니다. 잠시만 기다려주세요.'
+command-translate-failure: '&c스택 이름을 번역할 수 없습니다. 언어 데이터를 가져오는 중 문제가 발생했습니다. 나중에 다시 시도해주세요.'
+command-translate-invalid-locale: '&c스택 이름을 번역할 수 없습니다. 지정한 언어가 유효하지 않습니다.'
+command-translate-spawner-format: '&e스포너 이름은 정확하게 번역될 수 없습니다. 이 문제를 해결하려면, &b/rs translate en_us &3{} 스포너&e를 사용하여 스포너가 "소 스포너"처럼 표시되도록 할 수 있습니다. 몹 이름의 자리 표시자로 &b{}&e를 사용하세요.'
+command-translate-spawner-format-invalid: '&c제공한 스포너 형식이 잘못되었습니다. 몹 이름 위치에 &b{}&c를 포함해야 합니다.'
+command-translate-success: '&a스택 이름이 성공적으로 번역되었습니다.'
+
+# Stacking Tool Command
+command-stacktool-description: 플레이어에게 스태킹 도구를 지급합니다.
+command-stacktool-given: '&e스태킹 도구를 받았습니다.'
+command-stacktool-given-other: '&b%player%&a님에게 스태킹 도구를 지급했습니다.'
+command-stacktool-no-console: '&c콘솔에는 스태킹 도구를 지급할 수 없습니다.'
+command-stacktool-no-permission: '&c스태킹 도구를 사용할 권한이 없습니다.'
+command-stacktool-invalid-entity: '&c해당 엔티티는 스택의 일부가 아닙니다. 커스텀 몹인가요?'
+command-stacktool-marked-unstackable: '&b%type%&e이(가) &c스택 불가능&e으로 표시되었습니다.'
+command-stacktool-marked-stackable: '&b%type%&e이(가) &a스택 가능&e으로 표시되었습니다.'
+command-stacktool-marked-all-unstackable: '&b%type%&e 스택 전체가 &c스택 불가능&e으로 표시되었습니다.'
+command-stacktool-select-1: '&b%type%&e이(가) 엔티티 #1로 선택되었습니다. 다른 엔티티를 선택하여 스택 가능한지 테스트하세요.'
+command-stacktool-unselect-1: '&b%type%&e의 선택이 해제되었습니다.'
+command-stacktool-select-2: '&b%type%&e이(가) 엔티티 #2로 선택되었습니다.'
+command-stacktool-can-stack: '&a엔티티 #1은 엔티티 #2와 스택할 수 있습니다.'
+command-stacktool-can-not-stack: '&c엔티티 1은 엔티티 2와 스택할 수 없습니다. 이유: &b%reason%'
+command-stacktool-info: '&e스택 정보:'
+command-stacktool-info-uuid: '&eUUID: &b%uuid%'
+command-stacktool-info-entity-id: '&e엔티티 ID: &b%id%'
+command-stacktool-info-custom-name: '&e사용자 지정 이름: &r%name%'
+command-stacktool-info-location: '&e위치: X: &b%x% &eY: &b%y% &eZ: &b%z% &e월드: &b%world%'
+command-stacktool-info-chunk: '&e청크: &b%x%&e, &b%z%'
+command-stacktool-info-true: '&a참'
+command-stacktool-info-false: '&c거짓'
+command-stacktool-info-entity-type: '&e엔티티 유형: &b%type%'
+command-stacktool-info-entity-stackable: '&e스택 가능: %value%'
+command-stacktool-info-entity-has-ai: '&eAI 보유: %value%'
+command-stacktool-info-entity-from-spawner: '&e스포너로부터 생성됨: %value%'
+command-stacktool-info-item-type: '&e아이템 유형: &b%type%'
+command-stacktool-info-block-type: '&e블록 유형: &b%type%'
+command-stacktool-info-spawner-type: '&e스포너 유형: &b%type%'
+command-stacktool-info-stack-size: '&e스택 크기: &b%amount%'
+command-stacktool-info-data-storage-type: '&e데이터 저장 유형: &b%type%'
+
+# Stacked Block GUI
+gui-stacked-block-title: '%name% 스택 편집'
+gui-stacked-block-page-back:
+  - '&e이전 페이지 (%previousPage%/%maxPage%)'
+gui-stacked-block-page-forward:
+  - '&e다음 페이지 (%nextPage%/%maxPage%)'
+gui-stacked-block-destroy:
+  - '&c스택 파괴'
+  - '&e스택을 파괴하고 아이템을 드롭합니다.'
+gui-stacked-block-destroy-title: '블록 스택을 파괴할까요?'
+gui-stacked-block-destroy-confirm:
+  - '&a확인'
+  - '&e예, 스택을 파괴합니다.'
+gui-stacked-block-destroy-cancel:
+  - '&c취소'
+  - '&e아니요, 이전 화면으로 돌아갑니다.'
+
+# Stacked Spawner GUI
+gui-stacked-spawner-title: '%name% 정보 보기'
+gui-stacked-spawner-stats: '&6스포너 통계'
+gui-stacked-spawner-min-spawn-delay: '&e최소 생성 딜레이: &b%delay%'
+gui-stacked-spawner-max-spawn-delay: '&e최대 생성 딜레이: &b%delay%'
+gui-stacked-spawner-disabled-mob-ai: '&e몹 AI 비활성화: &b%disabled%'
+gui-stacked-spawner-entity-search-range: '&e엔티티 탐색 범위: &b%range%'
+gui-stacked-spawner-player-activation-range: '&e플레이어 활성화 범위: &b%range%'
+gui-stacked-spawner-spawn-range: '&e생성 범위: &b%range%'
+gui-stacked-spawner-min-spawn-amount: '&e최소 생성량: &b%amount%'
+gui-stacked-spawner-max-spawn-amount: '&e최대 생성량: &b%amount%'
+gui-stacked-spawner-spawn-amount: '&e생성량: &b%amount%'
+gui-stacked-spawner-spawn-conditions: '&6생성 조건'
+gui-stacked-spawner-time-until-next-spawn: '&e다음 생성까지 남은 시간: &b%time% 틱'
+gui-stacked-spawner-total-spawns: '&e총 생성된 몹 수: &b%amount%'
+gui-stacked-spawner-valid-spawn-conditions: '&6유효한 생성 조건'
+gui-stacked-spawner-invalid-spawn-conditions: '&6유효하지 않은 생성 조건'
+gui-stacked-spawner-entities-can-spawn: '&a엔티티가 생성될 수 있습니다.'
+gui-stacked-spawner-conditions-preventing-spawns: '&e생성을 방해하는 조건:'
+
+# Spawn Condition Messages
+spawner-condition-invalid: '&7 - &c%message%'
+spawner-condition-info: '&e%condition%'
+spawner-condition-single: '&e%condition%: &b%value%'
+spawner-condition-list: '&e%condition%:'
+spawner-condition-list-item: '&7 - &b%message%'
+spawner-condition-above-sea-level-info: '해수면 위'
+spawner-condition-above-sea-level-invalid: '해수면 위에 생성 공간 없음'
+spawner-condition-above-y-axis-info: 'Y축 위'
+spawner-condition-above-y-axis-invalid: '요구되는 Y축 위에 생성 공간 없음'
+spawner-condition-air-info: '열린 공간'
+spawner-condition-air-invalid: '충분히 큰 공간 없음'
+spawner-condition-below-sea-level-info: '해수면 아래'
+spawner-condition-below-sea-level-invalid: '해수면 아래에 생성 공간 없음'
+spawner-condition-below-y-axis-info: 'Y축 아래'
+spawner-condition-below-y-axis-invalid: '요구되는 Y축 아래에 생성 공간 없음'
+spawner-condition-biome-info: '생물 군계'
+spawner-condition-biome-invalid: '잘못된 생물 군계'
+spawner-condition-block-info: '생성 블록'
+spawner-condition-block-invalid: '유효한 생성 블록 없음'
+spawner-condition-block-exception-info: '생성 블록 예외'
+spawner-condition-block-exception-invalid: '제외된 생성 블록'
+spawner-condition-darkness-info: '낮은 밝기'
+spawner-condition-darkness-invalid: '지역이 너무 밝음'
+spawner-condition-total-darkness-info: '완전한 어둠'
+spawner-condition-total-darkness-invalid: '빛이 없는 지역이어야 함'
+spawner-condition-fluid-info: '유체 필요'
+spawner-condition-fluid-invalid: '주변에 유체 없음'
+spawner-condition-lightness-info: '높은 밝기'
+spawner-condition-lightness-invalid: '지역이 너무 어두움'
+spawner-condition-max-nearby-entities-info: '주변 최대 엔티티 수'
+spawner-condition-max-nearby-entities-invalid: '주변에 엔티티가 너무 많음'
+spawner-condition-no-skylight-access-info: '하늘 조명 접근 불가'
+spawner-condition-no-skylight-access-invalid: '하늘 조명 접근이 안 되는 생성 블록 없음'
+spawner-condition-on-ground-info: '땅 위'
+spawner-condition-on-ground-invalid: '주변에 단단한 땅 없음'
+spawner-condition-skylight-access-info: '하늘 조명 접근 가능'
+spawner-condition-skylight-access-invalid: '하늘 조명 접근이 가능한 생성 블록 없음'
+spawner-condition-none-invalid: '최대 생성 시도 횟수 초과'
+spawner-condition-not-player-placed-invalid: '플레이어가 설치해야 함'
+
+# Given Stack Item Lore
+# 참고: 이 내용은 '/rs give' 명령어로 지급된 아이템의 설명에 나타납니다.
+stack-item-lore-spawner: []
+stack-item-lore-spawner-plural: []
+stack-item-lore-block: []
+stack-item-lore-entity: []
+
+# Generic Command Messages
+no-permission: '&c이 작업을 수행할 권한이 없습니다!'
+only-player: '&c이 명령어는 플레이어만 실행할 수 있습니다.'
+unknown-command: '&c알 수 없는 명령어입니다. &b/%cmd% help&c를 사용하여 더 많은 정보를 확인하세요.'
+unknown-command-error: '&c알 수 없는 오류가 발생했습니다. 자세한 내용은 콘솔에 출력되었습니다. 서버 관리자에게 문의해주세요.'
+invalid-subcommand: '&c잘못된 하위 명령어입니다.'
+invalid-argument: '&c잘못된 인수: %message%.'
+invalid-argument-null: '&c잘못된 인수: %name%이(가) 비어있습니다.'
+missing-arguments: '&c인수가 부족합니다. &b%amount%개&c가 필요합니다.'
+missing-arguments-extra: '&c인수가 부족합니다. &b%amount%개 이상&c이 필요합니다.'
+
+# Argument Handler Error Messages
+argument-handler-enum: '%enum% 유형 [%input%]이(가) 존재하지 않습니다.'
+argument-handler-enum-list: '%enum% 유형 [%input%]이(가) 존재하지 않습니다. 유효한 유형: %types%'
+argument-handler-string: '문자열은 비워둘 수 없습니다.'
+argument-handler-integer: '정수 [%input%]은(는) -2^31과 2^31-1 사이의 정수여야 합니다.'
+argument-handler-player: '사용자 이름이 [%input%]인 플레이어를 온라인에서 찾을 수 없습니다.'
+argument-handler-stackplugin: '이름이 [%input%]인 플러그인을 찾을 수 없습니다.'
+argument-handler-material: '이름이 [%input%]인 재료를 찾을 수 없습니다.'
+argument-handler-stackamount: '스택 크기 [%input%]이(가) 잘못되었습니다. 0보다 큰 숫자여야 합니다.'
+argument-handler-stacktype: '스택 유형 [%input%]이(가) 잘못되었습니다.'
+argument-handler-translationlocale: '번역 언어 [%input%]이(가) 잘못되었습니다.'
+
+# Misc Messages
+spawner-silk-touch-protect: '&c경고! &e스포너를 회수하려면 섬세한 손길 곡괭이를 사용하거나 권한이 있어야 합니다. 그렇지 않으면 회수할 수 없습니다.'
+spawner-advanced-place-no-permission: '&c경고! &e해당 유형의 스포너를 설치할 권한이 없습니다.'
+spawner-advanced-break-no-permission: '&c경고! &e해당 유형의 스포너를 회수할 권한이 없습니다.'
+spawner-advanced-break-silktouch-no-permission: '&c경고! &e해당 유형의 스포너를 회수하려면 섬세한 손길 곡괭이가 필요합니다.'
+spawner-convert-not-enough: '&c경고! &e생성 알을 사용하여 스포너를 변환할 수 없습니다. 변환에 필요한 생성 알이 부족합니다.'
+number-separator: ','
+silktouch-chance-placeholder: '%chance%%'

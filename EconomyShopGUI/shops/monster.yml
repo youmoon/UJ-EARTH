@@ -1,0 +1,70 @@
+pages:
+  page1:
+    items:
+      '1':
+        material: red_stained_glass_pane
+        name: ' '
+      '2':
+        material: red_stained_glass_pane
+        name: ' '
+      '3':
+        material: red_stained_glass_pane
+        name: ' '
+      '4':
+        material: red_stained_glass_pane
+        name: ' '
+      '5':
+        material: red_stained_glass_pane
+        name: ' '
+      '6':
+        material: red_stained_glass_pane
+        name: ' '
+      '7':
+        material: red_stained_glass_pane
+        name: ' '
+      '8':
+        material: red_stained_glass_pane
+        name: ' '
+      '9':
+        material: red_stained_glass_pane
+        name: ' '
+      '10':
+        material: rotten_flesh
+        buy: -1
+        sell: 10
+        stack-size: 64
+      '11':
+        material: bone
+        buy: -1
+        sell: 15
+        stack-size: 64
+      '12':
+        material: string
+        buy: -1
+        sell: 20
+        stack-size: 64
+      '13':
+        material: prismarine_shard
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '14':
+        material: prismarine_crystals
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '15':
+        material: slime_ball
+        buy: -1
+        sell: 15
+        stack-size: 64
+      '16':
+        material: spider_eye
+        buy: -1
+        sell: 25
+        stack-size: 64
+      '17':
+        material: slime_ball
+        buy: 128
+        sell: -1
+        stack-size: 64

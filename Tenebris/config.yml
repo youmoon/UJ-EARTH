@@ -1,0 +1,78 @@
+#####################
+# TENEBRIS Settings #
+#####################
+
+# Thank you for using Tenebris :)
+enabled: true
+
+# Set whether players should be included in the check
+check-players: false
+
+# Set the interval to check for entities in line of sight
+# The unit is ticks; shorter intervals may put more load on the server
+check-period: 1
+
+# Entities specified here will not be hidden, even if they are out of sight
+# Refer to the link below for a full list of available entities:
+# https://tr.ee/7Y1Ho3
+excluded-entities:
+  - ARROW
+  - SNOWBALL
+  - FIREBALL
+  - SMALL_FIREBALL
+  - EGG
+  - ENDER_PEARL
+  - EXPERIENCE_ORB
+  - WITHER_SKULL
+  - SHULKER_BULLET
+  - TRIDENT
+  - SPECTRAL_ARROW
+  - SPLASH_POTION
+
+# Set the range in which checks are performed
+# Wider ranges may increase server load
+# It is recommended to match your server's render-distance
+ignore-radius: 128
+
+# Checks will not be performed in worlds specified here
+excluded-worlds:
+
+# Blocks listed here will be ignored during line-of-sight calculations
+# Refer to the link below for a full list of available blocks:
+# https://tr.ee/iaRWbp
+ignored-blocks:
+  - GLASS
+  - GLASS_PANE
+  - WHITE_STAINED_GLASS
+  - ORANGE_STAINED_GLASS
+  - MAGENTA_STAINED_GLASS
+  - LIGHT_BLUE_STAINED_GLASS
+  - YELLOW_STAINED_GLASS
+  - LIME_STAINED_GLASS
+  - PINK_STAINED_GLASS
+  - GRAY_STAINED_GLASS
+  - LIGHT_GRAY_STAINED_GLASS
+  - CYAN_STAINED_GLASS
+  - PURPLE_STAINED_GLASS
+  - BLUE_STAINED_GLASS
+  - BROWN_STAINED_GLASS
+  - GREEN_STAINED_GLASS
+  - RED_STAINED_GLASS
+  - BLACK_STAINED_GLASS
+  - WHITE_STAINED_GLASS_PANE
+  - ORANGE_STAINED_GLASS_PANE
+  - MAGENTA_STAINED_GLASS_PANE
+  - LIGHT_BLUE_STAINED_GLASS_PANE
+  - YELLOW_STAINED_GLASS_PANE
+  - LIME_STAINED_GLASS_PANE
+  - PINK_STAINED_GLASS_PANE
+  - GRAY_STAINED_GLASS_PANE
+  - LIGHT_GRAY_STAINED_GLASS_PANE
+  - CYAN_STAINED_GLASS_PANE
+  - PURPLE_STAINED_GLASS_PANE
+  - BLUE_STAINED_GLASS_PANE
+  - BROWN_STAINED_GLASS_PANE
+  - GREEN_STAINED_GLASS_PANE
+  - RED_STAINED_GLASS_PANE
+  - BLACK_STAINED_GLASS_PANE
+  - BARRIER

@@ -1,0 +1,298 @@
+pages:
+  page1:
+    items:
+      '1':
+        material: brown_stained_glass_pane
+        name: ' '
+      '2':
+        material: brown_stained_glass_pane
+        name: ' '
+      '3':
+        material: brown_stained_glass_pane
+        name: ' '
+      '4':
+        material: brown_stained_glass_pane
+        name: ' '
+      '5':
+        material: brown_stained_glass_pane
+        name: ' '
+      '6':
+        material: brown_stained_glass_pane
+        name: ' '
+      '7':
+        material: brown_stained_glass_pane
+        name: ' '
+      '8':
+        material: brown_stained_glass_pane
+        name: ' '
+      '9':
+        material: brown_stained_glass_pane
+        name: ' '
+      '10':
+        material: oak_sapling
+        buy: 750
+        sell: -1
+        stack-size: 64
+      '11':
+        material: spruce_sapling
+        buy: 750
+        sell: -1
+        stack-size: 64
+      '12':
+        material: birch_sapling
+        buy: 750
+        sell: -1
+        stack-size: 64
+      '13':
+        material: jungle_sapling
+        buy: 850
+        sell: -1
+        stack-size: 64
+      '14':
+        material: acacia_sapling
+        buy: 850
+        sell: -1
+        stack-size: 64
+      '15':
+        material: dark_oak_sapling
+        buy: 750
+        sell: -1
+        stack-size: 64
+      '16':
+        material: mangrove_propagule
+        buy: 850
+        sell: -1
+        stack-size: 64
+      '17':
+        material: cherry_sapling
+        buy: 1000
+        sell: -1
+        stack-size: 64
+      '18':
+        material: pale_oak_sapling
+        buy: 1500
+        sell: -1
+        stack-size: 64
+      '19':
+        material: azalea
+        buy: 1500
+        sell: -1
+        stack-size: 64
+      '20':
+        material: flowering_azalea
+        buy: 1750
+        sell: -1
+        stack-size: 64
+      '21':
+        material: crimson_fungus
+        buy: 2000
+        sell: -1
+        stack-size: 64
+      '22':
+        material: warped_fungus
+        buy: 2000
+        sell: -1
+        stack-size: 64
+      '23':
+        material: bamboo
+        buy: 1400
+        sell: -1
+        stack-size: 64
+      '24':
+        material: lily_pad
+        buy: 850
+        sell: -1
+        stack-size: 64
+  page2:
+    items:
+      '1':
+        material: tube_coral
+        buy: 775
+        sell: -1
+        stack-size: 32
+      '2':
+        material: brain_coral
+        buy: 775
+        sell: -1
+        stack-size: 32
+      '3':
+        material: bubble_coral
+        buy: 775
+        sell: -1
+        stack-size: 32
+      '4':
+        material: fire_coral
+        buy: 775
+        sell: -1
+        stack-size: 32
+      '5':
+        material: horn_coral
+        buy: 775
+        sell: -1
+        stack-size: 32
+      '6':
+        material: air
+        name: ' '
+      '7':
+        material: air
+        name: ' '
+      '8':
+        material: air
+        name: ' '
+      '9':
+        material: air
+        name: ' '
+      '10':
+        material: oak_log
+        buy: 95
+        sell: 35
+        stack-size: 64
+      '11':
+        material: spruce_log
+        buy: 95
+        sell: 35
+        stack-size: 64
+      '12':
+        material: birch_log
+        buy: 95
+        sell: 40
+        stack-size: 64
+      '13':
+        material: jungle_log
+        buy: 95
+        sell: 40
+        stack-size: 64
+      '14':
+        material: acacia_log
+        buy: 95
+        sell: 40
+        stack-size: 64
+      '15':
+        material: dark_oak_log
+        buy: 95
+        sell: 35
+        stack-size: 64
+      '16':
+        material: mangrove_log
+        buy: 95
+        sell: 40
+        stack-size: 64
+      '17':
+        material: cherry_log
+        buy: 95
+        sell: 40
+        stack-size: 64
+      '18':
+        material: pale_oak_log
+        buy: 95
+        sell: 45
+        stack-size: 64
+      '19':
+        material: crimson_stem
+        buy: 95
+        sell: 40
+        stack-size: 64
+      '20':
+        material: warped_stem
+        buy: 95
+        sell: 40
+        stack-size: 64
+      '21':
+        material: bamboo_block
+        buy: 95
+        sell: 35
+        stack-size: 64
+      '22':
+        material: tube_coral_fan
+        buy: 775
+        sell: -1
+        stack-size: 32
+      '23':
+        material: brain_coral_fan
+        buy: 775
+        sell: -1
+        stack-size: 32
+      '24':
+        material: bubble_coral_fan
+        buy: 775
+        sell: -1
+        stack-size: 32
+      '25':
+        material: fire_coral_fan
+        buy: 775
+        sell: -1
+        stack-size: 32
+      '26':
+        material: horn_coral_fan
+        buy: 775
+        sell: -1
+        stack-size: 32
+      '27':
+        material: air
+        buy: 1.19
+        sell: 0.3
+      '37':
+        material: oak_leaves
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '38':
+        material: spruce_leaves
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '39':
+        material: birch_leaves
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '40':
+        material: jungle_leaves
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '41':
+        material: acacia_leaves
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '42':
+        material: dark_oak_leaves
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '43':
+        material: mangrove_leaves
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '44':
+        material: cherry_leaves
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '45':
+        material: pale_oak_leaves
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '46':
+        material: nether_wart_block
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '47':
+        material: warped_wart_block
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '48':
+        material: azalea_leaves
+        buy: 25
+        sell: -1
+        stack-size: 64
+      '49':
+        material: flowering_azalea_leaves
+        buy: 25
+        sell: -1
+        stack-size: 64

@@ -1,0 +1,23 @@
+cast-mode:
+  cast: 시전
+  shoot-bow: 활 발사
+  shoot-trident: 삼지창 발사
+  sneak: 웅크리기
+  shift-left-click: 쉬프트 좌클릭
+  arrow-tick: 화살 틱
+  timer: 타이머
+  death: 사망
+  trident-land: 삼지창 착지
+  arrow-land: 화살 착지
+  trident-tick: 삼지창 틱
+  kill-entity: 개체 처치
+  right-click: 우클릭
+  attack: 공격
+  arrow-hit: 화살 명중
+  login: 로그인
+  api: API
+  damaged: 피해 받음
+  left-click: 좌클릭
+  trident-hit: 삼지창 명중
+  damaged-by-entity: 개체에게 피해 받음
+  shift-right-click: 쉬프트 우클릭

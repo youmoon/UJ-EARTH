@@ -1,0 +1,38 @@
+# All messages use Adventure's MiniMessage: https://docs.advntr.dev/minimessage/format.html
+# All messages support PlaceholderAPI placeholders
+# Make any message an empty string "" to disable it
+
+# Enable the plugin's features?
+enabled: true
+
+combat-duration: 20.0
+
+# Enabled: if player leaves while in combat, they die and drop their items
+kill-on-quit: true
+
+# Internal placeholder: [otherPlayer]
+combat-tagged-message: "<grey>> <#cb0000>[otherPlayer]과 전투 중 입니다"
+
+in-combat-action-bar: "<#cb0000>전투 중 <grey>| <#ffd0a8>%ct_time_left%<grey>초 남음"
+
+combat-expired-message: "<grey>> <green>전투 상태가 해제되었습니다"
+
+# Enable the command blocker?
+enable-command-blocker: true
+command-blocker:
+  blocked-msg: "<grey>> <red>전투 중에는 이 명령어를 사용할 수 없어요!"
+
+  # Enabled: if command has a colon in (e.g. /plugin:spawn), it will ignore the text before the colon, and only check it as '/spawn'
+  bypass-colons: true
+
+  # Enabled: each whole word must match (e.g., `/warp spawn` will block `/warp spawn` but not `/warp1` or `/warp spawn1`)
+  match-entire-words: true
+
+  blocked-cmds:
+    - "/warp spawn"
+    - "/home"
+    - "/tpa"
+    - "/t spawn"
+    - "/town spawn"
+    - "/n spawn"
+    - "/nation spawn"

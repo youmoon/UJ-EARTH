@@ -1,0 +1,131 @@
+pages:
+  page1:
+    items:
+      '1':
+        material: pink_stained_glass_pane
+        name: ' '
+      '2':
+        material: pink_stained_glass_pane
+        name: ' '
+      '3':
+        material: pink_stained_glass_pane
+        name: ' '
+      '4':
+        material: pink_stained_glass_pane
+        name: ' '
+      '5':
+        material: pink_stained_glass_pane
+        name: ' '
+      '6':
+        material: pink_stained_glass_pane
+        name: ' '
+      '7':
+        material: pink_stained_glass_pane
+        name: ' '
+      '8':
+        material: pink_stained_glass_pane
+        name: ' '
+      '9':
+        material: pink_stained_glass_pane
+        name: ' '
+      '10':
+        material: beef
+        buy: -1
+        sell: 30
+        stack-size: 64
+      '11':
+        material: porkchop
+        buy: -1
+        sell: 25
+        stack-size: 64
+      '12':
+        material: CHICKEN
+        buy: -1
+        sell: 15
+        stack-size: 64
+      '13':
+        material: mutton
+        buy: -1
+        sell: 20
+        stack-size: 64
+      '14':
+        material: rabbit
+        buy: -1
+        sell: 10
+        stack-size: 64
+      '15':
+        material: cod
+        buy: -1
+        sell: 15
+        stack-size: 64
+      '16':
+        material: salmon
+        buy: -1
+        sell: 25
+        stack-size: 64
+      '17':
+        material: pufferfish
+        buy: 350
+        sell: 25
+        stack-size: 64
+      '18':
+        material: tropical_fish
+        buy: 120
+        sell: 5
+        stack-size: 64
+      '19':
+        material: air
+        buy: 2
+        sell: 0.5
+      '20':
+        material: air
+        buy: 0.1
+        sell: 0.03
+      '21':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '22':
+        material: air
+        buy: 6
+        sell: 1.5
+      '23':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '24':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '25':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '26':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '27':
+        material: air
+        buy: 20.5
+        sell: 5.13
+      '28':
+        material: feather
+        buy: 250
+        sell: 5
+        stack-size: 64
+      '29':
+        material: egg
+        buy: 150
+        sell: 1
+        stack-size: 16
+      '30':
+        material: leather
+        buy: 250
+        sell: 6
+        stack-size: 64
+      '31':
+        material: rabbit_hide
+        buy: 200
+        sell: 5
+        stack-size: 64

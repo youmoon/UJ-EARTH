@@ -1,0 +1,25 @@
+# ─────────────────────────────
+# nation_rank.sk
+# 타우니 국가 돈 순위 자동 표시
+# ─────────────────────────────
+
+variables:
+    {nationRank::*} = none
+
+# 국가 리스트 갱신
+command /갱신:
+    permission: op
+    trigger:
+        execute player command "/dh line set nationTop 1 1 &a💲 &f&l국가별 돈 순위 &a💲"
+        execute player command "/dh line set nationTop 1 2 %%townyadvanced_top_town_balance_2%%"
+        execute player command "/dh line set nationTop 1 3 %%townyadvanced_top_town_balance_3%%"
+        execute player command "/dh line set nationTop 1 4 %%townyadvanced_top_town_balance_4%%"
+        execute player command "/dh line set nationTop 1 5 %%townyadvanced_top_town_balance_5%%"
+        execute player command "/dh line set nationTop 1 6 %%townyadvanced_top_town_balance_6%%"
+        
+        execute player command "/dh line set nationResidents 1 1 &e👥 &f&l국가별 거주자 순위 &e👥"
+        execute player command "/dh line set nationResidents 1 2 %%townyadvanced_top_town_residents_1%%"
+        execute player command "/dh line set nationResidents 1 3 %%townyadvanced_top_town_residents_2%%"
+        execute player command "/dh line set nationResidents 1 4 %%townyadvanced_top_town_residents_3%%"
+        execute player command "/dh line set nationResidents 1 5 %%townyadvanced_top_town_residents_4%%"
+        execute player command "/dh line set nationResidents 1 6 %%townyadvanced_top_town_residents_5%%"

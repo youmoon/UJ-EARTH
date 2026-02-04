@@ -1,0 +1,150 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axtrade.html
+# ITEM BUILDER: https://docs.artillex-studios.com/item-builder.html
+
+# ----- 설정 -----
+
+title: '&0거래 상대: %player%'
+# GUI는 1-6행을 가질 수 있습니다
+rows: 6
+
+# ----- 슬롯 -----
+
+# 아이템을 배치할 수 있는 슬롯
+# 장식용 아이템이나 화폐 아이템을 이 슬롯에 넣지 마세요
+# own-slots와 partner-slots는 동일한 수의 슬롯을 가져야 합니다
+own-slots:
+- 9-12
+- 18-21
+- 27-30
+- 36-39
+- 45-48
+
+partner-slots:
+- 14-17
+- 23-26
+- 32-35
+- 41-44
+- 50-53
+
+# ----- 아이템 -----
+
+# 당신 쪽 아이템
+own:
+  confirm-item:
+    slot: 0
+    # 다음 플레이스홀더를 사용할 수 있습니다:
+    # %own-name%"
+    # %partner-name%
+    accept:
+      material: RED_CONCRETE
+      # 원한다면 머리 텍스처를 추가할 수 있습니다:
+      #material: "PLAYER_HEAD"
+      #texture: "%own-head%"
+      name: '&#00ffdd&l거래 수락'
+      lore:
+      - ''
+      - ' &7- &f거래에 만족하시나요?'
+      - ''
+      - '&#00ffdd&l> &#00ffdd클릭 &8- &#00ffdd거래 확정'
+    cancel:
+      material: LIME_CONCRETE
+      name: '&#00ffdd&l확정 취소'
+      lore:
+      - ''
+      - ' &7- &f무언가 변경하고 싶으신가요?'
+      - ''
+      - '&#00ffdd&l> &#00ffdd클릭 &8- &#00ffdd확정 취소'
+  # 원하는 만큼 화폐를 정의할 수 있지만, 'partner' 섹션에도 복사해야 합니다!
+  currency1:
+    slot: 2
+    # 이 기능을 사용하려면 Vault가 설치되어 있어야 합니다
+    currency: Vault
+    material: GOLD_NUGGET
+    name: '&#00ffdd&l돈'
+    # 다음 플레이스홀더를 사용할 수 있습니다:
+    #  %amount% (플레이어가 설정한 금액)
+    #  %tax-amount% (세금 후 금액)
+    #  %tax-percent% (화폐에 대한 세금 %)
+    #  %tax-fee% (세금으로 인해 차감되는 금액)
+    lore:
+    - '&7당신의 제안'
+    - ''
+    - ' &7- &f금액: &#00ffdd%amount%$'
+    - ''
+    - '&#00ffdd&l> &#00ffdd클릭 &8- &#00ffdd금액 변경'
+  currency2:
+    slot: 3
+    currency: Experience
+    material: EXPERIENCE_BOTTLE
+    name: '&#00ffdd&l경험치'
+    lore:
+    - '&7당신의 제안'
+    - ''
+    - ' &7- &f금액: &#00ffdd%amount% EXP'
+    - ''
+    - '&#00ffdd&l> &#00ffdd클릭 &8- &#00ffdd금액 변경'
+
+# 거래 상대방 쪽 아이템
+partner:
+  confirm-item:
+    slot: 8
+    # 다음 플레이스홀더도 사용할 수 있습니다:
+    # %own-name%"
+    # %partner-name%
+    accept:
+      material: RED_CONCRETE
+      # 원한다면 머리 텍스처를 추가할 수 있습니다:
+      #material: "PLAYER_HEAD"
+      #texture: "%partner-head%"
+      name: '&#00ffdd&l상대방 대기 중'
+      lore:
+      - ''
+      - ' &7- &f%partner-name%님이 아직 거래를 확정하지 않았습니다!'
+      - ''
+    cancel:
+      material: LIME_CONCRETE
+      name: '&#00ffdd&l대기 중'
+      lore:
+      - ''
+      - ' &7- &f%partner-name%님이 거래를 확정했습니다!'
+  currency1:
+    slot: 6
+    currency: Vault
+    material: GOLD_NUGGET
+    name: '&#00ffdd&l돈'
+    # 다음 플레이스홀더를 사용할 수 있습니다:
+    #  %amount% (플레이어가 설정한 금액)
+    #  %tax-amount% (세금 후 금액)
+    #  %tax-percent% (화폐에 대한 세금 %)
+    #  %tax-fee% (세금으로 인해 차감되는 금액)
+    lore:
+    - '&7%partner-name%님의 제안'
+    - ''
+    - ' &7- &f금액: &#00ffdd%amount%$'
+    - ''
+    - '&#00ffdd&l> &#00ffdd클릭 &8- &#00ffdd금액 변경'
+  currency2:
+    slot: 5
+    currency: Experience
+    material: EXPERIENCE_BOTTLE
+    name: '&#00ffdd&l경험치'
+    lore:
+    - '&7%partner-name%님의 제안'
+    - ''
+    - ' &7- &f금액: &#00ffdd%amount% EXP'
+    - ''
+    - '&#00ffdd&l> &#00ffdd클릭 &8- &#00ffdd금액 변경'
+
+decoration-example:
+  slot:
+  - 4
+  - 13
+  - 22
+  - 31
+  - 40
+  - 49
+  material: LIGHT_BLUE_STAINED_GLASS_PANE
+  name: ' '
+
+# 이 값을 변경하지 마세요
+version: 1

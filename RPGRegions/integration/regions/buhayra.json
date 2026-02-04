@@ -1,0 +1,26 @@
+{
+  "type": "net.islandearth.rpgregions.api.integrations.rpgregions.region.CuboidRegion",
+  "properties": {
+    "name": "buhayra",
+    "world": "62fd7584-658a-4a00-8f3f-d10a5b704eda",
+    "points": [
+      {
+        "world": "world",
+        "x": 6832.0,
+        "y": -64.0,
+        "z": -6752.0,
+        "pitch": 25.349974,
+        "yaw": -16.199999
+      },
+      {
+        "world": "world",
+        "x": 7135.0,
+        "y": 319.0,
+        "z": -6593.0,
+        "pitch": 25.349974,
+        "yaw": -16.199999
+      }
+    ],
+    "priority": 1
+  }
+}

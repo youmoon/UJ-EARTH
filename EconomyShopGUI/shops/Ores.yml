@@ -1,0 +1,91 @@
+pages:
+  page1:
+    items:
+      '1':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '2':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '3':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '4':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '5':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '6':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '7':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '8':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '9':
+        material: light_blue_stained_glass_pane
+        name: ' '
+      '10':
+        material: coal
+        buy: 285
+        sell: 28
+        stack-size: 64
+      '11':
+        material: coal_block
+        buy: 2565
+        sell: 256
+        stack-size: 64
+      '12':
+        material: copper_ingot
+        buy: 900
+        sell: 90
+        stack-size: 64
+      '13':
+        material: copper_block
+        buy: 8100
+        sell: 810
+        stack-size: 64
+      '14':
+        material: LAPIS_LAZULI
+        buy: 460
+        sell: 46
+        stack-size: 64
+      '15':
+        material: LAPIS_BLOCK
+        buy: 4140
+        sell: 414
+        stack-size: 64
+      '16':
+        material: REDSTONE
+        buy: 410
+        sell: 41
+        stack-size: 64
+      '17':
+        material: REDSTONE_BLOCK
+        buy: 3690
+        sell: 369
+        stack-size: 64
+      '19':
+        material: GLOWSTONE_DUST
+        buy: 1700
+        sell: 340
+        stack-size: 64
+      '20':
+        material: GLOWSTONE
+        buy: 6800
+        sell: 1360
+        stack-size: 64
+      '21':
+        material: END_ROD
+        buy: 1200
+        sell: -1
+        stack-size: 12
+      '22':
+        material: calcite
+        buy: 490
+        sell: -1
+        stack-size: 64
+

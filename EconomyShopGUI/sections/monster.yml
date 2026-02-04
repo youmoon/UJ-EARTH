@@ -1,0 +1,14 @@
+enable: true
+slot: 26
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: rotten_flesh
+  displayname: '&f&l전리품상점'
+  name: '&f&l전리품상점'

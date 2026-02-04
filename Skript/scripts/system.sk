@@ -1,0 +1,3 @@
+on first join:
+    execute console command "coins set %name of player% 200"
+    execute console command "lp user %name of player% parent addtemp new 7d"

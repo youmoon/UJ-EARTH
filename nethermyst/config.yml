@@ -1,0 +1,4 @@
+max-air-seconds: 120
+decay-per-second: 1.0
+tick-interval: 20
+dot-damage: 3.0

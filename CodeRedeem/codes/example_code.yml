@@ -1,0 +1,42 @@
+# REDEEM CODE (use only capital letters and numbers)
+code: REDEEMCODE123
+
+# Enable or disable the code
+enabled: false
+
+# Validity date in yyyyMMdd format
+validity: 20241231
+
+# Rewards configuration 
+# Reference to the book YAML file in writtenbook folder
+# level enhantment 1-100
+# Command must be valid
+rewards:
+
+  - book: great_tale
+    custom_name: "&6The Great &cTale"
+    count: 1
+     
+  - item: DIAMOND_SWORD
+    custom_name: "&cFire &6Sword"
+    count: 1
+    enchantments:
+      - type: FIRE_ASPECT
+        level: 100
+      - type: UNBREAKING
+        level: 100
+        
+  - item: GOLDEN_APPLE
+    count: 5
+    
+  - money: 1000
+  
+  - command: give {player} minecraft:diamond_sword
+    message: "&x&0&8&4&C&F&BY&x&0&D&5&1&F&Bo&x&1&2&5&6&F&Bu &x&1&C&6&0&F&Bh&x&2&1&6&5&F&Ba&x&2&6&6&A&F&Bv&x&2&B&6&F&F&Be &x&3&5&7&A&F&Cr&x&3&A&7&F&F&Ce&x&3&F&8&4&F&Cc&x&4&4&8&9&F&Ce&x&4&9&8&E&F&Ci&x&4&E&9&3&F&Cv&x&5&3&9&8&F&Ce&x&5&8&9&D&F&Cd &x&6&2&A&7&F&CL&x&6&7&A&C&F&Ce&x&6&C&B&1&F&Cg&x&7&1&B&6&F&Ce&x&7&6&B&B&F&Cn&x&7&B&C&0&F&Cd&x&8&0&C&5&F&Ca&x&8&5&C&B&F&Dr&x&8&A&D&0&F&Dy &x&9&4&D&A&F&DW&x&9&9&D&F&F&De&x&9&E&E&4&F&Da&x&A&3&E&9&F&Dp&x&A&8&E&E&F&Do&x&A&D&F&3&F&Dn"
+  - command:   
+# Optional: Define how many times the code can be redeemed
+# Use -1 for unlimited
+redeem_limit: 10 
+
+#dont change this
+redeem_count: 0

@@ -1,0 +1,24 @@
+# REDEEM CODE (use only capital letters and numbers)
+code: SORRYMAINTENCE0803
+
+# Enable or disable the code
+enabled: true
+
+# Validity date in yyyyMMdd format
+validity: 20250817
+
+# Rewards configuration 
+# Reference to the book YAML file in writtenbook folder
+# level enhantment 1-100
+# Command must be valid
+rewards:
+- money: 300
+- command: send {player} 죄송합니다
+
+
+# Optional: Define how many times the code can be redeemed
+# Use -1 for unlimited
+redeem_limit: -1
+
+# dont change this
+redeem_count: 29

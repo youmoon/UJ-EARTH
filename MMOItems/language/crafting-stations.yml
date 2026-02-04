@@ -1,0 +1,44 @@
+condition:
+  profession:
+    positive: '&a✔ #profession# 레벨 #level# 필요'
+    negative: '&c✖ #profession# 레벨 #level# 필요'
+  mana:
+    positive: '&a✔ 마나 #mana# 필요'
+    negative: '&c✖ 마나 #mana# 필요'
+  money:
+    positive: '&a✔ $#money# 필요'
+    negative: '&c✖ $#money# 필요'
+  level:
+    positive: '&a✔ 레벨 #level# 필요'
+    negative: '&c✖ 레벨 #level# 필요'
+  stellium:
+    positive: '&a✔ 스텔륨 #stellium# 필요'
+    negative: '&c✖ 스텔륨 #stellium# 필요'
+  stamina:
+    positive: '&a✔ 기력 #stamina# 필요'
+    negative: '&c✖ 기력 #stamina# 필요'
+  permission:
+    positive: '&a✔ #display#'
+    negative: '&c✖ #display#'
+  placeholder:
+    positive: '&a✔ #display#'
+    negative: '&c✖ #display#'
+  attribute:
+    positive: '&a✔ #attribute# #points# 필요'
+    negative: '&c✖ #attribute# #points# 필요'
+  class:
+    positive: '&a✔ 필요 직업: #class#'
+    negative: '&c✖ 필요 직업: #class#'
+  food:
+    positive: '&a✔ 배고픔 #food# 필요'
+    negative: '&c✖ 배고픔 #food# 필요'
+ingredient:
+  mmoitem:
+    positive: '&8✔ &7#level##item# #amount#개'
+    negative: '&c✖ &7#level##item# #amount#개'
+  vanilla:
+    positive: '&8✔ &7#item# #amount#개'
+    negative: '&c✖ &7#item# #amount#개'
+  oraxen:
+    positive: '&a✔ &7#item# #amount#개'
+    negative: '&c✖ &7#item# #amount#개'

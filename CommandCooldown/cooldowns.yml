@@ -1,0 +1,17 @@
+imagemap:
+  cooldowns:
+    '*': 30.0
+  aliases: []
+확성기:
+  cooldowns:
+    '*': 30.0
+  aliases: []
+rmove:
+  cooldowns:
+    '*': 300.0
+  aliases: []
+frame:
+  cooldowns:
+    '*': 60.0
+  aliases:
+  - 곤니찌와

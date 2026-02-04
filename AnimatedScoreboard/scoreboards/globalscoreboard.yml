@@ -1,0 +1,143 @@
+scores:
+  # Whether scores (red numbers) on server versions 1.20.3 or newer should be hidden
+  hidden: true
+
+#This is where you create the scoreboard, the first section will always be the title. 
+#Every section after that will be a line displayed on the scoreboard. You can have a max
+#of 15 lines display due to the limitations of minecraft.
+display:
+    #This is the first section, it will always be the title of the scoreboard. 
+    #You can also use placeholders here if you want.
+    title:
+      #This is the text that will be display as the title, it can have as many lines as you want and it will automatically rotate through them or
+      #choose a random one, depending on what you set random to.
+      text:
+        - "§x§8§7§F§2§F§E§lU§x§8§9§F§7§F§E§lJ §x§8§7§F§2§F§E§lE§x§8§4§E§C§F§E§lA§x§8§2§E§7§F§E§lR§x§8§0§E§1§F§E§lT§x§7§D§D§C§F§E§lH"
+        - "§x§8§4§E§C§F§E§lU§x§8§7§F§2§F§E§lJ §x§8§9§F§7§F§E§lE§x§8§7§F§2§F§E§lA§x§8§4§E§C§F§E§lR§x§8§2§E§7§F§E§lT§x§8§0§E§1§F§E§lH"
+        - "§x§8§2§E§7§F§E§lU§x§8§4§E§C§F§E§lJ §x§8§7§F§2§F§E§lE§x§8§9§F§7§F§E§lA§x§8§7§F§2§F§E§lR§x§8§4§E§C§F§E§lT§x§8§2§E§7§F§E§lH"
+        - "§x§8§0§E§1§F§E§lU§x§8§2§E§7§F§E§lJ §x§8§4§E§C§F§E§lE§x§8§7§F§2§F§E§lA§x§8§9§F§7§F§E§lR§x§8§7§F§2§F§E§lT§x§8§4§E§C§F§E§lH"
+        - "§x§7§D§D§C§F§E§lU§x§8§0§E§1§F§E§lJ §x§8§2§E§7§F§E§lE§x§8§4§E§C§F§E§lA§x§8§7§F§2§F§E§lR§x§8§9§F§7§F§E§lT§x§8§7§F§2§F§E§lH"
+        - "§x§7§B§D§7§F§E§lU§x§7§D§D§C§F§E§lJ §x§8§0§E§1§F§E§lE§x§8§2§E§7§F§E§lA§x§8§4§E§C§F§E§lR§x§8§7§F§2§F§E§lT§x§8§9§F§7§F§E§lH"
+        - "§x§7§9§D§1§F§E§lU§x§7§B§D§7§F§E§lJ §x§7§D§D§C§F§E§lE§x§8§0§E§1§F§E§lA§x§8§2§E§7§F§E§lR§x§8§4§E§C§F§E§lT§x§8§7§F§2§F§E§lH"
+        - "§x§7§6§C§C§F§F§lU§x§7§9§D§1§F§E§lJ §x§7§B§D§7§F§E§lE§x§7§D§D§C§F§E§lA§x§8§0§E§1§F§E§lR§x§8§2§E§7§F§E§lT§x§8§4§E§C§F§E§lH"
+        - "§x§7§4§C§6§F§F§lU§x§7§6§C§C§F§F§lJ §x§7§9§D§1§F§E§lE§x§7§B§D§7§F§E§lA§x§7§D§D§C§F§E§lR§x§8§0§E§1§F§E§lT§x§8§2§E§7§F§E§lH"
+        - "§x§7§2§C§1§F§F§lU§x§7§4§C§6§F§F§lJ §x§7§6§C§C§F§F§lE§x§7§9§D§1§F§E§lA§x§7§B§D§7§F§E§lR§x§7§D§D§C§F§E§lT§x§8§0§E§1§F§E§lH"
+        - "§x§6§F§B§C§F§F§lU§x§7§2§C§1§F§F§lJ §x§7§4§C§6§F§F§lE§x§7§6§C§C§F§F§lA§x§7§9§D§1§F§E§lR§x§7§B§D§7§F§E§lT§x§7§D§D§C§F§E§lH"
+        - "§x§6§D§B§6§F§F§lU§x§6§F§B§C§F§F§lJ §x§7§2§C§1§F§F§lE§x§7§4§C§6§F§F§lA§x§7§6§C§C§F§F§lR§x§7§9§D§1§F§E§lT§x§7§B§D§7§F§E§lH"
+        - "§x§6§B§B§1§F§F§lU§x§6§D§B§6§F§F§lJ §x§6§F§B§C§F§F§lE§x§7§2§C§1§F§F§lA§x§7§4§C§6§F§F§lR§x§7§6§C§C§F§F§lT§x§7§9§D§1§F§E§lH"
+        - "§x§6§8§A§B§F§F§lU§x§6§B§B§1§F§F§lJ §x§6§D§B§6§F§F§lE§x§6§F§B§C§F§F§lA§x§7§2§C§1§F§F§lR§x§7§4§C§6§F§F§lT§x§7§6§C§C§F§F§lH"
+        - "§x§6§6§A§6§F§F§lU§x§6§8§A§B§F§F§lJ §x§6§B§B§1§F§F§lE§x§6§D§B§6§F§F§lA§x§6§F§B§C§F§F§lR§x§7§2§C§1§F§F§lT§x§7§4§C§6§F§F§lH"
+        - "§x§6§8§A§B§F§F§lU§x§6§6§A§6§F§F§lJ §x§6§8§A§B§F§F§lE§x§6§B§B§1§F§F§lA§x§6§D§B§6§F§F§lR§x§6§F§B§C§F§F§lT§x§7§2§C§1§F§F§lH"
+        - "§x§6§B§B§1§F§F§lU§x§6§8§A§B§F§F§lJ §x§6§6§A§6§F§F§lE§x§6§8§A§B§F§F§lA§x§6§B§B§1§F§F§lR§x§6§D§B§6§F§F§lT§x§6§F§B§C§F§F§lH"
+        - "§x§6§D§B§6§F§F§lU§x§6§B§B§1§F§F§lJ §x§6§8§A§B§F§F§lE§x§6§6§A§6§F§F§lA§x§6§8§A§B§F§F§lR§x§6§B§B§1§F§F§lT§x§6§D§B§6§F§F§lH"
+        - "§x§6§F§B§C§F§F§lU§x§6§D§B§6§F§F§lJ §x§6§B§B§1§F§F§lE§x§6§8§A§B§F§F§lA§x§6§6§A§6§F§F§lR§x§6§8§A§B§F§F§lT§x§6§B§B§1§F§F§lH"
+        - "§x§7§2§C§1§F§F§lU§x§6§F§B§C§F§F§lJ §x§6§D§B§6§F§F§lE§x§6§B§B§1§F§F§lA§x§6§8§A§B§F§F§lR§x§6§6§A§6§F§F§lT§x§6§8§A§B§F§F§lH"
+        - "§x§7§4§C§6§F§F§lU§x§7§2§C§1§F§F§lJ §x§6§F§B§C§F§F§lE§x§6§D§B§6§F§F§lA§x§6§B§B§1§F§F§lR§x§6§8§A§B§F§F§lT§x§6§6§A§6§F§F§lH"
+        - "§x§7§6§C§C§F§F§lU§x§7§4§C§6§F§F§lJ §x§7§2§C§1§F§F§lE§x§6§F§B§C§F§F§lA§x§6§D§B§6§F§F§lR§x§6§B§B§1§F§F§lT§x§6§8§A§B§F§F§lH"
+        - "§x§7§9§D§1§F§E§lU§x§7§6§C§C§F§F§lJ §x§7§4§C§6§F§F§lE§x§7§2§C§1§F§F§lA§x§6§F§B§C§F§F§lR§x§6§D§B§6§F§F§lT§x§6§B§B§1§F§F§lH"
+        - "§x§7§B§D§7§F§E§lU§x§7§9§D§1§F§E§lJ §x§7§6§C§C§F§F§lE§x§7§4§C§6§F§F§lA§x§7§2§C§1§F§F§lR§x§6§F§B§C§F§F§lT§x§6§D§B§6§F§F§lH"
+        - "§x§7§D§D§C§F§E§lU§x§7§B§D§7§F§E§lJ §x§7§9§D§1§F§E§lE§x§7§6§C§C§F§F§lA§x§7§4§C§6§F§F§lR§x§7§2§C§1§F§F§lT§x§6§F§B§C§F§F§lH"
+        - "§x§8§0§E§1§F§E§lU§x§7§D§D§C§F§E§lJ §x§7§B§D§7§F§E§lE§x§7§9§D§1§F§E§lA§x§7§6§C§C§F§F§lR§x§7§4§C§6§F§F§lT§x§7§2§C§1§F§F§lH"
+        - "§x§8§2§E§7§F§E§lU§x§8§0§E§1§F§E§lJ §x§7§D§D§C§F§E§lE§x§7§B§D§7§F§E§lA§x§7§9§D§1§F§E§lR§x§7§6§C§C§F§F§lT§x§7§4§C§6§F§F§lH"
+        - "§x§8§4§E§C§F§E§lU§x§8§2§E§7§F§E§lJ §x§8§0§E§1§F§E§lE§x§7§D§D§C§F§E§lA§x§7§B§D§7§F§E§lR§x§7§9§D§1§F§E§lT§x§7§6§C§C§F§F§lH"
+        - "§x§8§7§F§2§F§E§lU§x§8§4§E§C§F§E§lJ §x§8§2§E§7§F§E§lE§x§8§0§E§1§F§E§lA§x§7§D§D§C§F§E§lR§x§7§B§D§7§F§E§lT§x§7§9§D§1§F§E§lH"
+        - "§x§8§9§F§7§F§E§lU§x§8§7§F§2§F§E§lJ §x§8§4§E§C§F§E§lE§x§8§2§E§7§F§E§lA§x§8§0§E§1§F§E§lR§x§7§D§D§C§F§E§lT§x§7§B§D§7§F§E§lH"
+      #If this is true there will be a random line every time it updates. 
+      #If it is false than it will rotate through them and you can make some animations with it.
+      random: false
+      #The time between updates, 20 ticks is 1 second.
+      #Every x ticks it will go to the next line, if random is false, once all lines are displayed it will go to the first line.
+      interval: 2
+    #This section is the first line, here you set the data of that line. It doesn't matter what the name of the section is, as long
+    # as there is no other section with the exact same name 
+    line-1:
+      #Same as with the title, no limit on text. If you just put " " here it will display a blank line on the scoreboard.
+      text:
+      - " "
+      #If it should be random or not.
+      random: false
+      #The time between updates, 20 ticks is 1 second.
+      #Every x ticks it will go to the next line, if random is false, once all lines are displayed it will go to the first line.
+      interval: 200
+      #The score display next to the text, this can only be a number and not removed.
+      # If the score of the other lines are higher than this one, they will be displayed above this one.
+      score: 99   
+    line-2:
+      text:
+      - " §x§A§4§E§B§F§3§l아§x§A§4§E§B§F§3§l이§x§A§4§E§B§F§3§l디§x§A§4§E§B§F§3§l : &f%player_name%"
+      random: false
+      interval: 5
+      score: 98
+    line-3:
+      text:
+      - ""
+      random: false
+      interval: 60
+      score: 96    
+    line-4:
+      text:
+      - " §x§B§8§E§F§F§4§l국§x§B§8§E§F§F§4§l가§x§B§8§E§F§F§4§l : &f%townyadvanced_nation_unformatted%"    
+      random: false
+      interval: 60
+      score: 95
+    line-5:
+      text:
+      - "  &#DBCDF0국&#DBCDF0고&#DBCDF0 : %townyadvanced_nation_balance%"
+      random: false
+      interval: 60
+      score: 94 
+    line-6:
+      text:
+      - ""
+      random: false
+      interval: 60
+      score: 93 
+    line-7:
+      text:
+      - " §x§C§C§F§2§F§4§l마§x§C§C§F§2§F§4§l을§x§C§C§F§2§F§4§l : &f%townyadvanced_town_unformatted%"
+      random: false
+      interval: 60
+      score: 92
+    line-8:
+      text:
+      - "  &#F2C6DE잔&#F2C6DE고&#F2C6DE : %townyadvanced_town_balance%"
+      interval: 60
+      score: 91
+      random: false
+    line-9:
+      text:
+      - " "
+      random: false
+      interval: 60
+      score: 89 
+    line-10:
+      text:
+      - " §x§F§F§D§9§5§F§l코§x§F§F§D§9§5§F§l인§x§F§F§D§9§5§F§l: &f%lightcoins_coins_formatted%"       
+      random: false
+      interval: 1
+      score: 88
+    line-11:
+      text:
+      - " §x§B§A§A§6§E§A§l진§x§B§A§A§6§E§A§l: &f%lightcoins_virtual_formatted_jin%"       
+      random: false
+      interval: 1
+      score: 87
+    line-12:
+      text:
+      - ""
+      random: false
+      interval: 60
+      score: 86
+    line-13:
+      text:
+      - " §x§B§8§D§5§7§6§l좌§x§B§8§D§5§7§6§l표§x§B§8§D§5§7§6§l:"       
+      random: false
+      interval: 1
+      score: 85
+    line-14:
+      text:
+      - " <update ticks=1>  &f%player_x%, %player_y%, %player_z%</update>"  
+      random: false
+      interval: 1
+      score: 84
+#You are able to add more lines to the scoreboard if you want, this scoreboard is just to explain all the possibilities of this plugin.  

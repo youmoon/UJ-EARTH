@@ -1,0 +1,119 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axtrade.html
+
+player-help:
+- ' '
+- <gradient:#00FFDD:#55FFFF><b>거래</b></gradient> <#22FFDD>도움말
+- ' <#22FFDD>➤ <white>/trade <player> <#DDDDDD>| <#77FFFF>거래 요청 보내기'
+- ' <#22FFDD>➤ <white>/trade accept <player> <#DDDDDD>| <#77FFFF>거래 요청 수락'
+- ' <#22FFDD>➤ <white>/trade deny <player> <#DDDDDD>| <#77FFFF>거래 요청 거절'
+- ' '
+
+admin-help:
+- ' '
+- <gradient:#00FFDD:#55FFFF><b>거래</b></gradient> <#22FFDD>도움말
+- ' <#22FFDD>➤ <white>/trade <player> <#DDDDDD>| <#77FFFF>거래 요청 보내기'
+- ' <#22FFDD>➤ <white>/trade accept <player> <#DDDDDD>| <#77FFFF>거래 요청 수락'
+- ' <#22FFDD>➤ <white>/trade deny <player> <#DDDDDD>| <#77FFFF>거래 요청 거절'
+- ' <#22FFDD>➤ <white>/trade reload <#DDDDDD>| <#77FFFF>플러그인 리로드'
+- ' <#22FFDD>➤ <white>/trade force <player> <#DDDDDD>| <#77FFFF>강제로 거래 시작'
+- ' <#22FFDD>➤ <white>/trade preview <#DDDDDD>| <#77FFFF>읽기 전용 GUI 열기 (테스트용)'
+- ' '
+
+reload:
+  success: '&#33FF33플러그인이 성공적으로 리로드되었습니다!'
+  failed: '&#FF3333플러그인 리로드 실패! &f%file%&#FF3333 파일에 문제가 있습니다. 콘솔을 확인하거나 yaml 검증기를 사용하여 오류를 수정하세요!'
+
+trade:
+  started: '&#CCFFEE&#00FFDD%player%&#CCFFEE님과 거래를 시작했습니다!'
+  completed: '&#00FFDD%player% &#CCFFEE님과의 거래가 완료되었습니다!'
+  aborted: '&#00FFDD%player% &#CCFFEE님과의 거래가 취소되었습니다!'
+  blacklisted-item: '&#CCFFEE이 아이템은 거래가 금지되어 있습니다!'
+  inventory-full: '&#CCFFEE거래 상대방의 인벤토리가 가득 찼기 때문에 더 이상 아이템을 넣을 수 없습니다.'
+  preview-info: '&#CCFFEE미리보기 GUI를 열고 있습니다. 이것은 설정 테스트용이며, 버튼을 클릭하면 오류가 발생하거나 작동하지 않을 수 있습니다.'
+
+toggle:
+  enabled: '&#CCFFEE거래 요청을 활성화했습니다!'
+  disabled: '&#CCFFEE거래 요청을 비활성화했습니다!'
+
+# 거래 성공 후 요약
+summary:
+  get:
+    item: '&#00FF00&l+ &#00FF00%amount%x %item%'
+    currency: '&#00FF00&l+ &#00FF00%amount% %currency%'
+  give:
+    item: '&#FF0000&l- &#FF0000%amount%x %item%'
+    currency: '&#FF0000&l- &#FF0000%amount% %currency%'
+
+currency-editor:
+  success: '&#CCFFEE값이 성공적으로 변경되었습니다!'
+  failed: '&#CCFFEE잘못된 값입니다!'
+  not-enough: '&#CCFFEE이 화폐가 충분하지 않습니다!'
+
+request:
+  sent-sender: '&#00FFDD%player%&#CCFFEE님에게 거래 요청을 성공적으로 보냈습니다!'
+  sent-receiver:
+    info: '&#00FFDD%player%&#CCFFEE님으로부터 거래 요청을 받았습니다!'
+    accept:
+      message: '&#00FF00/trade accept %player%'
+      hover: '&#00FF00클릭하여 거래 요청을 &n수락&#00FF00하세요!'
+    deny:
+      message: '&#FF0000/trade deny %player%'
+      hover: '&#FF0000클릭하여 거래 요청을 &n거절&#FF0000하세요!'
+  no-request: '&#00FFDD%player%&#CCFFEE님으로부터 활성화된 거래 요청이 없습니다!'
+  deny-sender: '&#00FFDD%player%&#CCFFEE님이 거래 요청을 거절했습니다!'
+  deny-receiver: '&#00FFDD%player%&#CCFFEE님의 거래 요청을 성공적으로 거절했습니다!'
+  cant-trade-self: '&#CCFFEE자신에게 거래 요청을 보낼 수 없습니다!'
+  already-in-trade: '&#CCFFEE해당 플레이어는 이미 다른 사람과 거래 중입니다!'
+  already-sent: '&#CCFFEE최근에 이미 &#00FFDD%player% &#CCFFEE님에게 거래 요청을 보냈습니다!'
+  too-far: '&#00FFDD%player% &#CCFFEE님과 너무 멀리 떨어져 있어 거래 요청을 보낼 수 없습니다!'
+  not-accepting: '&#CCFFEE이 플레이어는 거래를 받지 않습니다!'
+  disallowed-gamemode: '&#CCFFEE당신 또는 상대방이 허용되지 않는 게임모드에 있습니다!'
+  same-ip: '&#CCFFEE같은 IP를 가진 계정과는 거래할 수 없습니다!'
+  below-required-amount: '&#CCFFEE최소 &f%amount% %currency%&#CCFFEE 이상을 거래해야 합니다!'
+  blacklisted-world: '&#CCFFEE이 월드에서는 거래가 비활성화되어 있습니다!'
+  expired: '&#00FFDD%player% &#CCFFEE님에게 보낸 거래 요청이 만료되었습니다!'
+  disabled-trading: '&#CCFFEE거래를 비활성화했습니다! &#00FFDD/trade toggle &#CCFFEE명령어로 활성화하세요.'
+
+# 반드시 4줄이어야 합니다
+# 참고: 현재 첫 번째 줄은 비워두어야 합니다
+currency-editor-sign:
+- ''
+- '-----------'
+- 첫 번째 줄에
+- 새 값을 입력하세요
+
+# 사운드 목록: https://www.digminecraft.com/lists/sound_list_pc.php
+# 비활성화하려면 ""로 설정
+sounds:
+  # 거래 사운드
+  started: entity.player.levelup
+  completed: entity.player.levelup
+  aborted: block.anvil.destroy
+  # 거래 요청
+  deny: block.anvil.land
+  requested: entity.experience_bottle.throw
+  # GUI 사운드
+  accept: ui.button.click
+  countdown: ui.button.click
+  cancel: ui.button.click
+
+# GUI 제목에서 %own-status%와 %partner-status%로 사용 가능
+placeholders:
+  ready: 준비됨
+  waiting: 대기 중
+
+commands:
+  invalid-value: '&#FF0000잘못된 매개변수: &#BB0000%value%'
+  invalid-command: '&#FF0000잘못된 명령어 또는 하위 명령어입니다!'
+  missing-argument: '&#FF0000인수가 누락되었습니다! &#BB0000%value%&#FF0000에 대한 값을 지정해야 합니다.'
+  no-permission: '&#FF0000이 명령어를 사용할 권한이 없습니다!'
+  out-of-range: '&#FF0000&#BB0000%number% &#FF0000은(는) &#BB0000%min% &#FF0000와(과) &#BB0000%max%&#FF0000 사이여야 합니다!'
+  player-only: '&#FF0000이 명령어는 플레이어만 사용할 수 있습니다!'
+  invalid-player: '&#FF0000플레이어 &#BB0000%player% &#FF0000을(를) 찾을 수 없습니다!'
+  invalid-selector: '&#FF0000이 명령어에서는 해당 선택자를 사용할 수 없습니다!'
+
+update-notifier: '&#AAFFCC플러그인의 새 버전이 있습니다! &#DDDDDD(&#FFFFFF현재: &#FF0000%current% &#DDDDDD| &#FFFFFF최신: &#00FF00%latest%&#DDDDDD)'
+safety: '&#FF0000이 기능은 안전상의 이유로 비활성화되었으며 플러그인 업데이트가 필요합니다. 서버 관리자에게 문의하세요.'
+
+# 이 값을 변경하지 마세요
+version: 9

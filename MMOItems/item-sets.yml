@@ -1,0 +1,19 @@
+# Item sets let you create links betweens the different items you create.
+# By wearing multiple items from the same set, the player will benefit from
+# set bonuses which incites him to use items from the same type.
+# This is a very powerful system for RPG items.
+#
+# You can also use potion effects as set bonuses, e.g
+# - "potion-speed: 2" gives permanent Speed II
+# - "potion-increase_damage: 3" gives permanent Strength III
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+#
+# You may also add abilities as full set bonuses. The ability ID
+# must start with 'ability-' but it is only used as reference.
+# You can configure the ability cast mode, type & modifiers as usual.
+SAND:
+  name: '&x&A&E&A&3&7&5모&x&B&5&A&B&7&C래 &x&C&3&B&A&8&9갑&x&C&B&C&2&8&F옷 &x&D&9&D&1&9&C세&x&E&0&D&9&A&3트'
+  lore-tag:
+  - '&x&A&E&A&3&7&5세&x&B&8&A&E&7&E트 &x&C&C&C&3&9&1보&x&D&6&C&E&9&A너&x&E&0&D&9&A&3스&7:'
+  - '&x&A&E&A&3&7&5[&x&C&7&B&E&8&C3&x&E&0&D&9&A&3] &f모래 털이'
+  - '&7공격을 당하면 공격자에게 모래 가루를 지급합니다'

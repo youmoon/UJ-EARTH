@@ -1,0 +1,101 @@
+# NEVER DELETE A %variable%
+# Messages support HEX colours codes.
+
+player_help: |
+  &f&n플레이어 명령어:
+  &b/dq me &f: 자신의 퀘스트를 확인합니다
+  &b/dq reroll <index> &f: 퀘스트를 다시 뽑습니다 (권한 필요)
+  &b/dq show <global/easy/medium/hard> &f: 카테고리별 퀘스트를 확인합니다
+admin_help: |
+  &f&n관리자 명령어:
+  &b/dqa complete <player> <index> &f: 플레이어의 퀘스트를 완료시킵니다
+  &b/dqa customcomplete <player> <index> <amount> &f: 커스텀 타입의 플레이어 퀘스트를 완료시킵니다
+  &b/dqa reset <quests/total> <player> &f: 플레이어의 새로운 퀘스트를 뽑거나 총 달성 퀘스트 수를 초기화합니다
+  &b/dqa add total <player> <amount> &f: 플레이어의 달성 퀘스트 수를 추가합니다
+  &b/dqa reroll <player> <index> &f: 특정 인덱스의 플레이어 퀘스트를 새로 뽑습니다
+  &b/dqa show <player> &f: 플레이어의 퀘스트를 확인합니다
+no_permission: '&f권한이 없습니다'
+no_permission_category: '&f이 카테고리를 볼 권한이 없습니다'
+player_only: '&f플레이어만 이 명령어를 실행할 수 있습니다'
+invalid_category: '&f유효하지 않은 퀘스트 카테고리입니다'
+invalid_player: '&f이 플레이어가 존재하지 않거나 오프라인입니다'
+invalid_quest_id: '&f유효한 퀘스트 ID를 지정해야 합니다'
+invalid_quest_index: '&f지정된 인덱스가 유효하지 않습니다'
+invalid_amount: '&f지정된 수량이 유효하지 않습니다'
+categorized_enabled: '&f카테고리 퀘스트가 활성화되어 있어 전체 메뉴를 사용할 수 없습니다'
+categorized_disabled: '&f카테고리 퀘스트가 비활성화되어 있어 전체 메뉴만 사용할 수 있습니다'
+global_disabled: '&f전체 퀘스트가 비활성화되어 있어 카테고리 메뉴만 사용할 수 있습니다'
+already_achieved: '&f이 퀘스트는 이미 달성되었습니다'
+hologram_categorized_enabled: '&f카테고리 퀘스트가 활성화되어 있어 전체 홀로그램을 생성할 수 없습니다'
+hologram_categorized_disabled: '&f카테고리 퀘스트가 비활성화되어 있어 카테고리 홀로그램을 생성할 수 없습니다'
+hologram_deleted: '&f홀로그램이 성공적으로 삭제되었습니다'
+hologram_invalid_index: '&f홀로그램의 인덱스가 유효하지 않습니다'
+quests_in_progress: '&f아직 완료해야 할 일일 퀘스트가 있습니다!'
+all_quests_achieved_connect: '&f모든 일일 퀘스트를 완료했습니다!'
+quests_renewed: '&f완료할 새로운 일일 퀘스트가 있습니다!'
+quests_renewed_admin: '&f&b%target%&f의 퀘스트를 초기화했습니다'
+quest_rerolled: '&f&b%index%&f번 퀘스트를 다시 뽑았습니다!'
+quest_rerolled_admin: '&f&b%target%&f의 &b%index%&f번 퀘스트를 다시 뽑았습니다'
+add_total_admin: '&f&b%target%&f의 총 완료 퀘스트 수에 &b%amount%&f를 추가했습니다'
+add_total_target: '&f관리자가 당신의 총 완료 퀘스트 수에 &b%amount%&f를 추가했습니다'
+quest_achieved: '&f퀘스트 &b%questName%&f를 완료했습니다, 잘했어요!'
+all_quests_achieved: '&f모든 일일 퀘스트를 완료했습니다, 잘했어요!'
+easy_reward: '&f모든 쉬운 퀘스트를 완료했습니다!'
+medium_reward: '&f모든 보통 퀘스트를 완료했습니다!'
+hard_reward: '&f모든 어려운 퀘스트를 완료했습니다!'
+not_enough_items: '&f이 퀘스트를 완료하기 위한 필요 수량이 부족합니다'
+total_amount_reset: '&f관리자에 의해 총 완료 퀘스트 수가 초기화되었습니다'
+total_amount_reset_admin: '&f관리자에 의해 &b%target%&f의 총 완료 퀘스트 수가 초기화되었습니다'
+world_disabled: '&f이 월드에서는 퀘스트를 완료할 수 없습니다'
+not_required_world: '&f이 월드에서는 이 퀘스트를 완료할 수 없습니다'
+not_required_region: '&f이 지역에서는 이 퀘스트를 완료할 수 없습니다'
+reward_command: '&f보상 명령어를 받았습니다'
+reward_exp_levels: '&f&b%rewardAmount% &f경험치 레벨을 받았습니다'
+reward_exp_points: '&f&b%rewardAmount% &f경험치 포인트를 받았습니다'
+reward_money: '&f&b%rewardAmount% &f원을 받았습니다'
+reward_points: '&f&b%rewardAmount% &f포인트를 받았습니다'
+reward_coins_engine: '&f&b%rewardAmount% %currencyName%&f를 받았습니다'
+new_day: '&f새로운 하루입니다!'
+too_far: '&f필요한 위치에서 너무 멀리 떨어져 있습니다'
+bad_world: '&f잘못된 월드에 있습니다'
+placeholder_api_not_enabled: '&f플레이스홀더API 플러그인이 활성화되지 않았습니다 관리자에게 알려주세요'
+placeholder_not_number: '&f플레이스홀더 &b%placeholder%&f는 숫자가 아닙니다 관리자에게 알려주세요'
+cannot_complete_quest_with_off_hand: '&f모든 필요한 아이템은 보조 손이 아닌 인벤토리에 있어야 합니다'
+cannot_reroll_if_achieved: '&f이미 달성한 퀘스트는 다시 뽑을 수 없습니다!'
+quest_already_assigned: '&cThis quest is already assigned to the player.'
+player_quests_not_loaded: '&cThe player''s quests are not loaded yet. Please try again
+  in a moment.'
+no_available_quests_in_category: '&cThere are no available quests in this category
+  to assign.'
+quest_set_admin: '&eYou have set quest %quest_id% (%quest%&r&e) in slot %slot% for
+  %target% in %category%.'
+quest_set_target: '&eAn admin set your quest number %slot% to %quest%&r&e (%quest_id%)
+  in %category%.'
+add_total_category_admin: '&eYou have added %amount% to %target%''s total number of
+  completed quests in the category %category%.'
+add_total_category_target: '&eAn admin has added %amount% to your total number of
+  completed quests in the category %category%.'
+remove_total_admin: '&eYou have removed %amount% to %target%''s total number of completed
+  quests.'
+remove_total_target: '&eAn admin has removed %amount% to your total number of completed
+  quests.'
+remove_total_category_admin: '&eYou have removed %amount% to %target%''s total number
+  of completed quests in the category %category%.'
+remove_total_category_target: '&eAn admin has removed %amount% to your total number
+  of completed quests in the category %category%.'
+total_category_reset_admin: '&e%target%''s total number of completed quests in the
+  category %category% has been reset by an admin.'
+total_category_reset_target: '&eYour total number of completed quests in the category
+  %category% has been reset by an admin.'
+category_quests_achieved: '&aYou have completed all your %category% quests!'
+plugin_reloaded: '&aThe plugin has been reloaded successfully!'
+error_inventory: '&cAn error occurred while opening the inventory.'
+conversion_failed: '&cConversion failed! Please check the console for more information.'
+conversion_success: '&aConversion successful! Please select the new storage mode in
+  the config file and restart the server to apply changes.'
+check_console: '&cPlease check the console for more information.'
+impossible_to_open_inventory: '&cImpossible to open the quests interface. Is the plugin
+  still loading?'
+contact_admin: '&cIf the problem persists, please contact the server administrator.'
+configuration_error: '&cA configuration error prevents the interface from being displayed.
+  Please inform an administrator.'

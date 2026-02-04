@@ -1,0 +1,210 @@
+pages:
+  page1:
+    items:
+      '1':
+        material: gray_stained_glass_pane
+        name: ' '
+      '2':
+        material: gray_stained_glass_pane
+        name: ' '
+      '3':
+        material: gray_stained_glass_pane
+        name: ' '
+      '4':
+        material: gray_stained_glass_pane
+        name: ' '
+      '5':
+        material: gray_stained_glass_pane
+        name: ' '
+      '6':
+        material: gray_stained_glass_pane
+        name: ' '
+      '7':
+        material: gray_stained_glass_pane
+        name: ' '
+      '8':
+        material: gray_stained_glass_pane
+        name: ' '
+      '9':
+        material: gray_stained_glass_pane
+        name: ' '
+      '10':
+        material: granite
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '11':
+        material: polished_granite
+        buy: 50
+        sell: -1
+        stack-size: 64
+      '12':
+        material: diorite
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '13':
+        material: polished_diorite
+        buy: 50
+        sell: -1
+        stack-size: 64
+      '14':
+        material: andesite
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '15':
+        material: polished_andesite
+        buy: 50
+        sell: -1
+        stack-size: 64
+      '16':
+        material: cobbled_deepslate
+        buy: 35
+        sell: -1
+        stack-size: 64
+      '17':
+        material: deepslate
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '18':
+        material: polished_deepslate
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '19':
+        material: cobblestone
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '20':
+        material: stone
+        buy: 35
+        sell: -1
+        stack-size: 64
+      '21':
+        material: smooth_stone
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '22':
+        material: stone_bricks
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '23':
+        material: tuff
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '24':
+        material: polished_tuff
+        buy: 50
+        sell: -1
+        stack-size: 64
+      '25':
+        material: netherrack
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '26':
+        material: blackstone
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '27':
+        material: polished_blackstone
+        buy: 50
+        sell: -1
+        stack-size: 64
+      '28':
+        material: sand
+        buy: 30
+        sell: -1
+        stack-size: 64
+      '29':
+        material: sandstone
+        buy: 35
+        sell: -1
+        stack-size: 64
+      '30':
+        material: smooth_sandstone
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '31':
+        material: red_sand
+        buy: 35
+        sell: -1
+        stack-size: 64
+      '32':
+        material: red_sandstone
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '33':
+        material: smooth_red_sandstone
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '34':
+        material: basalt
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '35':
+        material: smooth_basalt
+        buy: 50
+        sell: -1
+        stack-size: 64
+      '36':
+        material: polished_basalt
+        buy: 50
+        sell: -1
+        stack-size: 64
+      '37':
+        material: quartz
+        buy: 8
+        sell: -1
+        stack-size: 64
+      '38':
+        material: quartz_block
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '39':
+        material: smooth_quartz
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '40':
+        material: end_stone
+        buy: 45
+        sell: -1
+        stack-size: 64
+      '41':
+        material: end_stone_bricks
+        buy: 50
+        sell: -1
+        stack-size: 64
+      '42':
+        material: brick
+        buy: 12.5
+        sell: -1
+        stack-size: 64
+      '43':
+        material: bricks
+        buy: 50
+        sell: -1
+        stack-size: 64
+      '44':
+        material: packed_mud
+        buy: 40
+        sell: -1
+        stack-size: 64
+      '45':
+        material: mud_bricks
+        buy: 45
+        sell: -1
+        stack-size: 64

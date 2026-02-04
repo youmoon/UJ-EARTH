@@ -1,0 +1,197 @@
+#   ########################################################################################  #
+#
+# This file is generated with LightCore used in LightCoins
+#
+#    ___       ___  ________  ___  ___  _________  ________  ________  ________  _______
+#   |\  \     |\  \|\   ____\|\  \|\  \|\___   ___\\   ____\|\   __  \|\   __  \|\  ___ \
+#   \ \  \    \ \  \ \  \___|\ \  \\\  \|___ \  \_\ \  \___|\ \  \|\  \ \  \|\  \ \   __/|
+#    \ \  \    \ \  \ \  \  __\ \   __  \   \ \  \ \ \  \    \ \  \\\  \ \   _  _\ \  \_|/__
+#     \ \  \____\ \  \ \  \|\  \ \  \ \  \   \ \  \ \ \  \____\ \  \\\  \ \  \\  \\ \  \_|\ \
+#      \ \_______\ \__\ \_______\ \__\ \__\   \ \__\ \ \_______\ \_______\ \__\\ _\\ \_______\
+#       \|_______|\|__|\|_______|\|__|\|__|    \|__|  \|_______|\|_______|\|__|\|__|\|_______|
+#
+# -> powered LightCoins - A simple and lightweight coins /virtual currency plugin for your server.
+#    Copyright © 2024 LightStudios
+#
+#   ########################################################################################  #
+#
+# The language file for the baltop command.
+# You can create a new file called "language/xx.yml" where "xx" is the language code
+# and use the same structure as the default en.yml.
+language: en
+# This system is designed for efficient and fast data storage (database).
+# Vault and Virtual currency are using this system.
+# HINT: Cached Data Storage will write immediately.
+#       This affects only the database storage.
+#       If you get performance issues, you can increase the period and delay.
+# IMPORTANT: Do not increase these values too much on multiserver setups!
+# Defaults:
+#  period: 500
+#  delay: 500
+multiTransactionSync:
+  # The period in milliseconds for the transaction sync.
+  # How should often check our transaction queue for new transactions and write them in the database.
+  period: 5000
+  # The delay in milliseconds for the transaction sync.
+  # How long should the system wait before the first sync.
+  delay: 5000
+  # You can enable debug mode to see more information about the current transaction sync.
+  enableDebug: false
+# While I register commands after Server start, you can change the command prefix here.
+# After changing the command prefix, you have to reload the plugin with /lightcoins reload
+# To see autocomplete suggestions for the new command prefix you must rejoin the server!
+# HINT: to remove the previous command prefix, you have to RESTART the server.
+commands:
+  # The command prefix for the Vault currency
+  coins: coins
+  # The command prefix for the Virtual currency
+  virtual: virtual
+  # The command prefix for baltop command
+  baltop: baltop
+  # The command prefix for the vault pay command
+  pay: pay
+# The Vault default currency settings.
+# IMPORTANT: These settings only affects the Vault currency and not the custom currencies!
+defaultCurrency:
+  # The command cooldown for the pay command in seconds.
+  # Type -1 to disable the cooldown.
+  payCommandCooldown: 5
+  # The amount of entries shown in the baltop list via command
+  baltopCommandAmount: 10
+  # The '%lightcoins_coins%' placeholder.
+  placeholderFormat: <yellow>#coins# <gray>#currency#
+  # The name of the currency used in some messages.
+  displayName: <#ffdc73>Vault
+  # This is the starting balance for this
+  # currency when a new player joins the server.
+  # HINT: Compatible with multiserver setups.
+  startBalance: 200.0
+  # The decimal places for this currency.w
+  # 2 means 0.00, 3 means 0.000 and so on.
+  # HINT: If you set this to 0, the currency will be displayed without decimal places.
+  decimalPlaces: 2
+  # visual currency name in messages and GUIs in plural
+  currencyNamePlural: Coins
+  # visual currency name in messages and GUIs in singular
+  currencyNameSingular: Coin
+  # The max possible money amount.
+  # If a player reaches this value, he can't get any more money.
+  # HINT: This also caps a town account if you are using Towny.
+  maxBalance: 1.0E24
+  # Should the target player receive a message when he gets money via add/remove/set command ?
+  sendTargetMessages: true
+# These are the title settings for some transaction types
+# HINT: Titles will never be overwritten by another one.
+#       Instead, each triggered title will be added to the queue.
+title:
+  # animated: { } IN DEVELOPMENT!
+  # The default static non-animated title settings
+  static:
+    # Enable or disable the title system.
+    # HINT: Make sure only one title system is enabled.
+    enable: true
+    # Fade in time in ticks (20 ticks = 1 second)
+    fadeIn: 20
+    # Stay time in ticks (40 ticks = 2 second)
+    stay: 40
+    # Fade out time in ticks (20 ticks = 1 second)
+    fadeOut: 20
+    # Title translations for LightCoins virtual currency
+    virtual:
+      onDeposit:
+        upper: <gray>Received a <green>Deposit
+        lower: <green>#amount# <dark_gray>#currency# <gray>from <green>#sender#
+      onWithdraw:
+        upper: <gray>Receive a <red>Withdraw
+        lower: <red>#amount# <dark_gray>#currency# <gray>from <red>#sender#
+    # Title translations for the vault currency
+    coins:
+      onDeposit:
+        upper: <gray>Received a <green>Deposit
+        lower: <green>#amount# <dark_gray>#currency# <gray>from <green>#sender#
+      onWithdraw:
+        upper: <gray>Receive a <red>Withdraw
+        lower: <red>#amount# <dark_gray>#currency# <gray>from <red>#sender#
+      onPay:
+        sender:
+          upper: <red>Sent a Payment
+          lower: <green>#amount# <dark_gray>#currency# <gray>to <yellow>#target#
+        target:
+          upper: <green>Received a Payment
+          lower: <green>#amount# <dark_gray>#currency# <gray>from <yellow>#sender#
+# Lose Coins System - Only for Vault currency.
+# This system allows you to lose a percentage of your coins when the player dies.
+loseCoinsOnDeath:
+  # Enable or disable the loss coins system.
+  enable: false
+  # The death causes where the player can lose coins.
+  # '*' means all death causes.
+  # You can also add specific death causes like 'FALL' or 'FIRE'.
+  # See https://jd.papermc.io/paper/1.21.4/org/bukkit/event/entity/PlayerDeathEvent.html
+  deathCause:
+  - '*'
+  # The permission to bypass the loss coins system.
+  bypassPermission: lightcoins.losecoins.bypass
+  # The percentage of coins the player will lose when he dies.
+  percentage: 10
+  # The minimum amount of coins the player can lose.
+  minAmount: 100
+  # The maximum amount of coins the player can lose.
+  maxAmount: 100000
+  # Some Blacklist for different types.
+  # HINT: You can use the LightCoins WorldGuard flag 'lightcoins-losecoins-bypass' to disable
+  #       the loss coins system in each region too. You NEED to have WorldGuard installed to use this feature.
+  blacklist:
+    # The worlds where the player can't lose coins.
+    worlds:
+    - DisabledWorld
+# The placeholder for the top placeholder %coins_top_<place>% and %virtual_top_<currency>_<place>%
+# HINT: You can use custom placeholders '#place#', '#name#', '#coins#' and '#currency#' in this placeholder.
+#       'default': If no custom place placeholder is set below, this placeholder will be used.
+#       '1', '2', '3': is a specific place placeholder. For example, you want different colors for the first, second and third place.
+#       You can also use 4, 5, and so on.
+topPlaceholderFormat:
+  # Placeholder section for the virtual currency
+  virtual:
+    # You can specify for each single virtual currency a custom placeholder format here.
+    # In this Case 'gems' represents the name of the virtual currency used for the placeholder.
+    gems:
+      # The default placeholder format for the virtual currency.
+      # In this case, with the beginning after the 3rd place, the default placeholder format will be used.
+      default:
+        valid: <dark_gray>● <yellow><bold>#place#<reset><gray># <dark_gray>● <yellow>#name#
+          <gray>- <yellow>#amount# <gray>#currency#
+        invalid: <gold>#place#<gray># <dark_gray>●  <gray>-<red>x<gray>-
+      custom:
+        # Place #1-3 custom Placeholders (virtual currency)
+        '1':
+          valid: <dark_gray>● <gold><bold>#place#<reset><gray># <dark_gray>● <yellow>#name#
+            <gray>- <yellow>#amount# <gray>#currency#
+          invalid: <gold>#place#<gray># <dark_gray>●  <gray>-<red>x<gray>-
+        '2':
+          valid: <dark_gray>● <yellow><bold>#place#<reset><gray># <dark_gray>● <yellow>#name#
+            <gray>- <yellow>#amount# <gray>#currency#
+          invalid: <gold>#place#<gray># <dark_gray>●  <gray>-<red>x<gray>-
+        '3':
+          valid: <dark_gray>● <red><bold>#place#<reset><gray># <dark_gray>● <yellow>#name#
+            <gray>- <yellow>#amount# <gray>#currency#
+          invalid: <gold>#place#<gray># <dark_gray>●  <gray>-<red>x<gray>-
+  # Placeholder section for the vault based currency (default currency used by many vault based plugins)
+  coins:
+    default:
+      valid: <dark_gray>● <yellow><bold>#place#<reset><gray># <dark_gray>● <yellow>#name#
+        <gray>- <yellow>#amount# <gray>#currency#
+      invalid: <gold>#place#<gray># <dark_gray>●  <gray>-<red>x<gray>-
+    custom:
+      '1':
+        valid: <dark_gray>● <gold><bold>#place#<reset><gray># <dark_gray>● <yellow>#name#
+          <gray>- <yellow>#amount# <gray>#currency#
+        invalid: <gold>#place#<gray># <dark_gray>●  <gray>-<red>x<gray>-
+      '2':
+        valid: <dark_gray>● <yellow><bold>#place#<reset><gray># <dark_gray>● <yellow>#name#
+          <gray>- <yellow>#amount# <gray>#currency#
+        invalid: <gold>#place#<gray># <dark_gray>●  <gray>-<red>x<gray>-
+      '3':
+        valid: <dark_gray>● <red><bold>#place#<reset><gray># <dark_gray>● <yellow>#name#
+          <gray>- <yellow>#amount# <gray>#currency#
+        invalid: <gold>#place#<gray># <dark_gray>●  <gray>-<red>x<gray>-

@@ -1,0 +1,215 @@
+
+# 추천 명령어
+
+command /추천:
+    trigger:
+        send "<url:https://minelist.kr/servers/16577-jinyoon.kr>&f많은 &a&n마인리스트 추천&f 부탁해요!<reset>" to player 
+
+# 그린란드스폰
+
+function spawn(p:player):
+    # if {UJ.location::%uuid of {_p}%} is true:
+    #     send "&c튜토리얼 중에는 이동할 수 없어요." to {_p}
+    #     stop
+    set {UJ.location::%uuid of {_p}%} to location of {_p}
+    teleport {_p} to location(-5119.5, 68, -17407.5, world "overworld", 90, 0)
+
+command /스폰:
+    trigger:
+        spawn(player)
+
+command /spawn:
+    trigger:
+        spawn(player)
+        
+# 돌아가기
+
+function back(p:player):
+    # if {UJ.location::%uuid of {_p}%} is true:
+    #     send "&c튜토리얼 중에는 이동할 수 없어요." to {_p}
+    #     stop
+    if {UJ.location::%uuid of {_p}%} exists:
+        teleport {_p} to {UJ.location.%uuid of {_p}%}
+        clear {UJ.location.%uuid of {_p}%}
+    else:
+        send "&c돌아가기 기능은 서버 스폰에서만 사용 가능해요!" to {_p}        
+
+command /돌아가기:
+    trigger:
+        back(player)
+
+command /back:
+    trigger:
+        back(player)
+
+# 튜토리얼
+
+function tutorial(p: player):
+    set {UJ.location::%uuid of {_p}%} to location of {_p}
+    # set {UJ.location::%uuid of {_p}%} to true
+    teleport {_p} to location(-5102.5, -2, -17407.5, world "overworld", 90, 0)
+
+command /튜토리얼:
+    trigger:
+        tutorial(player)
+
+command /tutorial:
+    trigger:
+        tutorial(player)
+
+# 스폰템
+
+on first join:
+    send "&b&lUJ Earth&f에 오신 것을 환영합니다!" and "협력하거나 서로 전쟁하며 자신만의 세계를 꾸려나가보세요!" to player
+    tutorial(player)
+    spawnItem(player)
+    # give 32 of steak to player
+    
+
+# 임시명령어
+command /스폰템:
+    trigger:
+        if {UJ.spawnItem::%uuid of player%} isn't set:
+            spawnItem(player)
+            set {UJ.spawnItem::%uuid of player%} to true
+        else:
+            send "&c스폰 아이템은 한 번만 수령 가능합니다." to player
+
+function spawnItem(p: player):
+    send "간단한 &e&l스폰 아이템&f이 지급되었습니다." to {_p}
+    equip {_p} with leather helmet named "&b&l여행자의 모자" with lore "&7끝없는 여정을 함께할 든든한 동반자." and "&7햇살과 바람으로부터 당신을 지켜줍니다."
+    dye {_p}'s helmet cyan
+    equip {_p} with leather chestplate named "&b&l개척자의 상의" with lore "&7험한 길에서도 포기하지 않는 모험가의 상징."
+    dye {_p}'s chestplate cyan
+    equip {_p} with leather leggings named "&b&l모험가의 바지" with lore "&7비바람에도 꿋꿋했던 튼튼한 바지."
+    dye {_p}'s leggings cyan
+    equip {_p} with leather boots named "&b&l숲길의 부츠" with lore "&7대지와 바람이 당신의 발걸음을 인도한다."
+    dye {_p}'s boots cyan
+    give 32 of cooked beef to {_p}
+    give 64 of dirt to {_p}
+    give 16 of oak log to {_p}
+    give 1 of stone shovel to {_p}
+    give 1 of iron pickaxe to {_p}
+    give 1 of iron sword to {_p}
+    give 1 of stone axe to {_p}
+
+# Shift + F 단축키와 menu
+# 리소스팩 적용한 메뉴
+
+function menu(p: player):
+    
+    open chest inventory with 6 rows named "&fਔৡ" to {_p}
+    set slot (9, 10, 11, 18, 19, 20) of {_p}'s current inventory to structure void named "&a&l스폰" with lore "&fㅣ장소를 이동합니다."
+    set slot (27, 28, 29, 36, 37, 38) of {_p}'s current inventory to structure void named "&b&l상점" with lore "&fㅣ상점 창을 띄웁니다."
+    set slot (12, 13, 14, 21, 22, 23) of {_p}'s current inventory to structure void named "&7&l🔒 ???" with lore "&fㅣ???"
+    set slot (30, 31, 32, 39, 40, 41) of {_p}'s current inventory to structure void named "&7&l🔒 ???" with lore "&fㅣ???"
+    set slot (15, 16, 17, 24, 25, 26) of {_p}'s current inventory to structure void named "&7&l🔒 ???" with lore "&fㅣ???"
+    set slot (33, 34, 35, 42, 43, 44) of {_p}'s current inventory to structure void named "&7&l🔒 ???" with lore "&fㅣ???"
+
+    set slot 8 of {_p}'s current inventory to structure void named "&c&l나가기" with lore "&fㅣ메뉴를 끕니다."
+    
+    set slot 45 of {_p}'s current inventory to structure void named "&a&l마인리스트 추천하기" with lore "&fㅣ서버는 여러분의 추천을 먹고 삽니다."
+    set slot 46 of {_p}'s current inventory to structure void named "&9&l디스코드 서버로 이동하기" with lore "&fㅣUJ EARTH의 디스코드 서버로 연결해드립니다."
+    set slot 47 of {_p}'s current inventory to structure void named "&c&l유튜브 채널로 이동하기" with lore "&fㅣ유튜브 채널을 연결해드립니다." and "&f스트리밍, 이벤트 등에 사용합니다."
+
+    set slot 51 of {_p}'s current inventory to book named "&a&l일일퀘스트 확인" with lore "&fㅣ오늘의 할 일을 알려드릴게요!"
+
+function spawnMenu(p: player):
+    
+    open chest inventory with 6 rows named "&fਔ֏" to {_p}
+    
+    set slot 8 of {_p}'s current inventory to structure void named "&c&l나가기" with lore "&fㅣ메뉴를 끕니다."
+    
+    set slot (9, 10, 11, 18, 19, 20) of {_p}'s current inventory to structure void named "&c&l국가 스폰" with lore "&fㅣ국가의 스폰으로 이동합니다."
+    set slot (27, 28, 29, 36, 37, 38) of {_p}'s current inventory to structure void named "&6&l마을 스폰" with lore "&fㅣ마을의 스폰으로 이동합니다."
+    set slot (12, 13, 14, 21, 22, 23) of {_p}'s current inventory to structure void named "&b&l서버 스폰" with lore "&fㅣ서버의 스폰인 그린란드로 이동합니다."
+    set slot (30, 31, 32, 39, 40, 41) of {_p}'s current inventory to structure void named "&a&l랜덤 스폰" with lore "&fㅣ서버의 랜덤한 위치로 이동합니다."
+    set slot (15, 16, 17, 24, 25, 26) of {_p}'s current inventory to structure void named "&7&l🔒 ???" with lore "&fㅣ???"
+    set slot (33, 34, 35, 42, 43, 44) of {_p}'s current inventory to structure void named "&7&l🔒 ???" with lore "&fㅣ???"
+
+command /메뉴:
+    trigger:
+        menu(player)
+
+on inventory click:
+    stop if event-inventory is player's inventory
+    if name of top inventory of player is "&l게임 메뉴":
+
+        cancel event
+        close player's inventory if (10, 11, 12, 13, 14, 15) contains index of clicked slot
+        execute player command "/n spawn" if index of clicked slot is 10 # 국가 스폰
+        execute player command "/t spawn" if index of clicked slot is 11 # 마을 스폰
+        execute player command "/shop" if index of clicked slot is 12 # 상점
+        execute player command "/추천" if index of clicked slot is 13 # 추천
+        execute player command "/rmove %player%" if index of clicked slot is 14 # 랜덤스폰
+        execute player command "/dq" if index of clicked slot is 15 # 일퀘
+
+
+    if name of top inventory of player is "&fਔ֏":
+
+        cancel event
+
+        if index of clicked slot is 8: # 나가기
+            close player's inventory
+            stop
+            
+        if (9, 10, 11, 18, 19, 20) contains index of clicked slot: # 국가 스폰
+            close player's inventory
+            execute player command "/n spawn"
+            clear {UJ.location.%player%}
+            stop
+
+        if (27, 28, 29, 36, 37, 38) contains index of clicked slot: # 마을 스폰
+            close player's inventory
+            execute player command "/t spawn"
+            clear {UJ.location.%player%}
+            stop
+
+        if (12, 13, 14, 21, 22, 23) contains index of clicked slot: # 서버 스폰
+            close player's inventory
+            execute player command "/스폰"
+            stop
+            
+        if (30, 31, 32, 39, 40, 41) contains index of clicked slot: # 랜덤 스폰
+            close player's inventory
+            execute player command "/rmove %player%"
+            clear {UJ.location.%player%}
+            stop
+    
+    if name of top inventory of player is "&fਔৡ":
+
+        cancel event
+
+        if index of clicked slot is 8: # 나가기
+            close player's inventory
+            stop
+
+        if (9, 10, 11, 18, 19, 20) contains index of clicked slot: # 스폰
+            close player's inventory
+            spawnMenu(player)
+            stop
+
+        if (27, 28, 29, 36, 37, 38) contains index of clicked slot: # 상점
+            close player's inventory
+            execute player command "/shop"
+            stop
+
+        if index of clicked slot is 45: # 추천
+            close player's inventory
+            execute player command "/추천"
+            stop
+
+        if index of clicked slot is 46: # 디스코드
+            close player's inventory
+            send "<url:https://discord.gg/Zs4b9Rqbev>&f서버 전용 &9&n디스코드 링크&f입니다.<reset>" to player
+            stop
+
+        if index of clicked slot is 47: # 유튜브
+            close player's inventory
+            send "<url:https://www.youtube.com/@StudioUJ>&f서버의 &c&n유튜브 채널 링크&f입니다.<reset>" to player
+            stop
+
+        if index of clicked slot is 51: # 일퀘
+            close player's inventory
+            execute player command "/dq"
+            stop

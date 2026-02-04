@@ -1,0 +1,432 @@
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░██╗░░░░░░█████╗░░██████╗░░░███████╗██╗██╗░░██╗███████╗██████╗░░
+# ░██║░░░░░██╔══██╗██╔════╝░░░██╔════╝██║╚██╗██╔╝██╔════╝██╔══██╗░
+# ░██║░░░░░███████║██║░░██╗░░░█████╗░░██║░╚███╔╝░█████╗░░██████╔╝░
+# ░██║░░░░░██╔══██║██║░░╚██╗░░██╔══╝░░██║░██╔██╗░██╔══╝░░██╔══██╗░
+# ░███████╗██║░░██║╚██████╔╝░░██║░░░░░██║██╔╝╚██╗███████╗██║░░██║░
+# ░╚══════╝╚═╝░░╚═╝░╚═════╝░░░╚═╝░░░░░╚═╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝░
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+# Some of the options below require a server restart or plugin reload.
+main:
+  prefix: '&8[&e&l⚡&8] '
+  prefix_hover: true # Displays LagFixer version info on hover.
+  threads: 1 # Multithread synchronization has not been thoroughly tested.
+  monitor_interval: 5 # Update interval (in seconds) for TPS, MSPT, CPU, and other metrics.
+  map_interval: 3 # Update interval (in seconds) for the map handler (/lagfixer map). Recommended to be at least twice the monitor_interval.
+  errors_reporter: true # Automatically reports LagFixer and Spark profiler errors to our support team.
+  updater: true
+  warnings: true # Displays warnings for legacy methods without support.
+  bStats: true # Optimized metrics available at https://bstats.org/plugin/bukkit/LagFixer/19292.
+  config_auto_fix: true # If there are any problems with configuration, disable this option
+  command:
+    permission: lagfixer.command
+    aliases:
+    - lf
+    - antilag
+    - lag
+
+modules:
+  # A server restart is required to apply changes.
+  MobAiReducer:
+    enabled: true
+    worlds: # Use '*' to enable for all worlds.
+      - '*'
+    values:
+      collides: false # Disabling this option allows storing up to 2x more creatures, but may currently prevent arrows from hitting optimized entities.
+      silent: true # Disables audio packets, improving performance for large farms.
+      async: true
+      force_load: true # Overwrites entity AI on plugin reload.
+      click_event: true # Sends info when a player clicks on a creature (disabled by the developer).
+      purge_interval: 30 # The purge frequency of the cache for mobs with optimized MobAI is defined in seconds. It does not remove animals from the world — it only removes them from the internal WeakHashMap to prevent a memory leak.
+      ignore_models: true # If "true" the MobAiReducer won't apply to entities from ModelEngine or MythicMobs
+      
+      # List of triggered spawn reasons. Spawn reasons: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
+      spawn_reasons:
+      - NATURAL
+      - SPAWNER_EGG
+      - SPAWNER
+      - EGG
+      - BREEDING
+      - DISPENSE_EGG
+      - ENDER_PEARL
+      - COMMAND
+      
+      # Entities that will have their mob AI and pathfinder system replaced.
+      entities:
+        animals: true
+        monsters: true
+        villagers: true
+        tameable: false # Pets (e.g., wolves, horses, cats, llamas, parrots).
+        birds: false # Flying entities (e.g., bees, parrots).
+        others: true
+      
+      # List of ignored creatures. Entity types: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+      # Use an empty list ([]) to disable the blacklist.
+      blacklist:
+      - WOLF
+      - MOOSHROOM
+      - IRON_GOLEM
+      
+      pathfinder:
+        typeA: # Keep only dedicated pathfinders for mobs.
+          enabled: true
+          whitelist: # Do not modify unless you are a developer.
+            - AttackableTarget
+            - HurtByTarget
+            - Attack
+            - BowShoot
+            - Swell
+            - Eat
+            - FishSchool
+            - Sit
+            - FollowOwner
+        # - AvoidTarget
+        # - RestrictSun
+        # - FleeSun
+        typeB: # Remove unnecessary random movements that cause server load.
+          enabled: false
+          blacklist: # Do not modify unless you are a developer.
+            - Random
+            - LookAt
+            - Panic
+            - AvoidTarget
+            - MoveTowards
+        # - Float
+        # - FollowParent
+        # - MoveThroughVillage
+        typeC: # Clear all existing pathfinders (not recommended).
+          enabled: false
+      
+      animals:
+        tempt:
+          enabled: true
+          range: 6.25 # Player search range.
+          speed: 1.25 # Movement speed.
+          cooldown: 30 # Player search cooldown (in ticks).
+          villagers: true # Villagers follow players holding emeralds.
+          trigger_both_hands: true # If false, only the main hand is checked.
+          event: false # Calls EntityTargetEvent with Reason: Tempt.
+          teleport: false # Not recommended, but can optimize packet flow
+        breed:
+          enabled: true
+          range: 5.0 # Partner search range.
+          speed: 1.0 # Movement speed.
+          event: false # Calls EntityTargetEvent with Reason: Custom.
+          teleport: false # Not recommended, but can optimize packet flow
+        panic:
+          enabled: true
+          rangeFromPlayer: 7 # Required distance from the attacker to activate.
+          speed: 1.95
+          cooldown: 15
+  
+  # A server restart is required to apply changes.
+  # Optimizes collisions by replacing them with new, optimized objects.
+  VehicleMotionReducer:
+    enabled: false
+    worlds: # Use '*' to enable for all worlds.
+      - '*'
+    values:
+      force_load: false # Experimental feature
+      minecart:
+        enabled: true
+        remove_chest: false # Removes naturally generated minecarts, useful for servers with frequent chunk generation.
+      boat:
+        enabled: true
+  # Coming soon:
+  # silent: true # Disables audio packets, improving performance for large farms.
+  # max_speed: 8 # Default max speed in Minecraft is 8.
+  # physics: true # If false, vehicles may fall out of the world when not on water. May be fixed in the future.
+  # culling: false
+  # collides: false
+
+  LagShield:
+    enabled: true
+    worlds: # Use '*' to enable for all worlds.
+      - world
+      - world_the_end
+      - world_nether
+    values:
+      # TPS thresholds at which specific features will be disabled.
+      # Set to -1 to completely disable the check for a given feature.
+      tps_threshold:
+        entity_spawn: 19 # Disables entity spawning below this TPS.
+        tick_hopper: 18 # Disables hopper transfers below this TPS.
+        redstone: 18 # Disables redstone updates below this TPS.
+        projectiles: 15 # Cancels projectiles (arrows, snowballs, etc.) below this TPS.
+        leaves_decay: 19 # Stops leaf decay below this TPS.
+        mobai: -1 # Disables mob AI below this TPS.
+        liquid_flow: 18 # Stops liquid flow (water/lava) below this TPS.
+        random_tick_speed: 18.5 # Disables random ticks (crop growth, etc.) below this TPS.
+        explosions: 18.5 # Cancels explosions below this TPS.
+        fireworks: 19 # Cancels fireworks below this TPS.
+      
+      # Dynamic player view distance adjustment.
+      # Key = TPS, Value = view-distance set at that TPS.
+      # Value is limited by the "view-distance" set in spigot.yml
+      # This option may cause the screen to flicker (chunk reload) for players when changing the view distance.
+      # Range: 2–32 chunks.
+      dynamic_view_distance:
+        enabled: false # Whether dynamic view distance adjustment is enabled.
+        tps_thresholds:
+          '20': 10 # At 20 TPS -> view-distance 10
+          '18': 8 # At 18 TPS -> view-distance 8
+          '15': 6 # At 15 TPS -> view-distance 6
+          '10': 2 # At 10 TPS -> view-distance 2
+      
+      # Dynamic simulation distance adjustment.
+      # Controls how far from the player mechanics (mob AI, ticks, etc.) are active.
+      # Value is limited by the "simulation-distance" set in spigot.yml
+      # Also limited by the view distance to avoid simulating chunks that are not visible
+      dynamic_simulation_distance:
+        enabled: true # Whether dynamic simulation distance adjustment is enabled.
+        tps_thresholds:
+          '20': 5 # At 20 TPS -> simulation-distance 5
+          '18': 4 # At 18 TPS -> simulation-distance 4
+          '15': 3 # At 15 TPS -> simulation-distance 3
+          '10': 1 # At 10 TPS -> simulation-distance 1
+  
+  ConsoleFilter:
+    enabled: false
+    values:
+      logs_limit: 10 # Maximum logs saved in "/logs" directory. Use -1 to disable.
+      filter:
+        enabled: false
+        save_filtered: true
+        error_filtering: false
+        patterns:
+        - ^<(([A-Za-z0-9_]{3,16}))> (.{0,})
+        - ^/([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\:([0-9]{1,5}) lost
+          connection
+        - Reached end of stream for /([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})$
+        - '([A-Za-z0-9_]{3,16}) issued server command: /(.{0,})'
+        - Read timed out
+        - ^.*logged in with entity id ([0-9]{0,}) at.*$
+        - '([A-Za-z0-9_]{3,16}) lost connection: Disconnected'
+        - ^(§e)([A-Za-z0-9_]{3,16}) left the game.
+        - Connection reset
+        - 'CONSOLE: Forcing save\.\..*'
+        - 'CONSOLE: Save complete\..*'
+  
+  RedstoneLimiter:
+    enabled: true
+    worlds: # Use '*' to enable for all worlds.
+      - '*'
+    values:
+      alerts: true
+      ticks_limit: # Maximum ticks per chunk per second.
+        redstone: 1100
+        piston: 50 # Total pushed blocks.
+      break_block: # Should LagFixer break blocks upon detection?
+        redstone: false
+        piston: false
+      piston:
+        push_blacklist: # Materials: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+          - SAND
+          - RED_SAND
+          - GRAVEL
+      click_cooldown: 1500 # Cooldown (in ms) for levers, buttons, redstone torches, etc.
+  
+  EntityLimiter:
+    enabled: true
+    worlds: # Use '*' to enable for all worlds.
+      - '*'
+    values:
+      alerts: false
+      whitelist: # list of entities that will not be removed: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+        - VILLAGER
+        - ZOMBIE_VILLAGER
+        - ENDER_DRAGON
+        - WITHER
+      # - WOLF
+      perchunk:
+        enabled: true
+        ignore_models: true # If "true" the limit won't apply to entities from ModelEngine or MythicMobs
+        creatures: 15 # Animals and monsters per chunk (-1 to disable).
+        items: -1 # Dropped items per chunk (-1 to disable).
+        vehicles: 3 # Minecarts and boats per chunk (-1 to disable).
+        projectiles: 5 # Projectiles per chunk (-1 to disable).
+        tiles: 10 # Disabled by the developer.
+        reasons: # Spawn reasons: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
+          - DEFAULT
+          - EGG
+          - NATURAL
+          - SPAWNER
+          - SPAWNER_EGG
+          - COMMAND
+        overflow_purge: # The overflow purge limits the number of entities per chunk, removing excess ones to prevent server lag caused by players trying to overload chunks.
+          enabled: false
+          interval: 30 # An interval in seconds that defines how often the excess entities in a chunk will be removed (per cycle)
+          limit_multiplier: 1.5 # Limit multiplier to not remove too many mobs
+          types:
+            creatures: true
+            items: false
+            vehicles: true
+            projectiles: true
+            named: false # If "false" overflow purge won't remove entities with a custom name
+      perworld: # Managed by Spigot.
+        enabled: true
+        monsters: 40
+        animals: 20
+        water_animals: 5
+        water_ambient: 0
+        water_underground_creature: 5 # Only for 1.17+ servers.
+        axolotls: 5 # Only for 1.18+ servers.
+        ambient: 0 # Bats in cave
+  
+  WorldCleaner:
+    enabled: true
+    worlds: # Use '*' to enable for all worlds.
+      - world
+      - world_the_end
+      - world_nether
+    values:
+      interval: 240 # Interval (in seconds) between WorldCleaner runs.
+      alerts: true # Configurable in lang.yml.
+      
+      # Command: /lagfixer clear items
+      items:
+        enabled: true
+        disable_item_despawn: false # If true, LagFixer will handle item despawning instead of Bukkit.
+        time_lived: 10000 # Minimum time (in ms) an item must exist before removal (-1 to disable).
+        blacklist: # Materials: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+          - BEACON
+        abyss: # The abyss stores deleted items, which players can retrieve via /abyss.
+          enabled: false
+          alerts: true # Configurable in lang.yml.
+          permission: lagfixer.abyss # Leave empty to disable permission.
+          item_despawn: true # If true, adds items to abyss when they despawn.
+          close: 60 # Clears abyss inventory and disables the command after this time.
+          blacklist: # Materials: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+            - BEDROCK
+            - BEACON
+      
+      # Command: /lagfixer clear creatures
+      creatures:
+        enabled: true
+        named: false # Should named creatures be removed?
+        drop_items: false # If false, mobs die without dropping items.
+        stacked: true # If true, removes stacked entities (WildStacker, RoseStacker and UltimateStacker hook)
+        levelled: true # If true, removes levelled mobs (LevelledMobs hook)
+        babies: false # If true, removes baby mobs (including non-listed ones)
+        ignore_models: true # If "true" the WorldCleaner won't remove to entities from ModelEngine or MythicMobs
+        list_mode: true # If true, only listed entities will be removed; if false, all unlisted entities will be removed
+        list: # Allowed creatures: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+          - BAT
+          - ZOMBIE
+          - SKELETON
+          - SLIME
+          - CREEPER
+          - SPIDER
+          - PHANTOM
+          - SILVERFISH
+          - SQUID
+          - GLOW_SQUID
+          - COD
+          - SALMON
+          - PUFFERFISH
+          - TROPICAL_FISH
+      
+      # Command: /lagfixer clear projectiles (e.g., arrows, snowballs) - Coming soon.
+      projectiles:
+        enabled: true
+        blacklist: # Projectiles: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+          - ENDER_PEARL
+          - EXPERIENCE_BOTTLE
+          - FIREBALL
+          - POTION
+          - LINGERING_POTION
+          - SPLASH_POTION
+          - WITHER_SKULL
+          - TRIDENT
+  #  - EGG
+  #  - SNOWBALL
+  #  - ARROW
+
+  InstantLeafDecay:
+    enabled: true
+    worlds: # Use '*' to enable for all worlds.
+      - world
+    values:
+      drop_items: true # Items drop when leaves decay.
+      tree_distance: 7 # Maximum distance from a tree trunk for leaves to decay.
+      leaves_decay: true # If false, leaves only decay when broken by players.
+  
+  AbilityLimiter:
+    enabled: true
+    worlds: # Use '*' to enable for all worlds.
+      - '*'
+    values:
+      elytra_boost:
+        cooldown: 5
+        speed_multiplier: 0.85 # Option disabled by developer
+        additional_durability_loss: 5 # Set 0 to disable
+      
+      trident_riptide:
+        cooldown: 3
+        speed_multiplier: 0.85 # Option disabled by developer
+        additional_durability_loss: 5 # Set 0 to disable
+  
+  ExplosionOptimizer:
+    enabled: true
+    worlds:
+    - '*'
+    values:
+      # Limits the maximum explosion power/radius to reduce excessive destruction
+      yield_limit:
+        enabled: false
+        
+        # Maximum explosion power for all sources
+        # Higher = more destructive, Lower = less damage
+        # Default TNT yield in Minecraft is 4.0
+        default: 4.0
+        
+        # Explosion power limits per entity type:
+        # These override the "default" value
+        # Entity types: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+        per_entity:
+          TNT: 4.0 # TNT (most common)
+          TNT_MINECART: 4.0 # Minecart TNT
+          CREEPER: 3.0 # Creepers (slightly weaker)
+          FIREBALL: 1.0 # Ghast fireballs
+          WITHER_SKULL: 1.0 # Wither skull projectiles
+          END_CRYSTAL: 6.0 # End crystals (naturally powerful)
+      
+      # Prevents chain reactions where one explosion triggers others nearby
+      anti_chain:
+        enabled: true
+        
+        # Prevent chain reactions:
+        prevent_tnt_chains: true # TNT won't trigger other TNT
+        prevent_creeper_chains: false # Creepers can still trigger others
+        prevent_crystal_chains: true # End crystals won't chain
+        
+        # Prevent explosions from igniting TNT blocks
+        # true = explosions won't ignite TNT, false = normal behavior
+        prevent_block_ignition: true
+        
+        # Radius to check for potential chain reactions (in blocks)
+        chain_radius: 8.0
+        
+        # Maximum number of explosions allowed in one chain
+        max_chain_size: 3
+        
+        # Delay before allowing new chains after an explosion (ms)
+        chain_cooldown: 1000
+      
+      management:
+        # ⚠️ WARNING: This will completely disable explosions!
+        # Enable only if you experience severe lag caused by explosions
+        enabled: false
+        
+        # Explosion types to disable:
+        cancel_block_explosions: true # Beds in Nether, etc.
+        cancel_creepers: false # Keep creepers for gameplay
+        cancel_crystals: true
+        cancel_fireballs: true
+        cancel_tnt: true
+        cancel_wither_skulls: true
+        
+        # Partial effects when explosions are disabled:
+        explosion_damage: false # Damage entities but no block destruction
+        explosion_sound: true # Keep sounds for immersion

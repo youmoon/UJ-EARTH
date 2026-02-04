@@ -1,0 +1,1176 @@
+# mobs.yml - 몹 스태킹 설정
+
+ALLAY:
+  enabled: true # 활성화 여부
+  display-name: 알레이 # 표시될 이름
+  min-stack-size: -1 # 최소 스택 크기 (-1은 기본값)
+  max-stack-size: 1 # 최대 스택 크기
+  kill-entire-stack-on-death: default # 사망 시 전체 스택 제거 여부
+  merge-radius: 3 # 몹이 합쳐지는 반경 (블록 단위)
+  only-stack-from-spawners: default # 스포너에서 생성된 경우에만 스택
+  data-storage-type: default # 데이터 저장 방식
+  disable-all-mob-ai: default # 모든 몹 AI 비활성화 여부
+  dont-stack-if-different-custom-name: false # 사용자 이름이 다르면 스택 안 함
+  dont-stack-if-holding-items: false # 아이템을 들고 있으면 스택 안 함
+ARMADILLO:
+  enabled: true
+  display-name: 아르마딜로
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false # 번식 중이면 스택 안 함
+  dont-stack-if-different-age: true # 나이(성체/새끼)가 다르면 스택 안 함
+  dont-stack-if-baby: false # 새끼일 경우 스택 안 함
+AXOLOTL:
+  enabled: true
+  display-name: 아홀로틀
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-different-color: false # 색이 다르면 스택 안 함
+  dont-stack-if-playing-dead: false # 죽은 척하면 스택 안 함
+BAT:
+  enabled: true
+  display-name: 박쥐
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-sleeping: false # 자고 있으면 스택 안 함
+BEE:
+  enabled: true
+  display-name: 꿀벌
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-angry: false # 화난 상태면 스택 안 함
+  dont-stack-if-has-hive: false # 벌집이 있으면 스택 안 함
+  dont-stack-if-different-hives: false # 벌집 위치가 다르면 스택 안 함
+  dont-stack-if-stung: false # 침을 쏜 상태면 스택 안 함
+  dont-stack-if-has-flower: false # 꽃을 가지고 있으면 스택 안 함
+  dont-stack-if-has-nectar: false # 꿀을 가지고 있으면 스택 안 함
+BLAZE:
+  enabled: true
+  display-name: 블레이즈
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+BOGGED:
+  enabled: true
+  display-name: 보그드
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-sheared: false # 털이 깎인 상태면 스택 안 함
+BREEZE:
+  enabled: true
+  display-name: 브리즈
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+CAMEL:
+  enabled: true
+  display-name: 낙타
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-sitting: false # 앉아 있으면 스택 안 함
+  dont-stack-if-tamed: false # 길들여졌으면 스택 안 함
+  dont-stack-if-different-owners: false # 주인이 다르면 스택 안 함
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-saddled: false # 안장이 있으면 스택 안 함
+  dont-stack-if-dashing: false # 돌진 중이면 스택 안 함
+CAT:
+  enabled: false
+  display-name: 고양이
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-sitting: false
+  dont-stack-if-tamed: false
+  dont-stack-if-different-owners: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-different-type: false # 종류(털색)가 다르면 스택 안 함
+  dont-stack-if-different-collar-color: false # 목걸이 색이 다르면 스택 안 함
+CAVE_SPIDER:
+  enabled: true
+  display-name: 동굴 거미
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+CHICKEN:
+  enabled: true
+  display-name: 닭
+  min-stack-size: -1
+  max-stack-size: 10
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  multiply-egg-drops-by-stack-size: true # 알 드롭량을 스택 크기만큼 곱하기
+  max-egg-stack-size: -1 # 최대 알 스택 크기 (-1은 제한 없음)
+  dont-stack-if-different-types: false
+COD:
+  enabled: true
+  display-name: 대구
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+COW:
+  enabled: true
+  display-name: 소
+  min-stack-size: 8
+  max-stack-size: 32
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+CREEPER:
+  enabled: true
+  display-name: 크리퍼
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-charged: false # 충전된(Charged) 상태면 스택 안 함
+  explode-kill-entire-stack: false # 폭발 시 전체 스택을 함께 제거
+DOLPHIN:
+  enabled: true
+  display-name: 돌고래
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+DONKEY:
+  enabled: true
+  display-name: 당나귀
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-tamed: false
+  dont-stack-if-different-owners: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-saddled: false
+  dont-stack-if-chested: false # 상자를 달고 있으면 스택 안 함
+DROWNED:
+  enabled: true
+  display-name: 드라운드
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-converting: false # 주민으로 치유 중이면 스택 안 함
+ELDER_GUARDIAN:
+  enabled: true
+  display-name: 엘더 가디언
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+ENDERMAN:
+  enabled: true
+  display-name: 엔더맨
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-holding-block: false # 블록을 들고 있으면 스택 안 함
+ENDERMITE:
+  enabled: true
+  display-name: 엔더마이트
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+ENDER_DRAGON:
+  enabled: false
+  display-name: 엔더 드래곤
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+EVOKER:
+  enabled: true
+  display-name: 소환사
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-patrol-leader: false # 습격대장이면 스택 안 함
+FOX:
+  enabled: true
+  display-name: 여우
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-sitting: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-different-type: false
+FROG:
+  enabled: true
+  display-name: 개구리
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-different-type: false
+GHAST:
+  enabled: true
+  display-name: 가스트
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+GIANT:
+  enabled: true
+  display-name: 거인
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+GLOW_SQUID:
+  enabled: true
+  display-name: 빛나는 오징어
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-dark: false # 어두운 상태(먹물 사용 후)면 스택 안 함
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+GOAT:
+  enabled: true
+  display-name: 염소
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-different-horns: false # 뿔 개수가 다르면 스택 안 함
+  dont-stack-if-screaming: false # 소리 지르는 염소면 스택 안 함
+GUARDIAN:
+  enabled: true
+  display-name: 가디언
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+HOGLIN:
+  enabled: true
+  display-name: 호글린
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-unhuntable: false # 사냥 불가 상태(좀비화)면 스택 안 함
+HORSE:
+  enabled: true
+  display-name: 말
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-tamed: false
+  dont-stack-if-different-owners: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-saddled: false
+  dont-stack-if-armored: false # 갑옷을 입었으면 스택 안 함
+  dont-stack-if-different-style: false # 무늬가 다르면 스택 안 함
+  dont-stack-if-different-color: false
+HUSK:
+  enabled: true
+  display-name: 허스크
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-converting: false
+ILLUSIONER:
+  enabled: true
+  display-name: 환술사
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-patrol-leader: false
+IRON_GOLEM:
+  enabled: true
+  display-name: 철 골렘
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-player-created: false # 플레이어가 생성했으면 스택 안 함
+LLAMA:
+  enabled: true
+  display-name: 라마
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-tamed: false
+  dont-stack-if-different-owners: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-saddled: false
+  dont-stack-if-chested: false
+  dont-stack-if-different-decor: false # 장식(카펫)이 다르면 스택 안 함
+  dont-stack-if-different-color: false
+MAGMA_CUBE:
+  enabled: true
+  display-name: 마그마 큐브
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-size: true # 크기가 다르면 스택 안 함
+  accurate-drops-with-kill-entire-stack-on-death: true # 사망 시 전체 제거 옵션과 함께 정확한 드롭 계산
+MOOSHROOM:
+  enabled: true
+  display-name: 무시룸
+  min-stack-size: 8
+  max-stack-size: 32
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-different-type: false
+  extra-mushrooms-per-cow-in-stack: 5 # 스택 내 소 한 마리당 추가 버섯
+  drop-additional-mushrooms-for-each-cow-in-stack: true # 스택 내 소 개수만큼 추가 버섯 드롭
+MULE:
+  enabled: true
+  display-name: 노새
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-tamed: false
+  dont-stack-if-different-owners: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-saddled: false
+  dont-stack-if-chested: false
+OCELOT:
+  enabled: true
+  display-name: 오실롯
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+PANDA:
+  enabled: true
+  display-name: 판다
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-sitting: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-different-main-gene: false # 주요 유전자가 다르면 스택 안 함
+  dont-stack-if-different-recessive-gene: false # 열성 유전자가 다르면 스택 안 함
+PARROT:
+  enabled: true
+  display-name: 앵무새
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-sitting: false
+  dont-stack-if-tamed: false
+  dont-stack-if-different-owners: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-different-type: false
+PHANTOM:
+  enabled: true
+  display-name: 팬텀
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-size: true
+PIG:
+  enabled: true
+  display-name: 돼지
+  min-stack-size: 8
+  max-stack-size: 32
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-saddled: false
+  dont-stack-if-different-types: false
+PIGLIN:
+  enabled: true
+  display-name: 피글린
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-converting: false # 좀비화 중이면 스택 안 함
+  dont-stack-if-immune-to-zombification: false # 좀비화에 면역이면 스택 안 함
+  dont-stack-if-unable-to-hunt: false # 사냥 불가 상태면 스택 안 함
+PIGLIN_BRUTE:
+  enabled: true
+  display-name: 피글린 야수
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-converting: false
+  dont-stack-if-immune-to-zombification: false
+PILLAGER:
+  enabled: true
+  display-name: 약탈자
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-patrol-leader: false
+POLAR_BEAR:
+  enabled: true
+  display-name: 북극곰
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+PUFFERFISH:
+  enabled: true
+  display-name: 복어
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-inflation: false # 부풀어 오른 상태가 다르면 스택 안 함
+RABBIT:
+  enabled: true
+  display-name: 토끼
+  min-stack-size: 8
+  max-stack-size: 32
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-different-type: false
+RAVAGER:
+  enabled: true
+  display-name: 파괴수
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-patrol-leader: false
+SALMON:
+  enabled: true
+  display-name: 연어
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-size: true
+SHEEP:
+  enabled: true
+  display-name: 양
+  min-stack-size: 8
+  max-stack-size: 32
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-color: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-sheared: false
+  dont-stack-if-different-shear-state: false # 털 깎인 상태가 다르면 스택 안 함
+  percentage-of-wool-to-regrow-per-grass-eaten: 25.0 # 풀 먹을 때마다 양털 재생률 (%)
+  shear-all-sheep-in-stack: true # 스택 내 모든 양의 털을 한 번에 깎음
+SHULKER:
+  enabled: true
+  display-name: 셜커
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-color: false
+SILVERFISH:
+  enabled: true
+  display-name: 좀벌레
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+SKELETON:
+  enabled: true
+  display-name: 스켈레톤
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+SKELETON_HORSE:
+  enabled: true
+  display-name: 스켈레톤 말
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-tamed: false
+  dont-stack-if-different-owners: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-saddled: false
+SLIME:
+  enabled: true
+  display-name: 슬라임
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-size: true
+  accurate-drops-with-kill-entire-stack-on-death: true
+SNIFFER:
+  enabled: true
+  display-name: 스니퍼
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+SNOW_GOLEM:
+  enabled: true
+  display-name: 눈 골렘
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-no-pumpkin: false # 호박을 쓰지 않았으면 스택 안 함
+  force-custom-named-stacking: true # 사용자 이름이 있어야만 스택 강제
+SPIDER:
+  enabled: true
+  display-name: 거미
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+SQUID:
+  enabled: true
+  display-name: 오징어
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+STRAY:
+  enabled: true
+  display-name: 스트레이
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+STRIDER:
+  enabled: true
+  display-name: 스트라이더
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-shivering: false # 추워하는 상태면 스택 안 함
+  dont-stack-if-saddled: false
+TADPOLE:
+  enabled: true
+  display-name: 올챙이
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+TRADER_LLAMA:
+  enabled: true
+  display-name: 상인 라마
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-tamed: false
+  dont-stack-if-different-owners: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-saddled: false
+  dont-stack-if-chested: false
+  dont-stack-if-different-decor: false
+  dont-stack-if-different-color: false
+TROPICAL_FISH:
+  enabled: false
+  display-name: 열대어
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-body-color: false # 몸통 색이 다르면 스택 안 함
+  dont-stack-if-different-pattern: false # 무늬가 다르면 스택 안 함
+  dont-stack-if-different-pattern-color: false # 무늬 색이 다르면 스택 안 함
+TURTLE:
+  enabled: true
+  display-name: 거북
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+VEX:
+  enabled: true
+  display-name: 벡스
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-charging: false # 돌진 중이면 스택 안 함
+VILLAGER:
+  enabled: true
+  display-name: 주민
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-trading: false # 거래 중이면 스택 안 함
+  dont-stack-if-professioned: false # 직업이 있으면 스택 안 함
+  dont-stack-if-different-profession: false # 직업이 다르면 스택 안 함
+  dont-stack-if-different-type: false
+  dont-stack-if-different-level: false # 레벨이 다르면 스택 안 함
+VINDICATOR:
+  enabled: true
+  display-name: 변명자
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-patrol-leader: false
+WANDERING_TRADER:
+  enabled: true
+  display-name: 떠돌이 상인
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-trading: false
+WARDEN:
+  enabled: true
+  display-name: 워든
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+WITCH:
+  enabled: true
+  display-name: 마녀
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-patrol-leader: false
+WITHER:
+  enabled: false
+  display-name: 위더
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+WITHER_SKELETON:
+  enabled: true
+  display-name: 위더 스켈레톤
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+WOLF:
+  enabled: false
+  display-name: 늑대
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-sitting: false
+  dont-stack-if-tamed: false
+  dont-stack-if-different-owners: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-different-type: false
+  dont-stack-if-angry: false
+  dont-stack-if-different-collar-color: false
+ZOGLIN:
+  enabled: true
+  display-name: 조글린
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+ZOMBIE:
+  enabled: true
+  display-name: 좀비
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-converting: false
+ZOMBIE_HORSE:
+  enabled: true
+  display-name: 좀비 말
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-tamed: false
+  dont-stack-if-different-owners: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-saddled: false
+ZOMBIE_VILLAGER:
+  enabled: true
+  display-name: 좀비 주민
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-converting: false
+  dont-stack-if-different-profession: false
+ZOMBIFIED_PIGLIN:
+  enabled: true
+  display-name: 좀비화 피글린
+  min-stack-size: -1
+  max-stack-size: 1
+  kill-entire-stack-on-death: default
+  merge-radius: 3
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false
+  dont-stack-if-angry: false
+  dont-stack-if-converting: false
+CREAKING:
+  enabled: true
+  display-name: Creaking
+  min-stack-size: -1
+  max-stack-size: -1
+  kill-entire-stack-on-death: default
+  merge-radius: -1
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+HAPPY_GHAST:
+  enabled: true
+  display-name: Happy Ghast
+  min-stack-size: -1
+  max-stack-size: -1
+  kill-entire-stack-on-death: default
+  merge-radius: -1
+  only-stack-from-spawners: default
+  data-storage-type: default
+  disable-all-mob-ai: default
+  dont-stack-if-different-custom-name: false
+  dont-stack-if-breeding: false
+  dont-stack-if-different-age: true
+  dont-stack-if-baby: false

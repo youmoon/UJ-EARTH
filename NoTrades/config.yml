@@ -1,0 +1,6 @@
+#Shown when a user tried to trade with a villager, set to "" to disable
+notrade-message:
+  - "&c주민과의 거래는 비활성화 되었습니다."
+
+#Shown when user bypasses the trade restrictions by permission, set to "" to disable
+notrade-bypass: "§7({perm}) 권한으로 주민과의 거래가 일시적으로 활성화 되었습니다."

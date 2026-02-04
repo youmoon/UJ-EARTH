@@ -1,0 +1,26 @@
+# REDEEM CODE (use only capital letters and numbers)
+code: UJEARTHOPEN2025
+
+# Enable or disable the code
+enabled: true
+
+# Validity date in yyyyMMdd format
+validity: 20250816
+
+# Rewards configuration 
+# Reference to the book YAML file in writtenbook folder
+# level enhantment 1-100
+# Command must be valid
+rewards:
+- money: 150
+- command: give {player} cake[custom_name='["",{"text":"오픈 ","italic":false},{"text":"기념","italic":false,"color":"#ffccff"},{"text":"
+    ","italic":false},{"text":"케이크","italic":false,"color":"#ff99ff"}]',lore=['["",{"text":"
+    | 2025. 08. 01.","italic":false,"color":"white"}]','["",{"text":" | UJ EARTH 오픈!","italic":false,"color":"#ffccff"}]'],enchantment_glint_override=true]
+
+
+# Optional: Define how many times the code can be redeemed
+# Use -1 for unlimited
+redeem_limit: -1
+
+# dont change this
+redeem_count: 9

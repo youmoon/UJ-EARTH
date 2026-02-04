@@ -1,0 +1,14 @@
+enable: true
+slot: 21
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: stone
+  displayname: '&2&l석재상점'
+  name: '&2&l석재상점'

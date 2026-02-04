@@ -1,0 +1,22 @@
+location: world:-5116.500:70.500:-17404.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: §a💲 §f§l국가별 돈 순위 §a💲
+    height: 0.3
+  - content: '%townyadvanced_top_town_balance_2%'
+    height: 0.3
+  - content: '%townyadvanced_top_town_balance_3%'
+    height: 0.3
+  - content: '%townyadvanced_top_town_balance_4%'
+    height: 0.3
+  - content: '%townyadvanced_top_town_balance_5%'
+    height: 0.3
+  - content: '%townyadvanced_top_town_balance_6%'
+    height: 0.3
+  actions: {}
