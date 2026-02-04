@@ -457,4 +457,3 @@ sand_throw:
     - 'sound{sound=ENTITY_GENERIC_HURT;pitch=1.2}'
     - 'particle{particle=FALLING_DUST;data=SAND;amount=20;speed=.3}'
     - 'give_item{item={type=SAND;amount=1}}'
-    - 'send_message{text="&6&l모래를 얻었습니다!"}'
