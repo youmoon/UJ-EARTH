@@ -6,9 +6,7 @@ ANKH_OF_BASTET:
     - '&x&D&5&C&2&7&C태양의 수호가 깃든 생명의 부적.'
     - '&x&E&B&D&7&A&1사막을 헤매는 자에게 회복과 지혜를 부여한다.'
     tier: VERY_RARE
-    max-mana: 10.0
-    mana-regeneration: 0.4
     additional-wisdom: 2.0
     additional-regeneration: 2.0
     additional-luck: 2.5
-    required-excavation: 10.0
+    required-excavation: 3.0

@@ -3,13 +3,10 @@ PHARAOHS_KHOPESH:
     material: GOLDEN_SWORD
     name: '&x&F&2&D&4&6&6파&x&F&6&D&9&7&0라&x&F&A&D&E&7&A오&x&F&E&E&3&8&4의 &x&F&4&B&7&3&1코&x&F&6&B&E&3&8페&x&F&8&C&5&3&F쉬'
     lore:
-    - '&x&C&8&B&2&5&0고대 사막의 전쟁 사제가 들었다는 황금 곡검.'
-    - '&x&D&E&C&C&9&A전투 스킬의 힘을 끌어올려준다.'
+    - '&x&C&8&B&2&5&0고대 사막의 전쟁 사제가 들었다는 황금 곡검'
     tier: RARE
     attack-damage: 7.5
     attack-speed: 1.6
     critical-strike-chance: 7.0
-    skill-critical-strike-chance: 8.0
-    additional-strength: 3.0
     additional-crit-chance: 2.0
-    required-fighting: 12.0
+    required-fighting: 4.0
