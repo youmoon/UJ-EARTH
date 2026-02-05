@@ -30,77 +30,77 @@ pages:
         name: ' '
       '10':
         material: wheat
-        buy: 25
+        buy: 192
         sell: 48
         stack-size: 64
       '11':
         material: carrot
-        buy: 24
+        buy: 176
         sell: 44
         stack-size: 64
       '12':
         material: potato
-        buy: 26
+        buy: 192
         sell: 48
         stack-size: 64
       '13':
         material: beetroot
-        buy: 25
+        buy: 192
         sell: 48
         stack-size: 64
       '14':
         material: sugar_cane
-        buy: 75
+        buy: 240
         sell: 60
         stack-size: 64
       '15':
         material: apple
-        buy: 300
+        buy: 288
         sell: 72
         stack-size: 64
       '16':
         material: cocoa_beans
-        buy: 20
+        buy: 176.0
         sell: 44.0
         stack-size: 64
       '17':
         material: MELON
-        buy: 30
+        buy: 201.6
         sell: 50.4
         stack-size: 64
       '18':
         material: Pumpkin
-        buy: 30
+        buy: 201.6
         sell: 50.4
         stack-size: 64
       '19':
         material: sweet_berries
-        buy: 15
+        buy: 134.4
         sell: 33.6
         stack-size: 64
       '20':
         material: glow_berries
-        buy: 30
+        buy: 153.6
         sell: 38.4
         stack-size: 64
       '21':
         material: red_mushroom
-        buy: 50
+        buy: 176
         sell: 44
         stack-size: 64
       '22':
         material: brown_mushroom
-        buy: 50
+        buy: 176
         sell: 44
         stack-size: 64
       '23':
         material: HONEYCOMB
-        buy: 50
+        buy: 176
         sell: 44
         stack-size: 64
       '24':
         material: honey_bottle
-        buy: 75
+        buy: 272
         sell: 68
         stack-size: 16
       '25':
@@ -155,21 +155,21 @@ pages:
         sell: 5.13
       '37':
         material: WHEAT_seeds
-        buy: 15
+        buy: 4.8
         sell: 1.2
         stack-size: 64
       '38':
         material: PUMPKIN_SEEDS
-        buy: 15
+        buy: 4.8
         sell: 1.2
         stack-size: 64
       '39':
         material: melon_seeds
-        buy: 15
+        buy: 4.8
         sell: 1.2
         stack-size: 64
       '40':
         material: beetroot_seeds
-        buy: 15
+        buy: 4.8
         sell: 1.2
         stack-size: 64
