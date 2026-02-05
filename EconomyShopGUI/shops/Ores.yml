@@ -76,12 +76,12 @@ pages:
       '19':
         material: GLOWSTONE_DUST
         buy: 1700
-        sell: 340
+        sell: 187.5
         stack-size: 64
       '20':
         material: GLOWSTONE
         buy: 6800
-        sell: 1360
+        sell: 750
         stack-size: 64
       '21':
         material: END_ROD
