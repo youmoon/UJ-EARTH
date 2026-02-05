@@ -68,6 +68,11 @@ pages:
         buy: 3690
         sell: 369
         stack-size: 64
+      '18':
+        material: IRON_INGOT
+        buy: -1
+        sell: 120
+        stack-size: 64
       '19':
         material: GLOWSTONE_DUST
         buy: 1700
@@ -88,4 +93,13 @@ pages:
         buy: 490
         sell: -1
         stack-size: 64
-
+      '23':
+        material: GOLD_INGOT
+        buy: -1
+        sell: 180
+        stack-size: 64
+      '24':
+        material: DIAMOND
+        buy: -1
+        sell: 500
+        stack-size: 64
