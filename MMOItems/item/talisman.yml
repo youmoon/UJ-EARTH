@@ -1,0 +1,12 @@
+ANKH_OF_BASTET:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&x&F&4&D&1&6&6바&x&F&7&D&9&7&1스&x&F&A&E&2&7&C테&x&F&D&E&A&8&7트&x&F&F&E&F&9&F의 &x&F&4&E&1&8&5앙&x&F&6&E&6&8&B크'
+    lore:
+    - '&x&D&5&C&2&7&C태양의 수호가 깃든 생명의 부적'
+    - '&x&E&B&D&7&A&1사막을 헤매는 자에게 회복과 지혜를 부여한다'
+    tier: VERY_RARE
+    additional-wisdom: 2.0
+    additional-regeneration: 2.0
+    additional-luck: 2.5
+    required-excavation: 3.0

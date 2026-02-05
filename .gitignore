@@ -77,3 +77,6 @@ libs/
 *.fsh
 *.vsh
 *.zip
+
+# OS / Editor
+.vscode/

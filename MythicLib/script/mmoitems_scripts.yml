@@ -444,3 +444,16 @@ crossbow_attack:
 crossbow_arrow_tick:
   mechanics:
     - 'particle{particle=CRIT;speed=.05}'
+
+##############################################################################################################################
+#
+# Sand Set Effect - Give Sand to Attacker
+#
+##############################################################################################################################
+
+sand_throw:
+  public: true
+  mechanics:
+    - 'sound{sound=ENTITY_GENERIC_HURT;pitch=1.2}'
+    - 'particle{particle=FALLING_DUST;data=SAND;amount=20;speed=.3}'
+    - 'give_item{item={type=SAND;amount=1}}'
