@@ -74,6 +74,7 @@ userdata.json
 .paper-remapped/
 .libraries/
 libs/
+.vscode/
 *.fsh
 *.vsh
 *.zip
